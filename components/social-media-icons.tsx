@@ -30,7 +30,7 @@ const iconLinks: Props[] = [
 	}
 ];
 
-const SocialMediaCima = () => {
+const SocialMediaIcons = () => {
 	const iconMap = iconLinks.map(link => (
 		<a
 			key={link.name}
@@ -51,7 +51,7 @@ const SocialMediaCima = () => {
 	);
 };
 
-export default SocialMediaCima;
+export default SocialMediaIcons;
 
 // faGoogle,
 // faLinkedin,

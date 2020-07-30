@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import Container from '../components/container';
 import { CLIENT_NAME } from '../lib/constants';
 import SearchBox from '../components/search-box';
-import SocialMediaCima from '../components/social-media-cima';
+import SocialMediaIcons from '../components/social-media-icons';
 
 interface Props {
 	props: string | number;

@@ -1,7 +1,7 @@
 import Container from './container';
 import cn from 'classnames';
 // import { EXAMPLE_PATH } from '../lib/constants';
-import SocialMediaCima from './social-media-cima';
+import SocialMediaIcons from './social-media-icons';
 
 type Props = {
 	preview?: boolean;
@@ -30,7 +30,7 @@ const Alert = ({ preview }: Props) => {
 						</>
 					) : (
 						<>
-							<SocialMediaCima />
+							<SocialMediaIcons />
 						</>
 					)}
 				</div>
