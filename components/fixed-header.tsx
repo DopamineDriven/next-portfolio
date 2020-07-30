@@ -12,7 +12,7 @@ interface Props {
 const links: NavRef[] = [
 	{
 		href: '/',
-		label: 'Directory'
+		label: 'Portfolio'
 	},
 	{
 		href: '/contact',
