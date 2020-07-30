@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
-	faFacebook,
-	faInstagram,
+	faGithub,
+	faLinkedin,
 	faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -14,19 +14,19 @@ interface Props {
 
 const iconLinks: Props[] = [
 	{
-		href: 'https://www.facebook.com/ChiIndyMedia/',
-		name: 'facebook',
-		icon: faFacebook
+		href: 'https://github.com/DopamineDriven',
+		name: 'github',
+		icon: faGithub
 	},
 	{
-		href: 'https://twitter.com/chiindymedia?lang=en',
+		href: 'https://www.linkedin.com/in/asross/',
+		name: 'linkedin',
+		icon: faLinkedin
+	},
+	{
+		href: 'https://twitter.com/Dopamine_Driven',
 		name: 'twitter',
 		icon: faTwitter
-	},
-	{
-		href: 'https://www.instagram.com/chiindymedia/',
-		name: 'instagram',
-		icon: faInstagram
 	}
 ];
 
