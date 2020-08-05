@@ -14,7 +14,7 @@ type Props = {
 
 const iconLinks: Props[] = [
 	{
-		href: 'https://www.facebook.com/ChiIndyMedia/',
+		href: 'https://www.linkedin.com/in/asross/',
 		name: 'facebook',
 		icon: faLinkedin
 	},
