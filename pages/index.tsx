@@ -6,6 +6,7 @@ import Container from '../components/container';
 import { CLIENT_NAME } from '../lib/constants';
 import SearchBox from '../components/search-box';
 import SocialMediaIcons from '../components/social-media-icons';
+import Card from '../components/card';
 
 interface Props {
 	props: string | number;
@@ -21,14 +22,15 @@ const Index = ({ preview, props }: Props) => {
 					<title>{`${CLIENT_NAME} landing page`}</title>
 				</Head>
 				<Container>
-					<SearchBox />
 					<h2 className='md:text-5xl font-bold text-center font-serif tracking-tight md:tracking-tighter leading-tight mb-8 mt-2'>
 						<Link href='/'>
 							<a className='hover:text-cimaRed cursor-text select-text text-black px-8'>
-								Chicago Independent Media Alliance
+								Thanks for Dropping by
 							</a>
 						</Link>
 					</h2>
+					<SearchBox />
+					<Card /> <Card /> <Card /> <Card /> <Card /> <Card />
 				</Container>
 			</Layout>
 		</>
