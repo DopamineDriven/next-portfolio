@@ -1,1 +1,2 @@
 # next-jamstack-portfolio
+- ssg
