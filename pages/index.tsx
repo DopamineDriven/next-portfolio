@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/fixed-header';
+import Header from '../components/header';
 import Layout from '../components/layout';
 import Container from '../components/container';
 import { CLIENT_NAME } from '../lib/constants';
-import SearchBox from '../components/search-box';
+// import SearchBox from '../components/search-box';
 import SocialMediaIcons from '../components/social-media-icons';
 import Card from '../components/card';
 
@@ -29,8 +29,8 @@ const Index = ({ preview, props }: Props) => {
 							</a>
 						</Link>
 					</h2>
-					<SearchBox />
-					<Card /> <Card /> <Card /> <Card /> <Card /> <Card />
+					{/* <SearchBox /> */}
+
 				</Container>
 			</Layout>
 		</>

@@ -1,20 +1,96 @@
 import { CMS_NAME, CMS_URL } from '../lib/constants';
 import Link from 'next/link';
+interface SortRef {
+	href: string;
+	label: string;
+}
+
+const links: SortRef[] = [
+	{
+		href: '/',
+		label: 'Title Ascending'
+	},
+	{
+		href: '/reverse-alphabetical',
+		label: 'Title Descending'
+	},
+	{
+		href: '/newest',
+		label: 'Date Newest'
+	},
+	{
+		href: '/oldest',
+		label: 'Date Oldest'
+	}
+];
+
+// import {
+// 	getAllPostsForHomeDateAsc,
+// 	getAllPostsForHomeDateDesc,
+// 	getAllPostsForHomeAlphabetical,
+// 	getAllPostsForHomeReverseAlphabetical
+// } from '../lib/api';
+
+// type Sorting = {
+// 	sort: any;
+// 	title: string;
+// };
+
+// const handleClick = (e: Event) => {
+// 	e.preventDefault();
+// };
+
+// const sorts: Sorting[] = [
+// 	{
+// 		sort: getAllPostsForHomeDateAsc(),
+// 		title: 'date ascending (most recent)'
+// 	},
+// 	{
+// 		sort: getAllPostsForHomeDateDesc(),
+// 		title: 'date descending (least recent)'
+// 	},
+// 	{
+// 		sort: getAllPostsForHomeAlphabetical(),
+// 		title: 'alphabetical order'
+// 	},
+// 	{
+// 		sort: getAllPostsForHomeReverseAlphabetical(),
+// 		title: 'reverse-alphabetical order'
+// 	}
+// ];
 
 export default function Intro() {
+	// const sortingMap = links.map(sorting => (
+	// 	<div
+	// 		key={sorting.label}
+	// 		className='flex flex-row mx-3 mt-2 text-center items-center justify-center'
+	// 	>
+	// 		<Link href={sorting.href}>
+	// 			<button
+	// 				key={sorting.label}
+	// 				className='block bg-white px-2 hover:opacity-75 text-iconHover border-1 border-iconHover font-bold font-polished duration-300 transition-colors lg:mb-0 rounded'
+	// 				aria-label='Documentation'
+	// 				onClick={() => sorting}
+	// 			>
+	// 				{sorting.label}
+	// 			</button>
+	// 		</Link>
+	// 	</div>
+	// ));
+	// console.log(sortingMap);
 	return (
 		<>
-			<h1 className='text-6xl sm:text-6xl xs:text-6xl font-bold text-center font-serif tracking-tight leading-tight mt-8'>
+			<h1 className='text-6xl sm:text-6xl xs:text-5xl font-bold text-center justify-center font-polished tracking-tight leading-tight mt-50'>
 				<Link href='/'>
 					<a
 						className='hover:text-cimaRed cursor-text select-text text-black'
 						aria-label='Chicago Independent Media Alliance'
 					>
-						Thanks for Dropping by
+						Thanks for dropping by 
 					</a>
 				</Link>
 			</h1>
-			<h2 className='text-center justify-center text-black text-lg mt-5 px-2'>
+			<h2 className='text-center justify-center text-black text-lg mt-5 px-2 font-polished'>
 				Powered by{' '}
 				<a
 					href='https://nextjs.org/'
@@ -71,6 +147,12 @@ export default function Intro() {
 				</a>
 				.
 			</h2>
+			<hr />
+			{/* <h2 className='text-2xl sm:text-2xl xs:text-2xl font-bold text-center justify-center font-polished tracking-tight leading-tight mt-4'>
+				Sort Directory by Company Title or Date Published
+			</h2>
+			<div className='flex flex-row justify-center items-center align-middle'></div> */}
+			{/* <hr className='border-accent-2 w-full mt-8' /> */}
 		</>
 	);
 }
