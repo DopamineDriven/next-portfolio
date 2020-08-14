@@ -1,7 +1,7 @@
 {
-	"name": "chicago independent media alliance",
-	"short_name": "CIMA",
-	"start_url": "https://headless-wp-next-directory.vercel.app/",
+	"name": "JAMstack portfolio",
+	"short_name": "JAMstack",
+	"start_url": "https://next-jamstack-portfolio.vercel.app/",
 	"icons": [
 		{
 			"src": "/favicon/android-icon-36x36.png",
@@ -42,11 +42,11 @@
 		{
 			"src": "/favicon/android-icon-512x512.png",
 			"sizes": "512x512",
-            "type": "image/png",
-            "density": "5.0"
+			"type": "image/png",
+			"density": "5.0"
 		}
 	],
-	"theme_color": "#B8242C",
-	"background_color": "#FFFFFF",
+	"theme_color": "#000000",
+	"background_color": "#ffffff",
 	"display": "standalone"
 }
