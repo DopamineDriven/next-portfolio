@@ -6,7 +6,7 @@ import CardIcons from './card-icons';
 type CardProps = {
 	src: string;
 	title: string;
-	slug: string | number;
+	slug: string;
 	date: string;
 	avatar: string;
 	excerpt: string;

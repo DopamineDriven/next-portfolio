@@ -4,7 +4,7 @@ import Link from 'next/link';
 export type CoverImageProps = {
 	title: string;
 	src: string;
-	slug: string | number;
+	slug: string;
 };
 
 export default function CoverImageCard({
