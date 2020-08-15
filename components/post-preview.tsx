@@ -22,20 +22,22 @@ const PostPreview = ({
 	slug
 }: Props) => {
 	return (
-		<div>
-			<div className='mb-5'>
+		<div className='font-polished'>
+			<div className='mb-2'>
 				<CoverImage slug={slug} title={title} src={coverImage} />
 			</div>
 			<h3 className='text-3xl mb-3 leading-snug'>
 				<Link as={`/posts/${slug}`} href='/posts/[slug]'>
-					<a className='hover:underline'>{title}</a>
+					<a className='hover:underline text-4xl font-semibold'>{title}</a>
 				</Link>
 			</h3>
-			<div className='text-lg mb-4'>
+			<div className='text-lg mb-2'>
 				<DateFormater dateString={date} />
 			</div>
-			<p className='text-lg leading-relaxed mb-4'>{excerpt}</p>
-			<Avatar name={author.name} avatar={author.avatar} date={author.date} />
+			<div className='text-3xl leading-relaxed mb-2 text-center justify-center'>
+				{excerpt}
+			</div>
+			<Avatar name={author.name} avatar={author.avatar} date={date} />
 		</div>
 	);
 };

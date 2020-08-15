@@ -2,24 +2,23 @@ import CoverImage, { CoverImageProps } from './cover-image-card';
 import Avatar from './avatar';
 import Link from 'next/link';
 import CardIcons from './card-icons';
+import Author from '../types/author';
 
 type CardProps = {
+	author: Author;
 	src: string;
 	title: string;
 	slug: string;
 	date: string;
-	avatar: string;
 	excerpt: string;
 	social: any;
-	name: string;
 };
 
 const Card = ({
-	avatar,
+	author,
 	src,
 	excerpt,
 	date,
-	name,
 	slug,
 	social,
 	title
@@ -44,7 +43,7 @@ const Card = ({
 					></div>
 					<>
 						<div className='grid-cols-1 pl-2 font-subpolished'>
-							<Avatar avatar={avatar} date={date} name={name} />
+							<Avatar avatar={author.avatar} date={date} name={author.name} />
 						</div>
 					</>
 					<hr className='border-customGray w-full mt-2' />
