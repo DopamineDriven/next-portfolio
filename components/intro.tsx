@@ -91,7 +91,7 @@ export default function Intro() {
 				</Link>
 			</h1>
 			<h2 className='text-center justify-center text-black text-lg mt-5 px-2 font-polished'>
-				Powered by{' '}
+				Static Site Generation Powered by{' '}
 				<a
 					href='https://nextjs.org/'
 					className='underline hover:text-success duration-500 transition-colors'
@@ -111,12 +111,12 @@ export default function Intro() {
 				</a>
 				,{' '}
 				<a
-					href='https://graphql.org/'
+					href='https://cloudinary.com/'
 					className='underline hover:text-success duration-500 transition-colors'
-					aria-label='GraphQL'
+					aria-label='Cloudinary'
 					target='__blank'
 				>
-					GraphQL
+					Cloudinary
 				</a>
 				,{' '}
 				<a
