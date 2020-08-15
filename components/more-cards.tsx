@@ -18,7 +18,7 @@ export default function MoreCards({ posts }: CardsProps) {
 						key={post.slug}
 						title={post.title}
 						src={post.coverImage}
-						social={post.social}
+				
 						author={post.author}
 						date={post.date}
 						slug={post.slug}

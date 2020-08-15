@@ -11,7 +11,7 @@ type PostHeaderProps = {
 	author: Author;
 	date: string;
 	// slug?: string;
-	social: any;
+	social: string;
 };
 
 export default function PostHeader({
@@ -43,7 +43,7 @@ export default function PostHeader({
 					{/* <div className='flex flex-col'>
 						<Categories categories={categories} />
 					</div> */}
-					<CardIcons social={social} />
+					<CardIcons twitter={social} github={social} linkedin={social} />
 				</div>
 
 				<hr className='border-customGray w-4xl' />

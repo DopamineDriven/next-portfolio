@@ -11,7 +11,6 @@ type CardProps = {
 	slug: string;
 	date: string;
 	excerpt: string;
-	social: any;
 };
 
 const Card = ({
@@ -20,7 +19,6 @@ const Card = ({
 	excerpt,
 	date,
 	slug,
-	social,
 	title
 }: CardProps) => {
 	return (
@@ -48,7 +46,7 @@ const Card = ({
 					</>
 					<hr className='border-customGray w-full mt-2' />
 					<div className='text-right items-end align-middle float-right pr-2 py-1 font-subpolished'>
-						<CardIcons social={social} />
+						<CardIcons linkedin={author.linkedin} github={author.github} twitter={author.twitter} />
 					</div>
 				</div>
 			</div>

@@ -3,15 +3,18 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
 	faGithub,
 	faInstagram,
+	faLinkedin,
 	faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 type Props = {};
 
 type CardIconProps = {
-	social: any;
+	github: string;
+	twitter: string;
+	linkedin: string;
 };
 
-const CardIcons = ({ social }: CardIconProps) => {
+const CardIcons = ({ github, linkedin, twitter }: CardIconProps) => {
 	return (
 		<div className='align-middle justify-right text-right content-right inline-block'>
 			<ul className='align-middle'>
@@ -20,7 +23,7 @@ const CardIcons = ({ social }: CardIconProps) => {
 					<a
 						aria-label='github'
 						target='__blank'
-						href={social.facebook}
+						href={github}
 						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 rounded-full focus:outline-none'
 					>
 						<FontAwesomeIcon
@@ -29,20 +32,20 @@ const CardIcons = ({ social }: CardIconProps) => {
 						/>
 					</a>{' '}
 					<a
-						aria-label='vercel'
+						aria-label='linkedin'
 						target='__blank'
-						href={social.instagram}
+						href={linkedin}
 						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 rounded-full focus:outline-none'
 					>
 						<FontAwesomeIcon
-							icon={faInstagram}
+							icon={faLinkedin}
 							className='align-middle text-center font-extrabold text-1xl'
 						/>
 					</a>{' '}
 					<a
 						aria-label='twitter'
 						target='__blank'
-						href={social.twitter}
+						href={twitter}
 						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 rounded-full focus:outline-none'
 					>
 						<FontAwesomeIcon
