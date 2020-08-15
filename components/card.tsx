@@ -1,24 +1,25 @@
 import CoverImage, { CoverImageProps } from './cover-image-card';
-import Date from './date-formatter';
 import Avatar from './avatar';
 import Link from 'next/link';
 import CardIcons from './card-icons';
 
 type CardProps = {
-	coverImage: CoverImageProps;
+	src: string;
 	title: string;
 	slug: string | number;
 	date: string;
-	author: any;
+	avatar: string;
 	excerpt: string;
 	social: any;
+	name: string;
 };
 
 const Card = ({
-	author,
-	coverImage,
+	avatar,
+	src,
 	excerpt,
 	date,
+	name,
 	slug,
 	social,
 	title
@@ -26,7 +27,7 @@ const Card = ({
 	return (
 		<div className='inline-block font-polished'>
 			<div className='max-w-xs rounded-lg overflow-x-hidden overflow-y-hidden bg-white shadow-lg inline-block'>
-				<CoverImage coverImage={coverImage} title={title} slug={slug} />
+				<CoverImage src={src} title={title} slug={slug} />
 
 				<div className='flex flex-col text-left justify-center bg-white shadow rounded-b-lg'>
 					<div className='font-bold text-xl h-12 mt-2 w-full font-polished leading-tight px-4 pb-2'>
@@ -43,7 +44,7 @@ const Card = ({
 					></div>
 					<>
 						<div className='grid-cols-1 pl-2 font-subpolished'>
-							<Avatar author={author} date={date} />
+							<Avatar avatar={avatar} date={date} name={name} />
 						</div>
 					</>
 					<hr className='border-customGray w-full mt-2' />

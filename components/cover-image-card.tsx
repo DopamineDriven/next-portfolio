@@ -3,18 +3,18 @@ import Link from 'next/link';
 
 export type CoverImageProps = {
 	title: string;
-	coverImage: { sourceUrl: string } | any;
+	src: string;
 	slug: string | number;
 };
 
 export default function CoverImageCard({
 	title,
-	coverImage,
+	src,
 	slug
 }: CoverImageProps) {
 	const image = (
 		<img
-			src={coverImage ? coverImage.sourceUrl : coverImage}
+			src={src}
 			alt={title}
 			className={cn(
 				'shadow-sm w-full h-44 max-h-full overflow-x-hidden rounded-t rounded-b-sm',
