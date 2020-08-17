@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import SvgLogo from './svg-logo-only';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faWindowClose, faHome } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
 
 interface NavRef {
@@ -48,23 +48,24 @@ const Header = ({ props }: HeaderProps) => {
 	const heightOnOpen = navOpen ? ' h-oneThird' : ' h-oneFifth';
 	return (
 		<nav
-			className={`flex flex-row flex-wrap xl:h-half lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} pb-20 xl:mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-half lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} absolute flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} absolute flex flex-row w-full bg-contain antialiased`}
 					style={{
-						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597147257/ASR_Assets/headerhero_euqvup.jpg)`,
+						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640060/portfolio/blood-moon-cover_cwmoo0.jpg)`,
 						backgroundRepeat: 'no-repeat',
-						backgroundSize: '100% 100%'
+						backgroundSize: '100% 100%',
+						backgroundColor: 'black'
 					}}
 				>
 					<Container>
-						<div className='container flex flex-wrap px-4 justify-between mx-auto'>
+						<div className='container flex flex-wrap px-4 justify-between mx-auto pt-6'>
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
 								<Link href='/'>
-									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap '>
-										{<SvgLogo props={props} />}
+									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-white hover:opacity-75 text-xl'>
+										{<FontAwesomeIcon icon={faHome} />}
 									</a>
 								</Link>
 								<button
