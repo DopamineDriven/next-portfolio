@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import SvgLogo from './svg-logo-only';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faWindowClose, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
 
 interface NavRef {
@@ -31,11 +31,12 @@ const links: NavRef[] = [
 
 const Header = ({ props }: HeaderProps) => {
 	const [navOpen, setNavOpen] = useState(false);
+	const navText = navOpen ? '  duration-700' : ' duration-700';
 	const navlist = links.map(link => (
 		<li className='nav-item' key={`${link.href}-${link.label}`}>
 			<Link href={link.href}>
 				<a
-					className='px-3 pb-2 flex items-center float-right text-right text-xl w-full sm:text-xl font-bold leading-none text-white hover:opacity-75'
+					className={`px-3 pb-2 flex items-center float-right text-right text-xl w-full sm:text-xl font-bold leading-relaxed text-white hover:opacity-75 transform transition-colors duration-700 ease-in`}
 					aria-label={link.label}
 				>
 					{link.label}
@@ -45,16 +46,16 @@ const Header = ({ props }: HeaderProps) => {
 	));
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
-	const heightOnOpen = navOpen ? ' h-oneThird' : ' h-oneFifth';
+	const heightOnOpen = navOpen ? ' h-oneThird' : ' h-threeTenths';
 	return (
 		<nav
-			className={`flex flex-row flex-wrap xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} absolute flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
 					style={{
-						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640060/portfolio/blood-moon-cover_cwmoo0.jpg)`,
+						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: '100% 100%',
 						backgroundColor: 'black'
@@ -75,12 +76,42 @@ const Header = ({ props }: HeaderProps) => {
 									name='open-nav-button'
 								>
 									{navOpen ? (
-										<a aria-label='open-nav' className="transition-colors duration-500 hover:text-black">
-											<FontAwesomeIcon icon={faWindowClose} />
+										<a
+											aria-label='open-nav'
+											className='transition-colors duration-500 hover:opacity-75'
+										>
+											<svg
+												fill='none'
+												viewBox='0 0 24 24'
+												className='h-6 w-6 transition transform rotate-180 duration-1000'
+											>
+												<path
+													d='M6 18L18 6M6 6L18 18'
+													strokeLinecap='round'
+													strokeLinejoin='round'
+													strokeWidth='2'
+													stroke='currentColor'
+												/>
+											</svg>
 										</a>
 									) : (
-										<a aria-label='open-nav' className="transition-colors duration-500 hover:text-black">
-											<FontAwesomeIcon icon={faBars} />
+										<a
+											aria-label='open-nav'
+											className='transition-colors duration-500 hover:opacity-75 transform rotate-45'
+										>
+											<svg
+												fill='none'
+												viewBox='0 0 24 24'
+												className='h-6 w-6 transform rotate-45 transition duration-1000'
+											>
+												<path
+													d='M6 18L18 6M6 6L18 18'
+													strokeLinecap='round'
+													strokeLinejoin='round'
+													strokeWidth='2'
+													stroke='currentColor'
+												/>
+											</svg>
 										</a>
 									)}
 								</button>
@@ -90,7 +121,7 @@ const Header = ({ props }: HeaderProps) => {
 									'sm:flex flex-grow items-center' + (navOpen ? ' flex' : ' hidden')
 								}
 							>
-								<ul className='flex flex-col sm:flex-row list-none sm:ml-auto'>
+								<ul className='flex flex-col sm:relative sm:flex-row list-none sm:ml-auto'>
 									{navlist}
 								</ul>
 							</div>

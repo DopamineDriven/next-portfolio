@@ -3,6 +3,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
+				header: ['Playfair Display', 'serif'],
 				body: ['Barlow Condensed', 'sans-serif'],
 				display: ['Barlow Condensed', 'sans-serif'],
 				polished: ['brandon-grotesque', 'sans-serif'],

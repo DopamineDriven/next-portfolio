@@ -80,7 +80,7 @@ export default function Intro() {
 	// console.log(sortingMap);
 	return (
 		<>
-			<h1 className='text-6xl sm:text-6xl xs:text-5xl font-bold text-center justify-center font-polished tracking-tight leading-tight mt-50'>
+			<h1 className='text-6xl sm:text-6xl xs:text-5xl font-bold text-center justify-center font-polished tracking-tight leading-tight mt-50 transition duration-1000'>
 				<Link href='/'>
 					<a
 						className='hover:text-cimaRed cursor-text select-text text-black'
