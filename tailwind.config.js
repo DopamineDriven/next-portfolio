@@ -26,6 +26,7 @@ module.exports = {
 				iconHoverTwo: '#AEAEAE'
 			},
 			height: {
+				whole: '100vh',
 				threeFourths: '75vh',
 				twoThirds: '66.67vh',
 				threeFifths: '60vh',
