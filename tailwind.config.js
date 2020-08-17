@@ -27,7 +27,7 @@ module.exports = {
 			},
 			height: {
 				threeFourths: '75vh',
-				twoThirds: 'calc(100vh*(2/3))',
+				twoThirds: '66.67vh',
 				threeFifths: '60vh',
 				half: '50vh',
 				twoFifths: '40vh',
@@ -35,7 +35,7 @@ module.exports = {
 				threeTenths: '30vh',
 				oneFourth: '25vh',
 				oneFifth: '20vh',
-				oneSixth: '16.67'
+				oneSixth: '16.67vh'
 			},
 			spacing: {
 				7: '1.75rem',
