@@ -46,7 +46,6 @@ const Post = ({ post, morePosts, preview, props }: SlugProps) => {
 									coverImage={post.coverImage}
 									date={post.date}
 									author={post.author}
-									social={post.social}
 								/>
 								<PostBody content={post.content} />
 							</article>

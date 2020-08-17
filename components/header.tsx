@@ -64,7 +64,7 @@ const Header = ({ props }: HeaderProps) => {
 				<div
 					className={`sm:h-whole ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
 					style={{
-						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
+						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640060/portfolio/blood-moon-cover_cwmoo0.jpg)`,
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: '100% 100%',
 						backgroundColor: 'black'
