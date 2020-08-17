@@ -6,7 +6,7 @@ type Props = {
 
 function SvgComponent({ props }: Props) {
 	return (
-		<svg data-name='Layer 1' viewBox='0 0 752.62 729.3' width='12em' height='12em' {...props}>
+		<svg data-name='Layer 1' viewBox='0 0 752.62 729.3' width='10em' height='10em' {...props}>
 			<defs>
 				<clipPath id='prefix__a'>
 					<path fill='#fff' d='M290 390h243v247H290z' />
