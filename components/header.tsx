@@ -36,7 +36,7 @@ const Header = ({ props }: HeaderProps) => {
 		<li className='nav-item' key={`${link.href}-${link.label}`}>
 			<Link href={link.href}>
 				<a
-					className={`px-3 pb-2 flex items-center float-right text-right text-xl w-full sm:text-xl font-bold leading-relaxed text-white hover:opacity-75 transform transition-colors duration-700 ease-in`}
+					className={`px-5 pb-2  sm:px-3 flex text-right w-full h-full min-h-full sm:text-xl font-bold leading-relaxed sm:leading-none text-white hover:opacity-75 antialiased ease-linear transform transition-colors duration-1000`}
 					aria-label={link.label}
 				>
 					{link.label}
@@ -46,14 +46,23 @@ const Header = ({ props }: HeaderProps) => {
 	));
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
-	const heightOnOpen = navOpen ? ' h-oneThird' : ' h-threeTenths';
+	const heightOnOpen = navOpen ? ' h-half' : ' h-half';
+	const subNav = (
+		<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
+			<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform translate-y-full duration-1000 sm:text-2xl list-none sm:ml-auto h-full min-h-full align-text-bottom'>
+				<div className='flex flex-row h-full min-h-full items-baseline align-text-bottom justify-center'>
+					{navlist}
+				</div>
+			</ul>
+		</div>
+	);
 	return (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header sm:h-whole ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-whole lg:h-twoFifths md:h-twoFifths sm:h-oneThird ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
+					className={`sm:h-whole ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
 					style={{
 						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
 						backgroundRepeat: 'no-repeat',
@@ -70,7 +79,7 @@ const Header = ({ props }: HeaderProps) => {
 									</a>
 								</Link>
 								<button
-									className='text-white block cursor-pointer text-xl leading-none transition-colors duration-500 px-3 border border-solid border-transparent rounded bg-transparent sm:hidden outline-none focus:outline-none'
+									className='text-white block cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent sm:hidden outline-none focus:outline-none'
 									type='button'
 									onClick={() => setNavOpen(!navOpen)}
 									name='open-nav-button'
@@ -78,7 +87,7 @@ const Header = ({ props }: HeaderProps) => {
 									{navOpen ? (
 										<a
 											aria-label='open-nav'
-											className='transition-colors duration-500 hover:opacity-75'
+											className='transition-colors duration-1000 hover:opacity-75'
 										>
 											<svg
 												fill='none'
@@ -97,7 +106,7 @@ const Header = ({ props }: HeaderProps) => {
 									) : (
 										<a
 											aria-label='open-nav'
-											className='transition-colors duration-500 hover:opacity-75 transform rotate-45'
+											className='transition-colors duration-1000 hover:opacity-75 transform rotate-45'
 										>
 											<svg
 												fill='none'
@@ -118,12 +127,23 @@ const Header = ({ props }: HeaderProps) => {
 							</div>
 							<div
 								className={
-									'sm:flex flex-grow items-center' + (navOpen ? ' flex' : ' hidden')
+									'sm:flex flex-grow items-center flex-wrap' +
+									(navOpen ? ' flex' : ' hidden')
 								}
 							>
-								<ul className='flex flex-col sm:relative sm:flex-row list-none sm:ml-auto'>
-									{navlist}
-								</ul>
+								{navOpen ? (
+									<div className='container flex flex-row flex-grow h-full  items-center mx-auto min-h-full align-text-bottom justify-center'>
+										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform translate-y-full duration-1000 sm:text-2xl list-none sm:ml-auto h-full min-h-full align-text-bottom'>
+											<div className='flex flex-row h-full min-h-full items-baseline align-text-bottom justify-center'>
+												{navlist}
+											</div>
+										</ul>
+									</div>
+								) : (
+									<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row align-text-top sm:text-2xl list-none sm:ml-auto'>
+										{navlist}
+									</ul>
+								)}
 							</div>
 						</div>
 					</Container>
