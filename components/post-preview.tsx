@@ -1,4 +1,4 @@
-import Avatar from './avatar';
+import Avatar from './card-tech-specs';
 import DateFormater from './date-formatter';
 import CoverImage from './cover-image-card';
 import Link from 'next/link';
@@ -37,7 +37,7 @@ const PostPreview = ({
 			<div className='text-3xl leading-relaxed mb-2 text-center justify-center'>
 				{excerpt}
 			</div>
-			<Avatar name={author.name} avatar={author.avatar} date={date} />
+			<Avatar name={author.name} github={author.github} date={date} />
 		</div>
 	);
 };

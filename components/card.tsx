@@ -1,5 +1,5 @@
 import CoverImage, { CoverImageProps } from './cover-image-card';
-import Avatar from './avatar';
+import Avatar from './card-tech-specs';
 import Link from 'next/link';
 import CardIcons from './card-icons';
 import Author from '../types/author';
@@ -41,12 +41,12 @@ const Card = ({
 					></div>
 					<>
 						<div className='grid-cols-1 pl-2 font-subpolished'>
-							<Avatar avatar={author.avatar} date={date} name={author.name} />
+							<Avatar github={author.github} date={date} name={author.name} />
 						</div>
 					</>
 					<hr className='border-customGray w-full mt-2' />
 					<div className='text-right items-end align-middle float-right pr-2 py-1 font-subpolished'>
-						<CardIcons linkedin={author.linkedin} github={author.github} twitter={author.twitter} />
+						<CardIcons linkedin={author.linkedin} github={author.github} twitter={author.twitter} react={author.react} />
 					</div>
 				</div>
 			</div>

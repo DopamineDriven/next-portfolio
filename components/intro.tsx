@@ -88,8 +88,8 @@ export default function Intro({ props }: IntroProps) {
 			<div className='flex flex-row mx-auto items-center justify-center'>
 				<Link href='/'>
 					<a
-						className='hover:bg-tinyHouseWhite cursor-pointer select-text rounded'
-						aria-label='Chicago Independent Media Alliance'
+						className='hover:bg-tinyHouseWhite cursor-pointer select-text rounded px-5'
+						aria-label='Andrew Ross'
 					>
 						<SvgComponent props={props} />
 					</a>

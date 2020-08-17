@@ -3,7 +3,14 @@ import {} from '@fortawesome/fontawesome-svg-core';
 import {
 	faGithub,
 	faLinkedin,
-	faTwitter
+	faTwitter,
+	faReact,
+	faNode,
+	faWordpress,
+	faStripe,
+	faGoogle,
+	faAdobe,
+	faFigma,
 } from '@fortawesome/free-brands-svg-icons';
 
 // import { library } from '@fortawesome/fontawesome-svg-core';
@@ -35,25 +42,34 @@ type CardIconProps = {
 	github: string;
 	twitter: string;
 	linkedin: string;
+	react: string;
 };
 
-const CardIcons = ({ github, linkedin, twitter }: CardIconProps) => {
+const CardIcons = ({ github, linkedin, twitter, react }: CardIconProps) => {
 	return (
 		<div className='align-middle justify-right text-right content-right inline-block'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
-					<a
-						aria-label='github'
-						target='__blank'
-						href={github}
-						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
-					>
-						<FontAwesomeIcon
-							icon={faGithub}
-							className='flex align-middle text-center font-extrabold text-1xl'
-						/>
-					</a>{' '}
+					{github === '' ? (
+						<></>
+					) : (
+						<a
+							aria-label='github'
+							target='__blank'
+							href={github}
+							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							{github === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faGithub}
+									className='flex align-middle text-center font-extrabold text-1xl'
+								/>
+							)}
+						</a>
+					)}{' '}
 					<a
 						aria-label='linkedin'
 						target='__blank'
@@ -76,6 +92,26 @@ const CardIcons = ({ github, linkedin, twitter }: CardIconProps) => {
 							className='align-middle text-center font-extrabold text-1xl'
 						/>
 					</a>
+					{' '}
+					{react === '' ? (
+						<></>
+					) : (
+						<a
+							aria-label='github'
+							target='__blank'
+							href={react}
+							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							{react === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faReact}
+									className='flex align-middle text-center font-extrabold text-1xl'
+								/>
+							)}
+						</a>
+					)}{' '}
 				</li>
 			</ul>
 		</div>

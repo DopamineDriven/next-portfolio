@@ -45,6 +45,7 @@ export default function PostHeader({
 						twitter={author.twitter}
 						github={author.github}
 						linkedin={author.linkedin}
+						react={author.react}
 					/>
 				</div>
 

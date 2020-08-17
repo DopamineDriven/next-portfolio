@@ -7,7 +7,7 @@ type AvatarProps = {
 	date: string;
 };
 
-export default function Avatar({ avatar, date, name }: AvatarProps) {
+export default function AvatarOG({ avatar, date, name }: AvatarProps) {
 	// const nombre =
 	// 	author.firstName && author.lastName
 	// 		? `${author.firstName} ${author.lastName}`
@@ -17,11 +17,7 @@ export default function Avatar({ avatar, date, name }: AvatarProps) {
 		<>
 			<div className='ml-1 mt-1 flex flex-row items-left text-left float-left overflow-hidden'>
 				<div className='flex flex-col w-1/3 mr-6'>
-					<img
-						src={avatar}
-						className='h-12 w-12 rounded-full'
-						alt={name}
-					/>
+					<img src={avatar} className='h-8 w-8 rounded-full' alt={name} />
 				</div>
 
 				<div className='flex flex-col w-2/3 my-0 text-sm pt-1 pb-2 items-left align-top text-left float-left -mx-5'>
