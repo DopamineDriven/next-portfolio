@@ -37,6 +37,8 @@ module.exports = {
 			},
 			height: {
 				whole: '100vh',
+				nineTenths: '90vh',
+				fourFifths: '80vh',
 				threeFourths: '75vh',
 				twoThirds: '66.67vh',
 				threeFifths: '60vh',
