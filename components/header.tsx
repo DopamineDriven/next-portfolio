@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import SvgLogo from './svg-logo-only';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
 
 interface NavRef {
@@ -68,20 +68,25 @@ const Header = ({ props }: HeaderProps) => {
 									</a>
 								</Link>
 								<button
-									className='text-white block cursor-pointer text-xl leading-none px-3 border border-solid border-transparent rounded bg-transparent sm:hidden outline-none focus:outline-none'
+									className='text-white block cursor-pointer text-xl leading-none transition-colors duration-500 px-3 border border-solid border-transparent rounded bg-transparent sm:hidden outline-none focus:outline-none'
 									type='button'
 									onClick={() => setNavOpen(!navOpen)}
 									name='open-nav-button'
 								>
-									<a aria-label='open-nav'>
-										<FontAwesomeIcon icon={faBars} />
-									</a>
+									{navOpen ? (
+										<a aria-label='open-nav' className="transition-colors duration-500 hover:text-black">
+											<FontAwesomeIcon icon={faWindowClose} />
+										</a>
+									) : (
+										<a aria-label='open-nav' className="transition-colors duration-500 hover:text-black">
+											<FontAwesomeIcon icon={faBars} />
+										</a>
+									)}
 								</button>
 							</div>
 							<div
 								className={
-									'sm:flex flex-grow items-center' +
-									(navOpen ? ' flex' : ' hidden')
+									'sm:flex flex-grow items-center' + (navOpen ? ' flex' : ' hidden')
 								}
 							>
 								<ul className='flex flex-col sm:flex-row list-none sm:ml-auto'>
