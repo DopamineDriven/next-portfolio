@@ -37,7 +37,7 @@ const SocialMediaIcons = () => {
 			aria-label={link.name}
 			target='__blank'
 			href={link.href}
-			className='bg-black text-white hover:text-black hover:bg-white transition-colors duration-500 shadow-lg font-lg items-center justify-center align-center outline-none focus:outline-none py-1 px-3 inline-block text-center'
+			className='bg-black text-white hover:text-cimaRed transform transition-colors duration-500 shadow-lg font-lg items-center justify-center align-center outline-none focus:outline-none rounded-full py-1 px-3 inline-block text-center'
 		>
 			<FontAwesomeIcon icon={link.icon} fontSize='xl' />
 		</a>

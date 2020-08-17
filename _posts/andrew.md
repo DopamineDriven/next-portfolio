@@ -7,7 +7,7 @@ date: "2020-07-19T08:35:07.322Z"
 author:
   name: Andrew Ross
   role: 'CTO'
-  avatar: 'https://res.cloudinary.com/asross311/image/upload/v1595372546/ASR_Assets/andrew_cmsvrx.jpg'
+  avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
   github: 'https://github.com/DopamineDriven'
   twitter: 'https://twitter.com/Dopamine_Driven'
   linkedin: 'https://www.linkedin.com/in/asross/'

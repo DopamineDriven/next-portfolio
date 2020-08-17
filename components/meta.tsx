@@ -7,110 +7,34 @@ const MetaData = () => {
 		<Fragment>
 			<Head>
 				<link
-					rel='apple-icon-57x57'
-					type='img/png'
-					sizes='57x57'
-					href='/favicon/apple-icon-57x57.png'
-				/>
-				<link
-					rel='apple-icon-60x60'
-					type='img/png'
-					sizes='60x60'
-					href='/favicon/apple-icon-60x60.png'
-				/>
-				<link
-					rel='apple-icon-72x72'
-					type='img/png'
-					sizes='72x72'
-					href='/favicon/apple-icon-72x72.png'
-				/>
-				<link
-					rel='apple-icon-76x76'
-					type='img/png'
-					sizes='76x76'
-					href='/favicon/apple-icon-76x76.png'
-				/>
-				<link
-					rel='apple-icon-114x114'
-					type='img/png'
-					sizes='114x114'
-					href='/favicon/apple-icon-114x114.png'
-				/>
-				<link
-					rel='apple-icon-120x120'
-					type='img/png'
-					sizes='120x120'
-					href='/favicon/apple-icon-120x120.png'
-				/>
-				<link
-					rel='apple-icon-144x144'
-					type='img/png'
-					sizes='144x144'
-					href='/favicon/apple-icon-144x144.png'
-				/>
-				<link
-					rel='apple-icon-152x152'
-					type='img/png'
-					sizes='152x152'
-					href='/favicon/apple-icon-152x152.png'
-				/>
-				<link
-					rel='apple-icon-180x180'
-					type='img/png'
-					sizes='180x180'
-					href='/favicon/apple-icon-180x180.png'
-				/>
-				<link
-					rel='apple-icon-precomposed'
-					type='img/png'
-					sizes='192x192'
-					href='/favicon/apple-icon-precomposed.png'
-				/>
-				<link
 					rel='apple-touch-icon'
 					type='img/png'
-					sizes='192x192'
-					href='/favicon/apple-touch-icon.png'
-				/>
-				<link
-					rel='icon'
-					type='image/png'
-					sizes='96x96'
-					href='/favicon/favicon-96x96.png'
+					sizes='180x180'
+					href='/fav/apple-touch-icon.png'
 				/>
 				<link
 					rel='icon'
 					type='image/png'
 					sizes='32x32'
-					href='/favicon/favicon-32x32.png'
+					href='/fav/favicon-32x32.png'
 				/>
 				<link
 					rel='icon'
 					type='image/png'
 					sizes='16x16'
-					href='/favicon/favicon-16x16.png'
+					href='/fav/favicon-16x16.png'
 				/>
-				<link rel='manifest' href='/favicon/manifest.json' />
-				<link
-					rel='mask-icon'
-					href='/favicon/safari-pinned-tab.svg'
-					color='#b8242c'
-				/>
-				<link rel='shortcut icon' href='/favicon/favicon.ico' />
-				<link
-					rel='canonical'
-					href='https://next-jamstack-portfolio.vercel.app/'
-				/>
+				<link rel='manifest' href='/fav/manifest.json' />
+				<link rel='mask-icon' href='/fav/safari-pinned-tab.svg' color='#000000' />
+				<link rel='shortcut icon' href='/fav/favicon.ico' />
+				<link rel='canonical' href='https://next-jamstack-portfolio.vercel.app/' />
 				<link
 					href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
 					rel='stylesheet'
 				/>
 				<link rel='stylesheet' href='https://use.typekit.net/hzg4mdi.css' />
 				<meta name='msapplication-TileColor' content='#ffffff' />
-				<meta
-					name='msapplication-config'
-					content='/favicon/browserconfig.xml'
-				/>
+				<meta name='msapplication-config' content='/fav/browserconfig.xml' />
 				<meta name='theme-color' content='#b8242c' />
 				<link rel='alternate' type='application/rss+xml' href='/feed.xml' />
 				<meta

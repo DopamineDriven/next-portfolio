@@ -1,5 +1,6 @@
 import { CMS_NAME, CMS_URL } from '../lib/constants';
 import Link from 'next/link';
+import SvgComponent from './svg-logo-only';
 interface SortRef {
 	href: string;
 	label: string;
@@ -59,7 +60,11 @@ const links: SortRef[] = [
 // 	}
 // ];
 
-export default function Intro() {
+interface IntroProps {
+	props: string | number;
+}
+
+export default function Intro({ props }: IntroProps) {
 	// const sortingMap = links.map(sorting => (
 	// 	<div
 	// 		key={sorting.label}
@@ -80,16 +85,16 @@ export default function Intro() {
 	// console.log(sortingMap);
 	return (
 		<>
-			<h1 className='text-6xl sm:text-6xl xs:text-5xl font-bold text-center justify-center font-polished tracking-tight leading-tight mt-50 transition duration-1000'>
+			<div className='flex flex-row mx-auto items-center justify-center'>
 				<Link href='/'>
 					<a
-						className='hover:text-cimaRed cursor-text select-text text-black'
+						className='hover:bg-tinyHouseWhite cursor-pointer select-text rounded'
 						aria-label='Chicago Independent Media Alliance'
 					>
-						Thanks for dropping by 
+						<SvgComponent props={props} />
 					</a>
 				</Link>
-			</h1>
+			</div>
 			<h2 className='text-center justify-center text-black text-lg mt-5 px-2 font-polished'>
 				Static Site Generation Powered by{' '}
 				<a

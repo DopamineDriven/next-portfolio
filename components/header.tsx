@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import SvgLogo from './svg-logo-only';
+import ARIcon from './svg-logo-only';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
@@ -36,7 +36,7 @@ const Header = ({ props }: HeaderProps) => {
 		<li className='nav-item' key={`${link.href}-${link.label}`}>
 			<Link href={link.href}>
 				<a
-					className={`px-5 pb-2  sm:px-3 flex text-right w-full h-full min-h-full sm:text-xl font-bold leading-relaxed sm:leading-none text-white hover:opacity-75 antialiased transform transition-colors duration-1000`}
+					className={`px-5 pb-2 mx-auto sm:px-3 flex text-left sm:text-right w-full h-full min-h-full sm:text-xl font-bold leading-relaxed sm:leading-none text-white hover:opacity-75 antialiased transform transition-colors duration-1000`}
 					aria-label={link.label}
 				>
 					{link.label}
@@ -74,7 +74,7 @@ const Header = ({ props }: HeaderProps) => {
 						<div className='container flex flex-wrap px-4 justify-between mx-auto pt-6'>
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
 								<Link href='/'>
-									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-white hover:opacity-75 text-xl'>
+									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
 										{<FontAwesomeIcon icon={faHome} />}
 									</a>
 								</Link>
@@ -133,8 +133,8 @@ const Header = ({ props }: HeaderProps) => {
 							>
 								{navOpen ? (
 									<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
-										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform translate-y-full duration-1000 sm:text-2xl list-none sm:ml-auto h-full min-h-full align-text-bottom'>
-											<div className='flex flex-row h-full min-h-full items-baseline align-text-bottom justify-center'>
+										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform  sm:text-2xl list-none sm:ml-auto h-full min-h-full text-left'>
+											<div className='flex flex-col h-full min-h-full items-baseline text-left justify-center mx-auto'>
 												{navlist}
 											</div>
 										</ul>
