@@ -46,7 +46,7 @@ const Card = ({
 					</>
 					<hr className='border-customGray w-full mt-2' />
 					<div className='text-right items-end align-middle float-right pr-2 py-1 font-subpolished'>
-						<CardIcons linkedin={author.linkedin} github={author.github} twitter={author.twitter} react={author.react} />
+						<CardIcons linkedin={author.linkedin} props={author.props} twitter={author.twitter} react={author.react} />
 					</div>
 				</div>
 			</div>

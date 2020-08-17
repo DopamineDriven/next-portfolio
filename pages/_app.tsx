@@ -1,6 +1,8 @@
 import '../styles/index.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+// import IcoMoon, { iconList } from "icomoon-react";
+// import '../lib/icomoon.json';
 import { AppProps } from 'next/app';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

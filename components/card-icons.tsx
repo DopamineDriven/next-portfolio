@@ -1,17 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {} from '@fortawesome/fontawesome-svg-core';
 import {
 	faGithub,
 	faLinkedin,
 	faTwitter,
 	faReact,
+	faJava,
+	faPython,
+	faAngular,
+	faGit,
 	faNode,
 	faWordpress,
 	faStripe,
 	faGoogle,
 	faAdobe,
 	faFigma,
+	faYarn,
+	faNpm,
+	faUnsplash
 } from '@fortawesome/free-brands-svg-icons';
+import Heroku from "./svg-heroku"
+
 
 // import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -39,32 +47,32 @@ import {
 // type Props = {};
 
 type CardIconProps = {
-	github: string;
 	twitter: string;
 	linkedin: string;
 	react: string;
+	props: string | number;
 };
 
-const CardIcons = ({ github, linkedin, twitter, react }: CardIconProps) => {
+const CardIcons = ({ props, linkedin, twitter, react }: CardIconProps) => {
 	return (
 		<div className='align-middle justify-right text-right content-right inline-block'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
-					{github === '' ? (
+					{react === '' ? (
 						<></>
 					) : (
 						<a
-							aria-label='github'
+							aria-label='react'
 							target='__blank'
-							href={github}
+							href={react}
 							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							{github === '' ? (
+							{react === '' ? (
 								<></>
 							) : (
 								<FontAwesomeIcon
-									icon={faGithub}
+									icon={faReact}
 									className='flex align-middle text-center font-extrabold text-1xl'
 								/>
 							)}
@@ -87,17 +95,14 @@ const CardIcons = ({ github, linkedin, twitter, react }: CardIconProps) => {
 						href={twitter}
 						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 					>
-						<FontAwesomeIcon
-							icon={faTwitter}
-							className='align-middle text-center font-extrabold text-1xl'
-						/>
+						<Heroku props={props} />
 					</a>
 					{' '}
 					{react === '' ? (
 						<></>
 					) : (
 						<a
-							aria-label='github'
+							aria-label='react'
 							target='__blank'
 							href={react}
 							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'

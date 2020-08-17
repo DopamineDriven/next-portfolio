@@ -43,7 +43,7 @@ export default function PostHeader({
 					</div> */}
 					<CardIcons
 						twitter={author.twitter}
-						github={author.github}
+						props={author.props}
 						linkedin={author.linkedin}
 						react={author.react}
 					/>

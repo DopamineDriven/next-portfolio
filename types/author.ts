@@ -4,6 +4,7 @@ type Author = {
 	twitter: string;
 	github: string;
 	linkedin: string;
+	props: string | number;
 	react: string;
 };
 

@@ -1,6 +1,14 @@
 # next-jamstack-portfolio
-- ssg
 
+## SVGs in tailwindcss
+- https://tailwindcss.com/course/working-with-svg-icons
+## Ico Moon custom icons
+- https://icomoon.io/app/#/select
+- https://www.npmjs.com/package/react-icomoon
+- ssg
+- svg logo libraries
+- https://www.vectorlogo.zone/index.html?q=gray%20matter
+- http://www.lib4dev.in/info/unicodeveloper/awesome-nextjs/75291705
 - https://favicon.io/favicon-converter/
 - https://picsvg.com/
 - https://www.favicon-generator.org/
