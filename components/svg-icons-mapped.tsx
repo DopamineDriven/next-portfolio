@@ -2,6 +2,7 @@ import {
 	SvgIcon,
 	HerokuIcon,
 	TailwindIcon,
+	TsqlIcon,
 	TypeOrmIcon,
 	TypescriptIcon,
 	VercelIcon,
@@ -10,7 +11,7 @@ import {
 	YamlIcon
 } from './svg-icons';
 
-export interface SvgIcons extends Array<SvgIcon> {}
+export interface SvgIcons extends Array<SvgIcon>{}
 
 // export const Voosh: SvgIcons[] = ({
 // 	width = '60',
