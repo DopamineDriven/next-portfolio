@@ -22,6 +22,7 @@ export interface SvgIconSubunits {
 
 export interface SvgIcon extends FC<SvgIconSubunits> {}
 
+
 export const AntDesignIcon: SvgIcon = ({
 	width = '125',
 	height = '125',
@@ -377,7 +378,7 @@ export const CraIcon: SvgIcon = ({
 	);
 };
 
-export const DigitalOcean: SvgIcon = ({
+export const DigitalOceanIcon: SvgIcon = ({
 	width = '125',
 	height = '125',
 	strokeColor = 'none',
@@ -1645,7 +1646,7 @@ export const TypeOrmIcon: SvgIcon = ({
 	);
 };
 
-export const TypescriptIcon: SvgIcon = ({
+export const TypeScriptIcon: SvgIcon = ({
 	width = '45',
 	height = '30',
 	fillColor = 'none',
