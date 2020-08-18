@@ -1,6 +1,6 @@
 import { CMS_NAME, CMS_URL } from '../lib/constants';
 import Link from 'next/link';
-import SvgComponent from './svg-logo-only';
+import SvgComponent from './figma-iteration-three';
 interface SortRef {
 	href: string;
 	label: string;

@@ -1,6 +1,7 @@
 # next-jamstack-portfolio
 
 ## SVGs in tailwindcss
+- https://medium.com/swlh/reusable-svg-icon-using-figma-react-typescript-and-tailwind-css-51b8ceb86ac2
 - https://tailwindcss.com/course/working-with-svg-icons
 ## Ico Moon custom icons
 - https://icomoon.io/app/#/select

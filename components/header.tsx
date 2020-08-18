@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import ARIcon from './svg-logo-only';
+import ARIcon from './figma-iteration-three';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
@@ -46,7 +46,7 @@ const Header = ({ props }: HeaderProps) => {
 	));
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
-	const heightOnOpen = navOpen ? ' h-half' : ' h-half';
+	const heightOnOpen = navOpen ? ' h-sevenTwentieths' : ' h-sevenTwentieths';
 	// const subNav = (
 	// 	<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
 	// 		<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform translate-y-full duration-1000 sm:text-2xl list-none sm:ml-auto h-full min-h-full align-text-bottom'>
@@ -58,11 +58,11 @@ const Header = ({ props }: HeaderProps) => {
 	// );
 	return (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-threeFifths ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-half ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-threeFifths ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-half ${heightOnOpen} transform duration-1000 absolute flex flex-row w-full bg-contain antialiased`}
 					style={{
 						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640060/portfolio/blood-moon-cover_cwmoo0.jpg)`,
 						backgroundRepeat: 'no-repeat',
@@ -131,7 +131,10 @@ const Header = ({ props }: HeaderProps) => {
 									(navOpen ? ' flex' : ' hidden')
 								}
 							>
-								{navOpen ? (
+																	<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row align-text-top sm:text-2xl list-none sm:ml-auto'>
+										{navlist}
+									</ul>
+								{/* {navOpen ? (
 									<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
 										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform  sm:text-2xl list-none sm:ml-auto h-full min-h-full text-left'>
 											<div className='flex flex-col h-full min-h-full items-baseline text-left justify-center mx-auto'>
@@ -143,7 +146,7 @@ const Header = ({ props }: HeaderProps) => {
 									<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row align-text-top sm:text-2xl list-none sm:ml-auto'>
 										{navlist}
 									</ul>
-								)}
+								)} */}
 							</div>
 						</div>
 					</Container>
