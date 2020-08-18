@@ -19,9 +19,7 @@ import {
 	faUnsplash
 } from '@fortawesome/free-brands-svg-icons';
 
-import CustomSvgIcons from './svg-icons-mapped';
-
-const HerokuIcon = { CustomSvgIcons };
+import { HerokuIcon } from './svg-icons';
 
 type CardIconProps = {
 	twitter: string;
@@ -66,14 +64,14 @@ const CardIcons = ({ props, linkedin, twitter, react }: CardIconProps) => {
 							className='align-middle text-center font-extrabold text-1xl'
 						/>
 					</a>{' '}
-					{/* <a
-						aria-label='twitter'
-						target='__blank'
-						href={twitter}
-						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+					<a
+						aria-label="Heroku"
+						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 					>
-						<Heroku props={props} />
-					</a> */}{' '}
+						<i className='flex flex-row -mt-10 align-middle text-center font-extrabold justify-center text-1xl'>
+							<HerokuIcon width={'17'} fillColor='white' />
+						</i>
+					</a>{' '}
 					{react === '' ? (
 						<></>
 					) : (

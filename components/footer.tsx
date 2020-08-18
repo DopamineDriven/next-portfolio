@@ -1,6 +1,6 @@
 import Container from './container';
 import { EXAMPLE_PATH } from '../lib/constants';
-import CustomSvgIcons from "./svg-icons-mapped";
+import CustomSvgIcons from './svg-icons-mapped';
 
 const Footer = () => {
 	return (
@@ -24,6 +24,7 @@ const Footer = () => {
 							View on GitHub
 						</a>
 					</div>
+					<CustomSvgIcons />
 				</div>
 			</Container>
 		</footer>
