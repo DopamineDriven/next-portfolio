@@ -96,7 +96,7 @@ export default function Intro({ props }: IntroProps) {
 				</Link>
 			</div>
 			<h2 className='text-center justify-center text-black text-lg mt-5 px-2 font-polished'>
-				Static Site Generation Powered by{' '}
+				Powered by{' '}
 				<a
 					href='https://nextjs.org/'
 					className='underline hover:text-success duration-500 transition-colors'
