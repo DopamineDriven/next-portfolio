@@ -39,15 +39,13 @@ import {
 	YamlIcon
 } from './svg-icons';
 
-export interface SvgIcons extends Array<SvgIcon> {}
-
-interface SvgIconAbstract {
+export interface SvgIconAbstract {
 	id: number;
 	icon: SvgIcon;
 	name: string;
 }
 
-const svgIconCollection: SvgIconAbstract[] = [
+const svgIconLibrary: SvgIconAbstract[] = [
 	{
 		id: 0,
 		icon: AntDesignIcon,
@@ -235,9 +233,26 @@ const svgIconCollection: SvgIconAbstract[] = [
 	}
 ];
 
-
 const CustomSvgIcons = () => {
+	const iconCollection = svgIconLibrary.map(constituent => {
+		<a
+			key={constituent.id}
+			aria-label={constituent.name}
+			className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+		>
+			<i className='flex align-middle text-center font-extrabold text-1xl'>
+				{constituent.icon}
+			</i>
+		</a>;
+	});
 
-}
+	return (
+		<div className='align-middle justify-right text-right content-right inline-block'>
+			<ul className='align-middle'>
+				<li className='align-middle'>{iconCollection}</li>
+			</ul>
+		</div>
+	);
+};
 
 export default CustomSvgIcons;

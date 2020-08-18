@@ -19,6 +19,10 @@ import {
 	faUnsplash
 } from '@fortawesome/free-brands-svg-icons';
 
+import CustomSvgIcons from './svg-icons-mapped';
+
+const HerokuIcon = { CustomSvgIcons };
+
 type CardIconProps = {
 	twitter: string;
 	linkedin: string;
@@ -69,8 +73,7 @@ const CardIcons = ({ props, linkedin, twitter, react }: CardIconProps) => {
 						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 					>
 						<Heroku props={props} />
-					</a> */}
-					{' '}
+					</a> */}{' '}
 					{react === '' ? (
 						<></>
 					) : (
