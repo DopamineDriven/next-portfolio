@@ -35,7 +35,9 @@ module.exports = {
 				iconHover: '#9D9D9D',
 				iconHoverTwo: '#AEAEAE',
 				tailwindBlue: '#2298BD',
-				tailwindGreen: '#0ED7B5'
+				tailwindGreen: '#0ED7B5',
+				bloodMoon: '#cc6633',
+				herokuStroke: '#6762A6'
 			},
 			height: {
 				whole: '100vh',
