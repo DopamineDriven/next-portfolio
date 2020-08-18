@@ -16,6 +16,9 @@ type Props = {
 
 const Index = ({ allPosts, props }: Props) => {
 	// const heroPost = allPosts[0];
+	const x: boolean & number | unknown = true && 0o0;
+	console.log(typeof(x), x);
+	console.log(typeof(0o0));
 	const morePosts = allPosts.slice(0);
 	return (
 		<>

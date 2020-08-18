@@ -8,11 +8,6 @@ type AvatarProps = {
 };
 
 export default function AvatarOG({ avatar, date, name }: AvatarProps) {
-	// const nombre =
-	// 	author.firstName && author.lastName
-	// 		? `${author.firstName} ${author.lastName}`
-	// 		: author.name;
-
 	return (
 		<>
 			<div className='ml-1 mt-1 flex flex-row items-left text-left float-left overflow-hidden'>

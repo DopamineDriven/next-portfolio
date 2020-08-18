@@ -33,7 +33,9 @@ module.exports = {
 				tinyHouseWhite: '#f0f1f2',
 				customGray: '#D0D0D0',
 				iconHover: '#9D9D9D',
-				iconHoverTwo: '#AEAEAE'
+				iconHoverTwo: '#AEAEAE',
+				tailwindBlue: '#2298BD',
+				tailwindGreen: '#0ED7B5'
 			},
 			height: {
 				whole: '100vh',

@@ -27,6 +27,7 @@
 		"remark": "^12.0.1",
 		"remark-html": "^12.0.0",
 		"tailwindcss": "^1.6.0",
+		"tailwindcss-gradients": "^3.0.0",
 		"vercel": "^19.2.0"
 	},
 	"devDependencies": {

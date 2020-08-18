@@ -1,6 +1,6 @@
 import { CMS_NAME, CMS_URL } from '../lib/constants';
 import Link from 'next/link';
-import SvgComponent from './figma-iteration-three';
+import SvgComponent from './svg-logo-only';
 interface SortRef {
 	href: string;
 	label: string;
@@ -91,7 +91,7 @@ export default function Intro({ props }: IntroProps) {
 						className='hover:bg-tinyHouseWhite cursor-pointer select-text rounded px-5'
 						aria-label='Andrew Ross'
 					>
-						<SvgComponent props={props} />
+						<SvgComponent />
 					</a>
 				</Link>
 			</div>

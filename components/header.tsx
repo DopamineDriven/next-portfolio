@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import ARIcon from './figma-iteration-three';
+import { VercelIcon } from './svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
@@ -71,11 +71,11 @@ const Header = ({ props }: HeaderProps) => {
 					}}
 				>
 					<Container>
-						<div className='container flex flex-wrap px-4 justify-between mx-auto pt-6'>
+						<div className='container flex flex-wrap px-4 justify-between mx-auto pt-6 align-bottom'>
 							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
 								<Link href='/'>
 									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
-										{<FontAwesomeIcon icon={faHome} />}
+										{<VercelIcon />}
 									</a>
 								</Link>
 								<button
@@ -131,9 +131,9 @@ const Header = ({ props }: HeaderProps) => {
 									(navOpen ? ' flex' : ' hidden')
 								}
 							>
-																	<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row align-text-top sm:text-2xl list-none sm:ml-auto'>
-										{navlist}
-									</ul>
+								<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row align-text-top sm:text-2xl list-none sm:ml-auto'>
+									{navlist}
+								</ul>
 								{/* {navOpen ? (
 									<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
 										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform  sm:text-2xl list-none sm:ml-auto h-full min-h-full text-left'>

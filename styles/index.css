@@ -27,15 +27,6 @@
 		format('woff2');
 }
 
-/*https://github.com/tailwindlabs/discuss/issues/277*/
-/* @font-face {
-    font-family: 'Barrow Condensed', sans-serif;
-    font-style: regular;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Great Vibes'), local('GreatVibes-Regular'), url(https://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN9XLiaQ6DQ.woff2) format('woff2');
-} */
-
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
