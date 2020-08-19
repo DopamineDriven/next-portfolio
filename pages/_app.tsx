@@ -3,7 +3,6 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { AppProps } from 'next/app';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-common-types/index';
 import { ReactElement } from 'react';
 import { faHerokuIcon, faVercelIcon } from '../lib/fas-custom-integration';
 
