@@ -4,6 +4,8 @@ type Author = {
 	twitter: string;
 	github: string;
 	linkedin: string;
+	heroku: string;
+	vercel: string;
 	props: string | number;
 	react: string;
 };

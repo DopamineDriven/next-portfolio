@@ -4,7 +4,7 @@ import { IconDefinition, IconLookup } from '@fortawesome/fontawesome-svg-core';
 export interface CustomIcon extends IconDefinition, IconLookup {}
 
 export const faCustomHerokuIcon: CustomIcon = {
-	prefix: 'fab',
+	prefix: 'fac',
 	iconName: 'heroku-icon',
 	icon: [
 		64,
@@ -16,7 +16,7 @@ export const faCustomHerokuIcon: CustomIcon = {
 };
 
 export const faCustomVercelIcon: CustomIcon = {
-	prefix: 'fab',
+	prefix: 'fac',
 	iconName: 'vercel-icon',
 	icon: [24, 24, [], '#626262', 'M24 22.525H0l12-21.05l12 21.05z']
 };

@@ -46,6 +46,8 @@ export default function PostHeader({
 						props={author.props}
 						linkedin={author.linkedin}
 						react={author.react}
+						heroku={author.heroku}
+						vercel={author.vercel}
 					/>
 				</div>
 
