@@ -7,7 +7,6 @@ export const definition: IconDefinition;
 export const faHerokuIcon: IconDefinition;
 export const faVercelIcon: IconDefinition;
 export const prefix: IconPrefix;
-export const fac: IconPrefix;
 export const iconName: IconName;
 export const width: number;
 export const height: number;
