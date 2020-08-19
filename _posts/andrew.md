@@ -11,6 +11,8 @@ author:
   github: 'https://github.com/DopamineDriven'
   twitter: 'https://twitter.com/Dopamine_Driven'
   linkedin: 'https://www.linkedin.com/in/asross/'
+  vercel: 'https://next-jamstack-portfolio.vercel.app/'
+  heroku: 'https://heroku.com'
 ogImage:
   url: '/assets/next-jamstack.jpg'
 ---
