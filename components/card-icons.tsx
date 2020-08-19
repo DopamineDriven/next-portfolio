@@ -20,8 +20,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { HerokuIcon } from './svg-icons';
-import { faCustomHerokuIcon, faCustomVercelIcon } from './fas-custom-integration';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCustomHerokuIcon, faCustomVercelIcon } from '../lib/fas-custom-integration';
 
 type CardIconProps = {
 	twitter: string;
@@ -33,7 +32,8 @@ type CardIconProps = {
 };
 
 const CardIcons = ({ props, linkedin, twitter, react, heroku, vercel }: CardIconProps) => {
-	library.add(faCustomHerokuIcon)
+	console.log(typeof(faCustomHerokuIcon));
+	console.log(typeof(faCustomVercelIcon));
 	return (
 		<div className='align-middle justify-right text-right content-right inline-block'>
 			<ul className='align-middle'>

@@ -1,15 +1,15 @@
 import Date from './date-formatter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {} from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCustomVercelIcon } from '../lib/fas-custom-integration';
 
-type AvatarProps = {
+type CardTechProps = {
 	name: string;
 	date: string;
 	github: string;
 };
 
-export default function Avatar({ date, name, github }: AvatarProps) {
+export default function Avatar({ date, name, github }: CardTechProps) {
 	return (
 		<>
 			<div className='ml-1 mt-1 flex flex-row align-bottom items-left text-left float-left overflow-hidden'>
