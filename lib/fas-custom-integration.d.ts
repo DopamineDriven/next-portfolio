@@ -1,8 +1,10 @@
+
 import { IconDefinition, IconPrefix, IconName } from "@fortawesome/fontawesome-common-types";
 export const definition: IconDefinition;
 export const faCustomHerokuIcon: IconDefinition;
 export const faCustomVercelIcon: IconDefinition;
 export const prefix: IconPrefix;
+export const fac: IconPrefix;
 export const iconName: IconName;
 export const width: number;
 export const height: number;
