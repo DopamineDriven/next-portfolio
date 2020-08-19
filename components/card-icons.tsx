@@ -20,7 +20,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { HerokuIcon } from './svg-icons';
-import { faCustomHerokuIcon, faCustomVercelIcon } from '../lib/fas-custom-integration';
+import { faHerokuIcon, faVercelIcon } from '../lib/fas-custom-integration';
 
 type CardIconProps = {
 	twitter: string;
@@ -31,9 +31,16 @@ type CardIconProps = {
 	props: string | number;
 };
 
-const CardIcons = ({ props, linkedin, twitter, react, heroku, vercel }: CardIconProps) => {
-	console.log(typeof(faCustomHerokuIcon));
-	console.log(typeof(faCustomVercelIcon));
+const CardIcons = ({
+	props,
+	linkedin,
+	twitter,
+	react,
+	heroku,
+	vercel
+}: CardIconProps) => {
+	console.log(typeof faHerokuIcon);
+	console.log(typeof faVercelIcon);
 	return (
 		<div className='align-middle justify-right text-right content-right inline-block'>
 			<ul className='align-middle'>
@@ -52,7 +59,7 @@ const CardIcons = ({ props, linkedin, twitter, react, heroku, vercel }: CardIcon
 								<></>
 							) : (
 								<FontAwesomeIcon
-									icon={faCustomVercelIcon}
+									icon={faVercelIcon}
 									className='flex align-middle text-center font-extrabold text-1xl pb-1'
 									size='lg'
 								/>
@@ -72,7 +79,7 @@ const CardIcons = ({ props, linkedin, twitter, react, heroku, vercel }: CardIcon
 						/>
 					</a>{' '}
 					<a
-						aria-label="Heroku"
+						aria-label='Heroku'
 						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 					>
 						<i className='flex flex-row -mt-10 align-middle text-center font-extrabold justify-center text-1xl'>
@@ -92,9 +99,9 @@ const CardIcons = ({ props, linkedin, twitter, react, heroku, vercel }: CardIcon
 								<></>
 							) : (
 								<FontAwesomeIcon
-									icon={faCustomHerokuIcon}
+									icon={faHerokuIcon}
 									className='flex align-middle text-center font-extrabold text-1xl'
-									size={"lg"}
+									size={'lg'}
 								/>
 							)}
 						</a>

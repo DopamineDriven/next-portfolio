@@ -1,8 +1,11 @@
-
-import { IconDefinition, IconPrefix, IconName } from "@fortawesome/fontawesome-common-types";
+import {
+	IconDefinition,
+	IconPrefix,
+	IconName
+} from '@fortawesome/fontawesome-common-types';
 export const definition: IconDefinition;
-export const faCustomHerokuIcon: IconDefinition;
-export const faCustomVercelIcon: IconDefinition;
+export const faHerokuIcon: IconDefinition;
+export const faVercelIcon: IconDefinition;
 export const prefix: IconPrefix;
 export const fac: IconPrefix;
 export const iconName: IconName;

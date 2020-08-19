@@ -5,9 +5,9 @@ import { AppProps } from 'next/app';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-common-types/index';
 import { ReactElement } from 'react';
-import { faCustomHerokuIcon, faCustomVercelIcon } from '../lib/fas-custom-integration';
+import { faHerokuIcon, faVercelIcon } from '../lib/fas-custom-integration';
 
-library.add(faCustomHerokuIcon, faCustomVercelIcon);
+library.add(faHerokuIcon, faVercelIcon);
 
 config.autoAddCss = false;
 
