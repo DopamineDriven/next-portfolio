@@ -9,14 +9,14 @@ export interface CustomIconConstruct extends IconDefinition, IconLookup {}
 export interface CustomIconName extends IconLookup {}
 
 export const iconNameDeclaration: CustomIconName = {
-	prefix: 'fac',
+	prefix: 'fas',
 	iconName: "heroku-icon"
 }
 
 const iconValue: IconName = 'heroku-icon';
 
 export const faCustomVercelIcon: CustomIconConstruct = {
-	prefix: 'fac',
+	prefix: 'fas',
 	iconName: 'vercel-icon',
 	icon: [24, 24, [], '#626262', 'M24 22.525H0l12-21.05l12 21.05z']
 };
