@@ -15,5 +15,5 @@
 		"jsx": "preserve"
 	},
 	"exclude": ["node_modules"],
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/fas-custom-integration.tsx", "lib/fas-custom-integration.ts"]
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/fas-custom-integration.tsx", "lib/fas-custom-integration.ts", "node_modules/@fortawesome/fontawesome-common-types"]
 }
