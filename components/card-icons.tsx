@@ -20,35 +20,41 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { HerokuIcon } from './svg-icons';
+import { faCustomHerokuIcon, faCustomVercelIcon } from './fas-custom-integration';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 type CardIconProps = {
 	twitter: string;
 	linkedin: string;
 	react: string;
+	heroku: string;
+	vercel: string;
 	props: string | number;
 };
 
-const CardIcons = ({ props, linkedin, twitter, react }: CardIconProps) => {
+const CardIcons = ({ props, linkedin, twitter, react, heroku, vercel }: CardIconProps) => {
+	library.add(faCustomHerokuIcon)
 	return (
 		<div className='align-middle justify-right text-right content-right inline-block'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
-					{react === '' ? (
+					{vercel === '' ? (
 						<></>
 					) : (
 						<a
 							aria-label='react'
 							target='__blank'
-							href={react}
+							href={vercel}
 							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							{react === '' ? (
+							{vercel === '' ? (
 								<></>
 							) : (
 								<FontAwesomeIcon
-									icon={faReact}
-									className='flex align-middle text-center font-extrabold text-1xl'
+									icon={faCustomVercelIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
 								/>
 							)}
 						</a>
@@ -61,7 +67,8 @@ const CardIcons = ({ props, linkedin, twitter, react }: CardIconProps) => {
 					>
 						<FontAwesomeIcon
 							icon={faLinkedin}
-							className='align-middle text-center font-extrabold text-1xl'
+							className='align-middle text-center font-extrabold text-1xl pb-1'
+							size='lg'
 						/>
 					</a>{' '}
 					<a
@@ -72,21 +79,22 @@ const CardIcons = ({ props, linkedin, twitter, react }: CardIconProps) => {
 							<HerokuIcon width={'17'} fillColor='white' />
 						</i>
 					</a>{' '}
-					{react === '' ? (
+					{heroku === '' ? (
 						<></>
 					) : (
 						<a
-							aria-label='react'
+							aria-label='heroku'
 							target='__blank'
-							href={react}
+							href={heroku}
 							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{react === '' ? (
 								<></>
 							) : (
 								<FontAwesomeIcon
-									icon={faReact}
+									icon={faCustomHerokuIcon}
 									className='flex align-middle text-center font-extrabold text-1xl'
+									size={"lg"}
 								/>
 							)}
 						</a>

@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import {
 	SvgIcon,
 	AntDesignIcon,
@@ -39,13 +40,14 @@ import {
 	YamlIcon
 } from './svg-icons';
 
+
 export interface SvgIconAbstract {
 	id: number;
 	icon: SvgIcon;
 	name: string;
 }
 
-const svgIconLibrary: SvgIconAbstract[] = [
+export const svgIconLibrary: SvgIconAbstract[] = [
 	{
 		id: 0,
 		icon: AntDesignIcon,
@@ -233,7 +235,9 @@ const svgIconLibrary: SvgIconAbstract[] = [
 	}
 ];
 
-const CustomSvgIcons = () => {
+export interface SvgIconLibraryExtended extends FC<SvgIconAbstract>{}
+
+export const CustomSvgIcons: SvgIconLibraryExtended = ({}) => {
 	const iconCollection = svgIconLibrary.map(constituent => {
 		<a
 			key={constituent.id}
@@ -254,5 +258,3 @@ const CustomSvgIcons = () => {
 		</div>
 	);
 };
-
-export default CustomSvgIcons;
