@@ -38,7 +38,8 @@ module.exports = {
 				tailwindGreen: '#0ED7B5',
 				bloodMoon: '#cc6633',
 				herokuStroke: '#6762A6',
-				gqlPink: '#E535AB'
+				gqlPink: '#E535AB',
+				devPurple: '#3333CC'
 			},
 			height: {
 				whole: '100vh',
