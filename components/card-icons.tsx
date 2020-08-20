@@ -24,7 +24,8 @@ import {
 	faHerokuIcon,
 	faVercelIcon,
 	faGraphQLIcon,
-	faNextIcon
+	faNextIcon,
+	faTypeScriptIcon
 } from '../lib/fas-custom-integration';
 
 type CardIconProps = {
@@ -108,7 +109,7 @@ const CardIcons = ({
 								<></>
 							) : (
 								<FontAwesomeIcon
-									icon={faHerokuIcon}
+									icon={faTypeScriptIcon}
 									className='flex align-middle text-center font-extrabold text-1xl'
 									size={'lg'}
 								/>
