@@ -111,7 +111,7 @@ const CardIcons = ({
 								<FontAwesomeIcon
 									icon={faTypeScriptIcon}
 									className='flex align-middle text-center font-extrabold text-1xl'
-									size={'lg'}
+									size={'sm'}
 								/>
 							)}
 						</a>
