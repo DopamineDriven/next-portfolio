@@ -5,21 +5,21 @@ import {
 } from '@fortawesome/fontawesome-svg-core';
 
 export interface CustomIconConstruct extends IconDefinition, IconLookup {}
-export interface CustomIconName extends IconLookup {}
+// export interface CustomIconName extends IconLookup {}
 
-export const iconNameDeclaration: CustomIconName = {
-	prefix: 'fab',
-	iconName: 'heroku-icon'
-};
+// export const iconNameDeclaration: CustomIconName = {
+// 	prefix: 'fab',
+// 	iconName: 'heroku-icon'
+// };
 
 export const faVercelIcon: CustomIconConstruct = {
-	prefix: 'fab',
+	prefix: 'fac',
 	iconName: 'vercel-icon',
 	icon: [24, 24, [], '#626262', 'M24 22.525H0l12-21.05l12 21.05z']
 };
 
 export const faHerokuIcon: CustomIconConstruct = {
-	prefix: 'fab',
+	prefix: 'fac',
 	iconName: 'heroku-icon',
 	icon: [
 		64,
@@ -31,3 +31,23 @@ export const faHerokuIcon: CustomIconConstruct = {
 };
 
 library.add(faHerokuIcon, faVercelIcon);
+
+
+/*
+import {
+	IconDefinition,
+	IconPrefix,
+	IconName
+} from '@fortawesome/fontawesome-common-types';
+export const definition: IconDefinition;
+export const faHerokuIcon: IconDefinition;
+export const faVercelIcon: IconDefinition;
+export const prefix: IconPrefix;
+export const iconName: IconName;
+export const width: number;
+export const height: number;
+export const ligatures: string[];
+export const unicode: string;
+export const svgPathData: string;
+
+*/
