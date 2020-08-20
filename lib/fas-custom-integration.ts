@@ -1,5 +1,5 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+	library,
 	IconDefinition,
 	IconLookup
 } from '@fortawesome/fontawesome-svg-core';

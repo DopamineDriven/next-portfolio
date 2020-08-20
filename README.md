@@ -1,4 +1,14 @@
 # next-jamstack-portfolio
+
+## Patching Node_Modules
+- https://stackoverflow.com/questions/13300137/how-to-edit-a-node-module-installed-via-npm
+```git
+npx patch-package @fortawesome/fontawesome-common-types
+```
+- then, add the following to scripts in package.json
+```
+"postinstall": "npx patch-package" 
+```
 ***create a master svgLibrary function wrapping all svg declarations***
 - Pass Props  
 
