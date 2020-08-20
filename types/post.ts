@@ -1,6 +1,6 @@
 import Author from './author';
 
-type PostType = {
+interface PostType {
 	slug: string;
 	title: string;
 	date: string;
@@ -11,6 +11,6 @@ type PostType = {
 		url: string;
 	};
 	content: string;
-};
+}
 
 export default PostType;

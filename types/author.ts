@@ -1,4 +1,4 @@
-type Author = {
+interface Author {
 	name: string;
 	avatar: string;
 	twitter: string;
@@ -8,6 +8,6 @@ type Author = {
 	vercel: string;
 	props: string | number;
 	react: string;
-};
+}
 
 export default Author;
