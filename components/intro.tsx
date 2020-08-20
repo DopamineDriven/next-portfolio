@@ -1,6 +1,7 @@
 import { CMS_NAME, CMS_URL } from '../lib/constants';
 import Link from 'next/link';
 import SvgComponent from './svg-logo-only';
+import CustomLogo from './white-svg';
 interface SortRef {
 	href: string;
 	label: string;
@@ -88,10 +89,10 @@ export default function Intro({ props }: IntroProps) {
 			<div className='flex flex-row mx-auto items-center justify-center'>
 				<Link href='/'>
 					<a
-						className='hover:bg-tinyHouseWhite cursor-pointer select-text rounded px-5'
+						className='bg-black cursor-pointer select-text rounded-lg px-5'
 						aria-label='Andrew Ross'
 					>
-						<SvgComponent />
+						<CustomLogo />
 					</a>
 				</Link>
 			</div>

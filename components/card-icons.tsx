@@ -20,7 +20,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { HerokuIcon } from './svg-icons';
-import { faHerokuIcon, faVercelIcon } from '../lib/fas-custom-integration';
+import {
+	faHerokuIcon,
+	faVercelIcon,
+	faGraphQLIcon,
+	faNextIcon
+} from '../lib/fas-custom-integration';
 
 type CardIconProps = {
 	twitter: string;
@@ -53,7 +58,7 @@ const CardIcons = ({
 							aria-label='react'
 							target='__blank'
 							href={vercel}
-							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{vercel === '' ? (
 								<></>
@@ -70,21 +75,25 @@ const CardIcons = ({
 						aria-label='linkedin'
 						target='__blank'
 						href={linkedin}
-						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 					>
 						<FontAwesomeIcon
-							icon={faLinkedin}
+							icon={faNextIcon}
 							className='align-middle text-center font-extrabold text-1xl pb-1'
 							size='lg'
 						/>
 					</a>{' '}
 					<a
-						aria-label='Heroku'
-						className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						aria-label='linkedin'
+						target='__blank'
+						href={linkedin}
+						className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 					>
-						<i className='flex flex-row -mt-10 align-middle text-center font-extrabold justify-center text-1xl'>
-							<HerokuIcon width={'17'} fillColor='white' />
-						</i>
+						<FontAwesomeIcon
+							icon={faGraphQLIcon}
+							className='align-middle text-center font-extrabold text-1xl pb-1'
+							size='lg'
+						/>
 					</a>{' '}
 					{heroku === '' ? (
 						<></>
@@ -93,7 +102,7 @@ const CardIcons = ({
 							aria-label='heroku'
 							target='__blank'
 							href={heroku}
-							className='bg-customGray text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
 							{react === '' ? (
 								<></>

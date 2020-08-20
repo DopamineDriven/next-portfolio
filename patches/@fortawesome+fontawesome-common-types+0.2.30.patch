@@ -1,5 +1,5 @@
 diff --git a/node_modules/@fortawesome/fontawesome-common-types/index.d.ts b/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
-index b70b000..b6b2429 100644
+index b70b000..4dfc080 100644
 --- a/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
 +++ b/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
 @@ -1,4 +1,4 @@
@@ -8,12 +8,14 @@ index b70b000..b6b2429 100644
  export type IconPathData = string | string[]
  
  export interface IconLookup {
-@@ -21,7 +21,9 @@ export interface IconPack {
+@@ -21,7 +21,11 @@ export interface IconPack {
    [key: string]: IconDefinition;
  }
  
 -export type IconName = '500px' | 
-+export type IconName = 'vercel-icon' | 
++export type IconName = 'graphql-icon' | 
++'next-icon' |
++'vercel-icon' | 
 +'heroku-icon' |
 +'500px' | 
    'accessible-icon' | 
