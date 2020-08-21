@@ -25,7 +25,8 @@ import {
 	faVercelIcon,
 	faGraphQLIcon,
 	faNextIcon,
-	faTypeScriptIcon
+	faTypeScriptIcon,
+	faAuth0Icon
 } from '../lib/fas-custom-integration';
 
 type CardIconProps = {
@@ -110,6 +111,26 @@ const CardIcons = ({
 							) : (
 								<FontAwesomeIcon
 									icon={faTypeScriptIcon}
+									className='flex align-middle text-center font-extrabold text-1xl'
+									size={'sm'}
+								/>
+							)}
+						</a>
+					)}{' '}
+										{heroku === '' ? (
+						<></>
+					) : (
+						<a
+							aria-label='auth0'
+							target='__blank'
+							href={heroku}
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							{react === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faAuth0Icon}
 									className='flex align-middle text-center font-extrabold text-1xl'
 									size={'sm'}
 								/>
