@@ -21,6 +21,9 @@ const Card = ({
 	slug,
 	title
 }: CardProps) => {
+
+
+	
 	return (
 		<div className='inline-block font-polished'>
 			<div className='max-w-xs rounded-lg overflow-x-hidden overflow-y-hidden bg-white shadow-lg inline-block'>

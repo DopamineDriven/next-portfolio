@@ -8,6 +8,7 @@ import Head from 'next/head';
 import { CMS_NAME } from '../lib/constants';
 import Post from '../types/post';
 import Header from '../components/header';
+import SocialMediaIcons from '../components/social-media-icons';
 
 
 type Props = {
@@ -81,6 +82,7 @@ export const getStaticProps = async () => {
 // import Post from '../types/post';
 // import Header from '../components/header';
 // import { InferGetStaticPropsType, GetStaticProps } from 'next';
+
 
 // type Props = {
 // 	allPosts: Post[];

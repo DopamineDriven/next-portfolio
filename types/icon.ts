@@ -1,9 +1,9 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-interface CimaIcon {
+interface SocialIcon {
 	href: string;
 	name: string;
 	icon: IconProp;
 }
 
-export default CimaIcon;
+export default SocialIcon;

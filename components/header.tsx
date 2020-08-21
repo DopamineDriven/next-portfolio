@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { Fragment, useState, ReactNode } from 'react';
 import Link from 'next/link';
 import { VercelIcon } from './svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
+import SocialMediaIcons from './social-media-icons';
 
 interface NavRef {
 	href: string;
@@ -12,6 +13,7 @@ interface NavRef {
 
 type HeaderProps = {
 	props: string | number;
+	children?: ReactNode;
 };
 
 const links: NavRef[] = [
@@ -29,7 +31,7 @@ const links: NavRef[] = [
 	}
 ];
 
-const Header = ({ props }: HeaderProps) => {
+const Header = ({ props, children }: HeaderProps) => {
 	const [navOpen, setNavOpen] = useState(false);
 	const navText = navOpen ? '  duration-700' : ' duration-700';
 	const navlist = links.map(link => (
@@ -47,18 +49,10 @@ const Header = ({ props }: HeaderProps) => {
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
 	const heightOnOpen = navOpen ? ' h-nineTwentieths' : ' h-sevenTwentieths';
-	// const subNav = (
-	// 	<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
-	// 		<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform translate-y-full duration-1000 sm:text-2xl list-none sm:ml-auto h-full min-h-full align-text-bottom'>
-	// 			<div className='flex flex-row h-full min-h-full items-baseline align-text-bottom justify-center'>
-	// 				{navlist}
-	// 			</div>
-	// 		</ul>
-	// 	</div>
-	// );
-	return (
+
+	const nav = (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-half ${heightOnOpen} pb-20 xl:mb-2 mb-2 container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-half ${heightOnOpen} container overflow-y-hidden  overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
@@ -153,6 +147,21 @@ const Header = ({ props }: HeaderProps) => {
 				</div>
 			</Container>
 		</nav>
+	);
+
+	const subnav = (
+		<div className='bg-black text-xl transform duration-1000'>
+			<SocialMediaIcons />
+		</div>
+	);
+	return (
+		<Fragment>
+			<div className='bg-black transform duration-1000'>
+				{' '}
+				{nav}
+				{subnav}
+			</div>
+		</Fragment>
 	);
 };
 
