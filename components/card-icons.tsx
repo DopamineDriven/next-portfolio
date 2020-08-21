@@ -1,25 +1,27 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faGithub,
-	faLinkedin,
-	faTwitter,
-	faReact,
-	faJava,
-	faPython,
-	faAngular,
-	faGit,
-	faNode,
-	faWordpress,
-	faStripe,
-	faGoogle,
-	faAdobe,
-	faFigma,
-	faYarn,
-	faNpm,
-	faUnsplash
-} from '@fortawesome/free-brands-svg-icons';
+// import {
+// 	faGithub,
+// 	faLinkedin,
+// 	faDev,
+// 	faMedium,
+// 	faTwitter,
+// 	faReact,
+// 	faJava,
+// 	faPython,
+// 	faAngular,
+// 	faGit,
+// 	faNode,
+// 	faWordpress,
+// 	faStripe,
+// 	faGoogle,
+// 	faAdobe,
+// 	faFigma,
+// 	faYarn,
+// 	faNpm,
+// 	faUnsplash
+// } from '@fortawesome/free-brands-svg-icons';
 
-import { HerokuIcon } from './svg-icons';
+// import { HerokuIcon } from './svg-icons';
 import {
 	faHerokuIcon,
 	faVercelIcon,
@@ -117,7 +119,7 @@ const CardIcons = ({
 							)}
 						</a>
 					)}{' '}
-										{heroku === '' ? (
+					{heroku === '' ? (
 						<></>
 					) : (
 						<a
