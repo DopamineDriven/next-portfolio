@@ -8,13 +8,13 @@ import {
 	faMedium
 } from '@fortawesome/free-brands-svg-icons';
 
-interface Props {
+export interface IconProps {
 	href: string;
 	name: string;
 	icon: IconProp;
 }
 
-const iconLinks: Props[] = [
+export const iconLinks: IconProps[] = [
 	{
 		href: 'https://github.com/DopamineDriven',
 		name: 'github',

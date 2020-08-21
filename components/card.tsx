@@ -23,10 +23,10 @@ const Card = ({
 }: CardProps) => {
 
 
-	
+
 	return (
 		<div className='inline-block font-polished'>
-			<div className='max-w-xs rounded-lg overflow-x-hidden overflow-y-hidden bg-white shadow-lg inline-block'>
+			<div className='max-w-sm rounded-lg overflow-x-hidden overflow-y-hidden bg-white shadow-lg inline-block'>
 				<CoverImage src={src} title={title} slug={slug} />
 
 				<div className='flex flex-col text-left justify-center bg-white shadow rounded-b-lg'>
