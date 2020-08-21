@@ -3,7 +3,9 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
 	faGithub,
 	faLinkedin,
-	faTwitter
+	faTwitter,
+	faDev,
+	faMedium
 } from '@fortawesome/free-brands-svg-icons';
 
 interface Props {
@@ -27,6 +29,16 @@ const iconLinks: Props[] = [
 		href: 'https://twitter.com/Dopamine_Driven',
 		name: 'twitter',
 		icon: faTwitter
+	},
+	{
+		href: 'https://dev.to/dopaminedriven',
+		name: 'dev',
+		icon: faDev
+	},
+	{
+		href: 'https://medium.com/@andrew.simpson.ross',
+		name: 'medium',
+		icon: faMedium
 	}
 ];
 
