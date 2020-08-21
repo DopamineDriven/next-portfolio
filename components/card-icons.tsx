@@ -1,35 +1,51 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {
-// 	faGithub,
-// 	faLinkedin,
-// 	faDev,
-// 	faMedium,
-// 	faTwitter,
-// 	faReact,
-// 	faJava,
-// 	faPython,
-// 	faAngular,
-// 	faGit,
-// 	faNode,
-// 	faWordpress,
-// 	faStripe,
-// 	faGoogle,
-// 	faAdobe,
-// 	faFigma,
-// 	faYarn,
-// 	faNpm,
-// 	faUnsplash
-// } from '@fortawesome/free-brands-svg-icons';
-
-// import { HerokuIcon } from './svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
-	faHerokuIcon,
-	faVercelIcon,
+	faAuth0Icon,
 	faGraphQLIcon,
+	faHerokuIcon,
 	faNextIcon,
-	faTypeScriptIcon,
-	faAuth0Icon
+	faVercelIcon,
+	faTypeScriptIcon
 } from '../lib/fas-custom-integration';
+interface MappingProps {
+	href: string;
+	name: string;
+	icon: IconProp;
+}
+
+const iconLinks: MappingProps[] = [
+	{
+		href: 'https://auth0.com/',
+		name: 'auth0',
+		icon: faAuth0Icon
+	},
+	{
+		href: 'https://www.graphql.com/',
+		name: 'graphql',
+		icon: faGraphQLIcon
+	},
+	{
+		href: 'https://www.heroku.com/',
+		name: 'heroku',
+		icon: faHerokuIcon
+	},
+	{
+		href: 'https://nextjs.org/',
+		name: 'next',
+		icon: faNextIcon
+	},
+	{
+		href: 'https://vercel.com/',
+		name: 'vercel',
+		icon: faVercelIcon
+	},
+	{
+		href: 'https://twitter.com/Dopamine_Driven',
+		name: 'typescript',
+		icon: faTypeScriptIcon
+	}
+];
 
 type CardIconProps = {
 	twitter: string;
@@ -51,7 +67,7 @@ const CardIcons = ({
 	console.log(typeof faHerokuIcon);
 	console.log(typeof faVercelIcon);
 	return (
-		<div className='align-middle justify-right text-right content-right inline-block'>
+		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
@@ -148,3 +164,29 @@ const CardIcons = ({
 export default CardIcons;
 
 // CUSTOM ICONS https://medium.com/@nsisodiya/hacking-font-awesome-for-custom-svg-icons-ea762118fa7b
+
+/*
+// import {
+// 	faGithub,
+// 	faLinkedin,
+// 	faDev,
+// 	faMedium,
+// 	faTwitter,
+// 	faReact,
+// 	faJava,
+// 	faPython,
+// 	faAngular,
+// 	faGit,
+// 	faNode,
+// 	faWordpress,
+// 	faStripe,
+// 	faGoogle,
+// 	faAdobe,
+// 	faFigma,
+// 	faYarn,
+// 	faNpm,
+// 	faUnsplash
+// } from '@fortawesome/free-brands-svg-icons';
+
+// import { HerokuIcon } from './svg-icons';
+*/
