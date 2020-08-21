@@ -1,7 +1,7 @@
 import { CMS_NAME, CMS_URL } from '../lib/constants';
-import Link from 'next/link';
-import SvgComponent from './svg-logo-only';
-import CustomLogo from './white-svg';
+// import Link from 'next/link';
+// import SvgComponent from './svg-logo-only';
+// import CustomLogo from './white-svg';
 interface SortRef {
 	href: string;
 	label: string;
@@ -86,7 +86,7 @@ export default function Intro({ props }: IntroProps) {
 	// console.log(sortingMap);
 	return (
 		<>
-			<div className='flex flex-row mx-auto items-center justify-center'>
+			{/* <div className='flex flex-row mx-auto items-center justify-center'>
 				<Link href='/'>
 					<a
 						className='bg-black cursor-pointer select-text rounded-lg px-5'
@@ -95,7 +95,7 @@ export default function Intro({ props }: IntroProps) {
 						<CustomLogo />
 					</a>
 				</Link>
-			</div>
+			</div> */}
 			<h2 className='text-center justify-center text-black text-lg mt-5 px-2 font-polished'>
 				Powered by{' '}
 				<a
