@@ -8,17 +8,21 @@ import Head from 'next/head';
 import { CMS_NAME } from '../lib/constants';
 import Post from '../types/post';
 import Header from '../components/header';
+import { InferGetStaticPropsType, GetStaticProps } from 'next';
 
 type Props = {
 	allPosts: Post[];
 	props: string | number;
 };
 
-const Index = ({ allPosts, props }: Props) => {
+const Index = ({
+	allPosts,
+	props
+}: Props & InferGetStaticPropsType<typeof getStaticProps>) => {
 	// const heroPost = allPosts[0];
-	const x: boolean & number | unknown = true && 0o0;
-	console.log(typeof(x), x);
-	console.log(typeof(0o0));
+	const x: (boolean & number) | unknown = true && 0o0;
+	console.log(typeof x, x);
+	console.log(typeof 0o0);
 	const morePosts = allPosts.slice(0);
 	return (
 		<>
@@ -50,7 +54,7 @@ const Index = ({ allPosts, props }: Props) => {
 
 export default Index;
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
 	const allPosts = getAllPosts([
 		'title',
 		'date',
