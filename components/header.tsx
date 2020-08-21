@@ -46,7 +46,7 @@ const Header = ({ props }: HeaderProps) => {
 	));
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
-	const heightOnOpen = navOpen ? ' h-sevenTwentieths' : ' h-sevenTwentieths';
+	const heightOnOpen = navOpen ? ' h-nineTwentieths' : ' h-sevenTwentieths';
 	// const subNav = (
 	// 	<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
 	// 		<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform translate-y-full duration-1000 sm:text-2xl list-none sm:ml-auto h-full min-h-full align-text-bottom'>

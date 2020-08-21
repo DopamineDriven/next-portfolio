@@ -8,7 +8,7 @@ export interface CustomIconConstruct extends IconDefinition, IconLookup {}
 
 export const faAuth0Icon: CustomIconConstruct = {
 	prefix: 'fac',
-	iconName: 'auth0-icon',
+	iconName: 'auth-icon',
 	icon: [
 		200,
 		200,
