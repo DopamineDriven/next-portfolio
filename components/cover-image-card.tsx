@@ -17,7 +17,7 @@ export default function CoverImageCard({
 			src={src}
 			alt={title}
 			className={cn(
-				'shadow-sm w-full h-44 max-h-full overflow-x-hidden rounded-t rounded-b-sm',
+				'shadow-sm w-full h-44 max-h-full sm:h-56 lg:h-64 overflow-x-hidden rounded-t rounded-b-sm',
 				{
 					'hover:shadow-lg transition-shadow duration-400': slug
 				}

@@ -21,12 +21,12 @@ const Card = ({
 	slug,
 	title
 }: CardProps) => {
-
-
+// animate
+// https://www.npmjs.com/package/tailwindcss-animatecss
 
 	return (
-		<div className='inline-block font-polished'>
-			<div className='max-w-sm rounded-lg overflow-x-hidden overflow-y-hidden bg-white shadow-lg inline-block'>
+		<div className='font-polished animate-wiggle hover:ease-in-out duration-700 flex'>
+			<div className='max-w-xs sm:max-w-sm lg:max-w-md rounded-lg overflow-x-hidden overflow-y-hidden bg-white shadow-lg inline-block'>
 				<CoverImage src={src} title={title} slug={slug} />
 
 				<div className='flex flex-col text-left justify-center bg-white shadow rounded-b-lg'>

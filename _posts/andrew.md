@@ -1,5 +1,5 @@
 ---
-title: 'Driven to build'
+title: 'Headless WordPress Directory'
 excerpt: '"The mechanic that would perfect his work must first sharpen his tools." - Confucius'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1597440661/portfolio/next-jamstack_x8lmse.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR_Assets/typescript-in-react_vv81ae.png'
