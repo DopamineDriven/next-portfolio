@@ -10,6 +10,7 @@ import Post from '../types/post';
 import Header from '../components/header';
 import { iconLinks } from '../components/social-media-icons-footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Sidebar from '../components/landing-sidebar';
 
 type Props = {
 	allPosts: Post[];
@@ -22,32 +23,11 @@ const Index = ({ allPosts, props }: Props) => {
 	console.log(typeof x, x);
 	console.log(typeof 0o0);
 	const morePosts = allPosts.slice(0);
-	const iconMap = iconLinks.map(link => (
-		<a
-			key={link.name}
-			aria-label={link.name}
-			target='__blank'
-			href={link.href}
-			className='bg-white text-black hover:opacity-75 transform transition-colors duration-500 font-lg my-2 items-center justify-center align-center outline-none focus:outline-none rounded-full py-2 px-2 inline-block text-center'
-		>
-			<FontAwesomeIcon icon={link.icon} size='2x' className='rounded-full' />
-		</a>
-	));
 	return (
 		<>
 			<Header props={props} />
 			<Layout>
-				<div className='flex float-left'>
-					<div className='h-screen sticky top-0 flex'>
-						{' '}
-						<ul className='flex flex-row w-full my-auto lg:flex-row list-none float-left py-1 bg-scroll sticky top-0 bg-black rounded-r-lg'>
-							<li className='grid grids-cols-1 float-left items-end justify-end mx-auto py-1 pr-3 my-2 mr-1 pl-1'>
-								{iconMap}
-							</li>
-						</ul>
-					</div>
-				</div>
-
+				<Sidebar />
 				<Head>
 					<title>Next.js Blog Example with {CMS_NAME}</title>
 				</Head>
