@@ -12,9 +12,25 @@ module.exports = {
 		rotate: {
 			'855': '855deg',
 			'180': '180deg',
-			'45': '45deg',
+			'45': '45deg'
+		},
+		opacity: {
+			'10': '10',
+			'25': '25',
+			'50': '50',
+			'75': '75'
 		},
 		extend: {
+			transitionDuration: {
+				'0': '0ms',
+				'200': '200ms',
+				'300': '300ms',
+				'500': '500ms',
+				'700': '700ms',
+				'1000': '1000ms',
+				'2000': '2000ms',
+				'3000': '3000ms'
+			},
 			keyframes: {
 				wiggle: {
 					'0%, 100%': { transform: 'rotate(-3deg)' },
@@ -84,9 +100,6 @@ module.exports = {
 				275: '69.25rem',
 				300: '75rem',
 				309: '77.25rem'
-			},
-			letterSpacing: {
-				tighter: '-.04em'
 			},
 			lineHeight: {
 				tight: 1.2

@@ -203,3 +203,11 @@ export type IconName = 'graphql-icon' | 'heroku-icon' | 'next-icon' | 'vercel-ic
 
 
 ```
+
+
+'0': '0ms',
+'200': '200ms',
+'300': '300ms',
+'500': '500ms',
+'700': '700ms',
+'1000': '1000ms',

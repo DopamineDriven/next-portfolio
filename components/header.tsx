@@ -35,7 +35,7 @@ const Header = ({ props }: HeaderProps) => {
 		<li className='nav-item' key={`${link.href}-${link.label}`}>
 			<Link href={link.href}>
 				<a
-					className={`px-5 pb-2 mx-auto md:px-3 flex text-left md:text-right w-full h-full min-h-full md:text-xl font-bold leading-10 md:leading-none text-white hover:opacity-75 antialiased transform transition-colors duration-1000 justify-center uppercase md:tracking-wide md:normal-case tracking-widest`}
+					className={`px-5 bg-black bg-opacity-10 md:bg-transparent md:bg-opacity-100 pb-2 mx-auto md:px-3 flex text-left md:text-right w-full h-full min-h-full md:text-xl font-bold leading-10 md:leading-none text-white hover:opacity-75 antialiased transform transition-colors duration-1000 justify-center uppercase md:tracking-wide md:normal-case tracking-widest`}
 					aria-label={link.label}
 				>
 					{link.label}
@@ -46,6 +46,7 @@ const Header = ({ props }: HeaderProps) => {
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
 	const heightOnOpen = navOpen ? ' h-whole' : ' h-whole';
+	const pulseOnOpen = navOpen ? ' animate-none' : ' transform duration-3000 absolute transition-all animate-pulse bg-opacity-10 bg-blac'
 
 	// const menuOpenNav = navOpen ? (
 	// 	<ul className='sm:hidden flex flex-row mx-auto my-auto sm:mr-0 sm:relative sm:flex-row transform sm:mx-auto  sm:text-2xl list-none sm:ml-auto h-full min-h-full'>
@@ -61,7 +62,7 @@ const Header = ({ props }: HeaderProps) => {
 		>
 			<Container>
 				<div
-					className={`xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} transform duration-1000 absolute transition-all flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} transform duration-3000 absolute transition-all animate-pulse bg-opacity-10 bg-blackk flex flex-row w-full bg-contain antialiased`}
 					style={{
 						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
 						backgroundRepeat: 'no-repeat',
@@ -130,11 +131,12 @@ const Header = ({ props }: HeaderProps) => {
 									(navOpen ? ' flex' : ' hidden')
 								}
 							>
-								<div className='flex my-auto md:my-0 md:float-right w-full h-full items-center float-right align-text-right justify-center md:mx-auto'>
-									<ul className='flex flex-col mx-auto md:mr-0 md:relative md:flex-row align-text-top md:text-2xl list-none md:ml-auto my-auto float-right'>
+								<div className='flex my-auto md:my-0 md:float-right w-full h-full md:w-full md:h-full items-center float-right align-text-right justify-center md:mx-auto'>
+									<ul className='flex flex-col mx-auto md:mr-0 md:relative md:flex-row align-text-top md:text-2xl list-none md:ml-auto my-auto float-right md:h-full'>
 										{navlist}
 									</ul>
 								</div>
+								{navOpen ? <div className=''></div> : null}
 								{/* {navOpen ? (
 									<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
 										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform  sm:text-2xl list-none sm:ml-auto h-full min-h-full text-left'>
