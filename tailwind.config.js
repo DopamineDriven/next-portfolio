@@ -68,7 +68,8 @@ module.exports = {
 				bloodMoon: '#cc6633',
 				herokuStroke: '#6762A6',
 				gqlPink: '#E535AB',
-				devPurple: '#3333CC'
+				devPurple: '#3333CC',
+				lighterBlack: '#323232'
 			},
 			height: {
 				whole: '100vh',

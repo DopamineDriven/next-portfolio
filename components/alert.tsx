@@ -3,6 +3,7 @@ import cn from 'classnames';
 // import { EXAMPLE_PATH } from '../lib/constants';
 import SocialMediaIcons from './social-media-icons-footer';
 
+
 type Props = {
 	preview?: boolean;
 };
@@ -12,7 +13,7 @@ const Alert = ({ preview }: Props) => {
 		<div
 			className={cn('border-t bg-black', {
 				'bg-accent-7 border-accent-7 text-white': preview,
-				'bg-black border-top border-cimaRed': !preview
+				'bg-black border-top border-cimaRed w-full align-middle justify-center': !preview
 			})}
 		>
 			<Container>
@@ -30,7 +31,9 @@ const Alert = ({ preview }: Props) => {
 						</>
 					) : (
 						<>
-							<SocialMediaIcons />
+							<a className='inline-flex mx-auto min-w-full w-full justify-center text-2xl flex-grow'>
+								<SocialMediaIcons />
+							</a>
 						</>
 					)}
 				</div>
