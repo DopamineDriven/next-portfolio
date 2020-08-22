@@ -8,7 +8,7 @@ export const AntDesignIcon: SvgIcon = ({
 	width = '125',
 	height = '125',
 	strokeColor = 'none',
-	fillColor = 'none',
+	fillColor = 'white',
 	rotateCenter = 0
 }) => {
 	return (
