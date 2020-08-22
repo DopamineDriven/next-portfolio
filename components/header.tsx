@@ -57,7 +57,7 @@ const Header = ({ props }: HeaderProps) => {
 
 	const nav = (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} container overflow-y-hidden  overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} container overflow-y-hidden animate-pulse md:animate-none  overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
@@ -130,7 +130,7 @@ const Header = ({ props }: HeaderProps) => {
 									(navOpen ? ' flex' : ' hidden')
 								}
 							>
-								<div className="flex my-auto md:my-0 md:float-right w-full h-full items-center float-right align-text-right justify-center md:mx-auto">
+								<div className='flex my-auto md:my-0 md:float-right w-full h-full items-center float-right align-text-right justify-center md:mx-auto'>
 									<ul className='flex flex-col mx-auto md:mr-0 md:relative md:flex-row align-text-top md:text-2xl list-none md:ml-auto my-auto float-right'>
 										{navlist}
 									</ul>
