@@ -71,7 +71,7 @@ const Header = ({ props }: HeaderProps) => {
 						Andrew&nbsp;&nbsp;S&nbsp;&nbsp;Ross
 					</p>{' '}
 					<p className='hover:bg-black opacity-75 tracking-widest mx-auto inline-flex min-w-full text-center justify-center px-5 py-2 antialiased transform transition-colors duration-1000'>
-						Developer - Technophile - human
+						Developer - Human - Technophile 
 					</p>
 				</div>
 			)}
