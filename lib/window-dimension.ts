@@ -1,4 +1,4 @@
-const getWindowDimension = () => {
+const getWindowDimensions = () => {
 	const width =
 		window.innerWidth ||
 		document.documentElement.clientWidth ||
@@ -12,7 +12,7 @@ const getWindowDimension = () => {
 	return { width, height };
 };
 
-export default getWindowDimension;
+export default getWindowDimensions;
 
 // https://github.com/applike/responsive-react
 // https://www.npmjs.com/package/typed-responsive-react

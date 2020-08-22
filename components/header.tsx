@@ -23,6 +23,10 @@ const links: NavRef[] = [
 		label: 'About'
 	},
 	{
+		href: '/blog',
+		label: 'Blog'
+	},
+	{
 		href: '/contact',
 		label: 'Contact'
 	}
@@ -31,38 +35,70 @@ const links: NavRef[] = [
 const Header = ({ props }: HeaderProps) => {
 	const [navOpen, setNavOpen] = useState(false);
 	const navText = navOpen ? '  duration-700' : ' duration-700';
+	const onHover = !navOpen
+		? ' md:hover:animate-pulse transform duration-3000 transition-all'
+		: ' transform duration-3000 transition-all animate-pulse';
 	const navlist = links.map(link => (
 		<li className='nav-item' key={`${link.href}-${link.label}`}>
 			<Link href={link.href}>
 				<a
-					className={`px-5 bg-black bg-opacity-10 md:bg-transparent md:bg-opacity-100 pb-2 mx-auto md:px-3 flex text-left md:text-right w-full h-full min-h-full md:text-xl font-bold leading-10 md:leading-none text-white hover:opacity-75 antialiased transform transition-colors duration-1000 justify-center uppercase md:tracking-wide md:normal-case tracking-widest`}
+					className={`px-5 py-5 bg-black opacity-75 text-xl md:bg-transparent md:hover:bg-black md:hover:text-opacity-75 md:hover:animate-pulse mx-auto md:px-5 md:mx-auto flex text-left 
+					md:text-center w-full h-full min-h-full md:text-2xl font-bold leading-10 md:leading-loose text-white hover:opacity-75 
+					antialiased transform transition-colors duration-1000 justify-center uppercase md:tracking-widest md:uppercase tracking-widest md:my-auto md:flex md:justify-start`}
 					aria-label={link.label}
 				>
-					{link.label}
+					&nbsp;{link.label}&nbsp;
 				</a>
 			</Link>
 		</li>
 	));
+
+	const threadingTheNeedle = (
+		<div
+			className={
+				'md:flex md:mx-auto md:my-auto md:h-full md:w-full flex-grow flex-wrap' +
+				(navOpen ? ' flex' : ' hidden')
+			}
+		>
+			{navOpen ? (
+				<div className='bg-transparent py-5 h-full block flex-row hover:bg-black flex-grow w-full text-xl text-center justify-center mx-auto my-auto uppercase text-white'>
+					<p>Andrew Ross</p>
+					<p>Freelance Developer, Lifelong Learner</p>
+				</div>
+			) : (
+				<div className='bg-transparent cursor-pointer flex flex-col flex-grow w-full text-4xl text-center justify-center mx-auto my-auto uppercase text-white '>
+					<p className='hover:bg-black hover:bg-opacity-10 mx-auto tracking-widest inline-flex px-auto py-2 min-w-full text-center justify-center antialiased transform transition-colors duration-1000'>
+						Andrew&nbsp;&nbsp;S&nbsp;&nbsp;Ross
+					</p>{' '}
+					<p className='hover:bg-black opacity-75 tracking-widest mx-auto inline-flex min-w-full text-center justify-center px-5 py-2 antialiased transform transition-colors duration-1000'>
+						Developer - Technophile - human
+					</p>
+				</div>
+			)}
+			<div
+				className={
+					'flex my-auto md:my-auto w-full h-full md:min-w-full  md:w-full md:min-h-full md:h-full items-center align-text-right justify-center md:mx-auto md:justify-center' +
+					`md:hover:${onHover}`
+				}
+			>
+				<ul className='flex flex-col mx-auto md:flex md:mx-auto md:justify-center md:relative md:flex-row flex-grow align-text-top md:text-2xl list-none md:my-auto my-auto md:h-full'>
+					{navlist}
+				</ul>
+			</div>
+		</div>
+	);
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
 	const heightOnOpen = navOpen ? ' h-whole' : ' h-whole';
-	const pulseOnOpen = navOpen ? ' animate-none' : ' transform duration-3000 absolute transition-all animate-pulse bg-opacity-10 bg-blac'
-
-	// const menuOpenNav = navOpen ? (
-	// 	<ul className='sm:hidden flex flex-row mx-auto my-auto sm:mr-0 sm:relative sm:flex-row transform sm:mx-auto  sm:text-2xl list-none sm:ml-auto h-full min-h-full'>
-	// 		<div className='flex flex-col h-full min-h-full items-baseline text-left justify-center mx-auto'>
-	// 			{navlist}
-	// 		</div>
-	// 	</ul>
-	// ) : null;
+	const pulseOnOpen = navOpen ? ' animate-none' : ' animate-pulse';
 
 	const nav = (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} container overflow-y-hidden animate-pulse md:animate-none  overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} transform duration-3000 absolute transition-all animate-pulse bg-opacity-10 bg-blackk flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} transform duration-2000 absolute transition-all bg-opacity-10 ${!pulseOnOpen} bg-lighterBlack flex flex-row w-full bg-contain antialiased`}
 					style={{
 						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
 						backgroundRepeat: 'no-repeat',
@@ -71,15 +107,15 @@ const Header = ({ props }: HeaderProps) => {
 					}}
 				>
 					<Container>
-						<div className='container flex flex-wrap px-4 justify-between mx-auto pt-6 align-bottom'>
-							<div className='flex w-full relative md:flex-row justify-between md:w-auto md:static md:justify-start md:block'>
-								<Link href='/'>
+						<div className='container block flex-grow px-4 justify-center w-full min-w-full items-center mx-auto py-6 md:my-auto md:block md:flex-grow md:mx-auto md:min-w-full md:w-full md:justify-center'>
+							<div className='flex w-full relative md:min-w-full md:mx-auto md:my-auto md:align-middle md:float-left justify-between md:w-full md:justify-center md:flex md:flex-row md:flex-grow'>
+								{/* <Link href='/'>
 									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
 										{<VercelIcon />}
 									</a>
-								</Link>
+								</Link> */}
 								<button
-									className='text-white block cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
+									className='text-white flex flex-col cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
 									type='button'
 									onClick={() => setNavOpen(!navOpen)}
 									name='open-nav-button'
@@ -92,7 +128,7 @@ const Header = ({ props }: HeaderProps) => {
 											<svg
 												fill='none'
 												viewBox='0 0 24 24'
-												className='h-8 w-8 transition transform rotate-180 duration-1000 animate-pulse'
+												className='h-8 w-8 transition transform rotate-180 duration-1000'
 											>
 												<path
 													d='M6 18L18 6M6 6L18 18'
@@ -125,32 +161,7 @@ const Header = ({ props }: HeaderProps) => {
 									)}
 								</button>
 							</div>
-							<div
-								className={
-									'md:flex flex-grow flex-wrap float-right' +
-									(navOpen ? ' flex' : ' hidden')
-								}
-							>
-								<div className='flex my-auto md:my-0 md:float-right w-full h-full md:w-full md:h-full items-center float-right align-text-right justify-center md:mx-auto'>
-									<ul className='flex flex-col mx-auto md:mr-0 md:relative md:flex-row align-text-top md:text-2xl list-none md:ml-auto my-auto float-right md:h-full'>
-										{navlist}
-									</ul>
-								</div>
-								{navOpen ? <div className=''></div> : null}
-								{/* {navOpen ? (
-									<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
-										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform  sm:text-2xl list-none sm:ml-auto h-full min-h-full text-left'>
-											<div className='flex flex-col h-full min-h-full items-baseline text-left justify-center mx-auto'>
-												{navlist} 
-											</div>
-										</ul>
-									</div>
-								) : (
-									<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row align-text-top sm:text-2xl list-none sm:ml-auto'>
-										{navlist}
-									</ul>
-								)} */}
-							</div>
+							<div>{threadingTheNeedle}</div>
 						</div>
 					</Container>
 				</div>
@@ -165,7 +176,7 @@ const Header = ({ props }: HeaderProps) => {
 	);
 	return (
 		<Fragment>
-			<div className='bg-black transform  transition-all container w-full min-w-full'>
+			<div className='bg-black transform transition-all duration-1000 container w-full min-w-full'>
 				{' '}
 				{nav}
 				{subnav}
