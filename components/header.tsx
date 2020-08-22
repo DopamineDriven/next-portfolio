@@ -42,9 +42,9 @@ const Header = ({ props }: HeaderProps) => {
 		<li className='nav-item' key={`${link.href}-${link.label}`}>
 			<Link href={link.href}>
 				<a
-					className={`px-5 py-5 bg-black opacity-75 text-xl md:bg-transparent md:hover:bg-black md:hover:text-opacity-75 md:hover:animate-pulse mx-auto md:px-5 md:mx-auto flex text-left 
-					md:text-center w-full h-full min-h-full md:text-2xl font-bold leading-10 md:leading-loose text-white hover:opacity-75 
-					antialiased transform transition-colors duration-1000 justify-center uppercase md:tracking-widest md:uppercase tracking-widest md:my-auto md:flex md:justify-start`}
+					className={`px-5 bg-black opacity-100 text-lg md:bg-black md:hover:bg-black md:opacity-75 md:hover:animate-pulse mx-auto md:px-5 md:mx-auto flex text-left 
+					md:text-center w-full h-full min-h-full md:text-2xl font-bold leading-loose md:leading-loose text-white hover:opacity-75 
+					antialiased transform transition-all duration-1000 justify-center uppercase md:tracking-widest md:uppercase tracking-widest md:my-auto md:flex md:justify-start animate-pulse`}
 					aria-label={link.label}
 				>
 					&nbsp;{link.label}&nbsp;
@@ -61,16 +61,20 @@ const Header = ({ props }: HeaderProps) => {
 			}
 		>
 			{navOpen ? (
-				<div className='bg-transparent py-5 h-full block flex-row hover:bg-black flex-grow w-full text-xl text-center justify-center mx-auto my-auto uppercase text-white'>
-					<p>Andrew Ross</p>
-					<p>Freelance Developer, Lifelong Learner</p>
+				<div className={`bg-transparent leading-none h-full block flex-row hover:bg-black flex-grow w-full text-xl text-center justify-center mx-auto my-auto uppercase text-white ${onHover}`}>
+					<p className='hover:bg-black opacity-75 tracking-widest mx-auto inline-flex min-w-full text-lg md:text-3xl text-center justify-center px-5 antialiased transform transition-colors duration-1000'>
+						Andrew&nbsp;&nbsp;Ross
+					</p>
+					<p className='my-1'>Developer</p>
+					<p className='my-1'> Human</p>
+					<p className='my-1'> Technophile</p>
 				</div>
 			) : (
-				<div className='bg-transparent cursor-pointer flex flex-col flex-grow w-full text-4xl text-center justify-center mx-auto my-auto uppercase text-white '>
-					<p className='hover:bg-black hover:bg-opacity-10 mx-auto tracking-widest inline-flex px-auto py-2 min-w-full text-center justify-center antialiased transform transition-colors duration-1000'>
+				<div className='bg-transparent cursor-pointer flex flex-col flex-grow w-full text-1xl md:text-3xl text-center justify-center mx-auto my-0 uppercase text-white '>
+					<p className='hover:bg-black hover:bg-opacity-10 mx-auto tracking-widest md:text-1x1 md:tracking-widest inline-flex px-auto min-w-full text-center justify-center antialiased transform transition-colors duration-1000'>
 						Andrew&nbsp;&nbsp;S&nbsp;&nbsp;Ross
 					</p>{' '}
-					<p className='hover:bg-black opacity-75 tracking-widest mx-auto inline-flex min-w-full text-center justify-center px-5 py-2 antialiased transform transition-colors duration-1000'>
+					<p className='hover:bg-black md:text-3xl opacity-75 tracking-widest mx-auto inline-flex min-w-full text-2xl text-center justify-center px-5 antialiased transform transition-colors duration-1000'>
 						Developer - Human - Technophile
 					</p>
 				</div>
@@ -88,13 +92,83 @@ const Header = ({ props }: HeaderProps) => {
 		</div>
 	);
 
-	const logo = (
-		<div className='flex flex-row mx-auto justify-center  w-full min-w-full '>
+	const paddingConditional = navOpen ? ' py-1' : ' py-10 md:py-0';
+
+	const logoT = (
+		<div className='flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto md:py-4 py-0'>
 			<Link href='/'>
-				<a className='inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
-					{<NewSvgLogo />}
+				<a className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded md:py-0 ${paddingConditional} mt-1`}>
+					{<NewSvgLogo fillColor='#000000' />}
 				</a>
 			</Link>
+		</div>
+	);
+
+	const logoB = (
+		<div
+			className={`flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto trasition-all duration-2000 py-0 md:mt-10 lg:mt-10 xl:mt-10`}
+		>
+			<Link href='/'>
+				<a className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 opacity-75 text-xl rounded md:py-0 ${paddingConditional} transform md:rotate-0 rotate-180`}>
+					{<NewSvgLogo fillColor2='#000000' fillColor3='#000000' fillColor='#000000' fillColor4='#ffffff' />}
+				</a>
+			</Link>
+		</div>
+	);
+
+	const responsiveNav = (
+		<div className='flex w-full relative md:min-w-full md:mx-auto md:my-auto md:align-middle md:float-left justify-between md:w-full md:justify-center md:flex md:flex-row md:flex-grow'>
+			{/* <Link href='/'>
+			<a className='inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
+				{<NewSvgLogo fillColor='#ffffff' />}
+			</a>
+		</Link> */}
+			<button
+				className='text-white flex flex-col cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
+				type='button'
+				onClick={() => setNavOpen(!navOpen)}
+				name='open-nav-button'
+			>
+				{navOpen ? (
+					<a
+						aria-label='open-nav'
+						className='transition duration-1000 hover:opacity-75 w-full'
+					>
+						<svg
+							fill='none'
+							viewBox='0 0 24 24'
+							className='h-8 w-8 transition transform rotate-180 duration-1000'
+						>
+							<path
+								d='M6 18L18 6M6 6L18 18'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								strokeWidth='3.5'
+								stroke='currentColor'
+							/>
+						</svg>
+					</a>
+				) : (
+					<a
+						aria-label='open-nav'
+						className='transition-colors delay-1000 hover:opacity-75'
+					>
+						<svg
+							fill='none'
+							viewBox='0 0 24 24'
+							className='h-8 w-8 transform rotate-855 transition duration-1000'
+						>
+							<path
+								d='M6 18L18 6M6 6L18 18'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								strokeWidth='2.5'
+								stroke='currentColor'
+							/>
+						</svg>
+					</a>
+				)}
+			</button>
 		</div>
 	);
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
@@ -117,15 +191,10 @@ const Header = ({ props }: HeaderProps) => {
 					}}
 				>
 					<Container>
-						<div className='container block flex-grow px-4 justify-center w-full min-w-full items-center mx-auto py-6 md:my-auto md:block md:flex-grow md:mx-auto md:min-w-full md:w-full md:justify-center'>
+						<div className='container block flex-grow px-4 justify-center w-full min-w-full items-center mx-auto md:my-auto md:block md:flex-grow md:mx-auto md:min-w-full md:w-full md:justify-center'>
 							<div className='flex w-full relative md:min-w-full md:mx-auto md:my-auto md:align-middle md:float-left justify-between md:w-full md:justify-center md:flex md:flex-row md:flex-grow'>
-								{/* <Link href='/'>
-									<a className='inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
-										{<NewSvgLogo fillColor='#ffffff' />}
-									</a>
-								</Link> */}
 								<button
-									className='text-white flex flex-col cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
+									className='text-white block mx-auto cursor-pointer pt-2 text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
 									type='button'
 									onClick={() => setNavOpen(!navOpen)}
 									name='open-nav-button'
@@ -172,7 +241,9 @@ const Header = ({ props }: HeaderProps) => {
 								</button>
 							</div>
 							<div>
-								{logo} {threadingTheNeedle} {logo}
+								<Fragment>
+									{logoT} {threadingTheNeedle} {logoB}
+								</Fragment>
 							</div>
 						</div>
 					</Container>

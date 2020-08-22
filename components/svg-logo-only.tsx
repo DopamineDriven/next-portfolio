@@ -5,6 +5,9 @@ export interface SvgIconPropsLogo {
 	strokeColor?: string;
 	strokeWidth?: string;
 	fillColor?: string;
+	fillColor2?: string;
+	fillColor3?: string;
+	fillColor4?: string;
 	width?: string;
 	height?: string;
 	rotateCenter?: number;
@@ -99,7 +102,7 @@ export const SvgComponent: SvgIconLogo = ({
 	);
 };
 
-export const NewSvgLogo: SvgIcon = ({
+export const NewSvgLogo: SvgIconLogo = ({
 	width = '101',
 	height = '75',
 	fillColor = 'none',
@@ -116,7 +119,7 @@ export const NewSvgLogo: SvgIcon = ({
 			viewBox='0 0 404 350'
 			fill={fillColor}
 			xmlns='http://www.w3.org/2000/svg'
-			className={`stroke-current ${strokeColor} antialiased`}
+			className={`stroke-current ${strokeColor} antialiased ${fillColor}`}
 			transform={`rotate(${rotateCenter}, 404, 350)`}
 		>
 			<path
