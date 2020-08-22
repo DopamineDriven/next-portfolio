@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import Link from 'next/link';
-import { NewSvgLogo } from "./svg-logo-only"
+import { NewSvgLogo } from './svg-logo-only';
 import Container from './container';
 import SocialMediaIcons from './social-media-icons-footer';
 
@@ -87,6 +87,16 @@ const Header = ({ props }: HeaderProps) => {
 			</div>
 		</div>
 	);
+
+	const logo = (
+		<div className='flex flex-row mx-auto justify-center  w-full min-w-full '>
+			<Link href='/'>
+				<a className='inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
+					{<NewSvgLogo />}
+				</a>
+			</Link>
+		</div>
+	);
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
 	const heightOnOpen = navOpen ? ' h-whole' : ' h-whole';
@@ -110,8 +120,8 @@ const Header = ({ props }: HeaderProps) => {
 						<div className='container block flex-grow px-4 justify-center w-full min-w-full items-center mx-auto py-6 md:my-auto md:block md:flex-grow md:mx-auto md:min-w-full md:w-full md:justify-center'>
 							<div className='flex w-full relative md:min-w-full md:mx-auto md:my-auto md:align-middle md:float-left justify-between md:w-full md:justify-center md:flex md:flex-row md:flex-grow'>
 								<Link href='/'>
-									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
-										{<NewSvgLogo />}
+									<a className='inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
+										{<NewSvgLogo fillColor='#ffffff' />}
 									</a>
 								</Link>
 								<button
@@ -161,7 +171,7 @@ const Header = ({ props }: HeaderProps) => {
 									)}
 								</button>
 							</div>
-							<div>{threadingTheNeedle}</div>
+									<div>{threadingTheNeedle} {logo}</div>
 						</div>
 					</Container>
 				</div>

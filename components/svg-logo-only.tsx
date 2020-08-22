@@ -100,12 +100,12 @@ export const SvgComponent: SvgIconLogo = ({
 };
 
 export const NewSvgLogo: SvgIcon = ({
-	width = '404',
-	height = '350',
+	width = '101',
+	height = '75',
 	fillColor = 'none',
-	fillColor2 = 'none',
-	fillColor3 = 'none',
-	fillColor4 = 'none',
+	fillColor2 = '#ffffff',
+	fillColor3 = '#ffffff',
+	fillColor4 = '#ffffff',
 	strokeColor = 'none',
 	rotateCenter = 0
 }) => {
