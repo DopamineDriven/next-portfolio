@@ -71,7 +71,7 @@ const Header = ({ props }: HeaderProps) => {
 						Andrew&nbsp;&nbsp;S&nbsp;&nbsp;Ross
 					</p>{' '}
 					<p className='hover:bg-black opacity-75 tracking-widest mx-auto inline-flex min-w-full text-center justify-center px-5 py-2 antialiased transform transition-colors duration-1000'>
-						Developer - Human - Technophile 
+						Developer - Human - Technophile
 					</p>
 				</div>
 			)}
@@ -119,11 +119,11 @@ const Header = ({ props }: HeaderProps) => {
 					<Container>
 						<div className='container block flex-grow px-4 justify-center w-full min-w-full items-center mx-auto py-6 md:my-auto md:block md:flex-grow md:mx-auto md:min-w-full md:w-full md:justify-center'>
 							<div className='flex w-full relative md:min-w-full md:mx-auto md:my-auto md:align-middle md:float-left justify-between md:w-full md:justify-center md:flex md:flex-row md:flex-grow'>
-								<Link href='/'>
+								{/* <Link href='/'>
 									<a className='inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
 										{<NewSvgLogo fillColor='#ffffff' />}
 									</a>
-								</Link>
+								</Link> */}
 								<button
 									className='text-white flex flex-col cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
 									type='button'
@@ -171,7 +171,9 @@ const Header = ({ props }: HeaderProps) => {
 									)}
 								</button>
 							</div>
-									<div>{threadingTheNeedle} {logo}</div>
+							<div>
+								{logo} {threadingTheNeedle} {logo}
+							</div>
 						</div>
 					</Container>
 				</div>
