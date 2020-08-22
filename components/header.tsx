@@ -1,8 +1,6 @@
-import { Fragment, useState, ReactNode } from 'react';
+import { Fragment, useState } from 'react';
 import Link from 'next/link';
 import { VercelIcon } from './svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Container from './container';
 import SocialMediaIcons from './social-media-icons-footer';
 
@@ -13,7 +11,6 @@ interface NavRef {
 
 type HeaderProps = {
 	props: string | number;
-	children?: ReactNode;
 };
 
 const links: NavRef[] = [
@@ -31,14 +28,14 @@ const links: NavRef[] = [
 	}
 ];
 
-const Header = ({ props, children }: HeaderProps) => {
+const Header = ({ props }: HeaderProps) => {
 	const [navOpen, setNavOpen] = useState(false);
 	const navText = navOpen ? '  duration-700' : ' duration-700';
 	const navlist = links.map(link => (
 		<li className='nav-item' key={`${link.href}-${link.label}`}>
 			<Link href={link.href}>
 				<a
-					className={`px-5 pb-2 mx-auto sm:px-3 flex text-left sm:text-right w-full h-full min-h-full sm:text-xl font-bold leading-relaxed sm:leading-none text-white hover:opacity-75 antialiased transform transition-colors duration-1000`}
+					className={`px-5 pb-2 mx-auto md:px-3 flex text-left md:text-right w-full h-full min-h-full md:text-xl font-bold leading-10 md:leading-none text-white hover:opacity-75 antialiased transform transition-colors duration-1000 justify-center uppercase md:tracking-wide md:normal-case tracking-widest`}
 					aria-label={link.label}
 				>
 					{link.label}
@@ -48,15 +45,23 @@ const Header = ({ props, children }: HeaderProps) => {
 	));
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
-	const heightOnOpen = navOpen ? ' h-nineTwentieths' : ' h-sevenTwentieths';
+	const heightOnOpen = navOpen ? ' h-whole' : ' h-whole';
+
+	// const menuOpenNav = navOpen ? (
+	// 	<ul className='sm:hidden flex flex-row mx-auto my-auto sm:mr-0 sm:relative sm:flex-row transform sm:mx-auto  sm:text-2xl list-none sm:ml-auto h-full min-h-full'>
+	// 		<div className='flex flex-col h-full min-h-full items-baseline text-left justify-center mx-auto'>
+	// 			{navlist}
+	// 		</div>
+	// 	</ul>
+	// ) : null;
 
 	const nav = (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-half ${heightOnOpen} container overflow-y-hidden  overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} container overflow-y-hidden  overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-whole lg:h-fourFifths md:h-threeFourths sm:h-half ${heightOnOpen} transform duration-1000 absolute transition-all flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} transform duration-1000 absolute transition-all flex flex-row w-full bg-contain antialiased`}
 					style={{
 						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
 						backgroundRepeat: 'no-repeat',
@@ -66,14 +71,14 @@ const Header = ({ props, children }: HeaderProps) => {
 				>
 					<Container>
 						<div className='container flex flex-wrap px-4 justify-between mx-auto pt-6 align-bottom'>
-							<div className='flex w-full relative sm:flex-row justify-between sm:w-auto sm:static sm:justify-start sm:block'>
+							<div className='flex w-full relative md:flex-row justify-between md:w-auto md:static md:justify-start md:block'>
 								<Link href='/'>
 									<a className='inline-block leading-relaxed mr-4 whitespace-no-wrap text-white hover:opacity-75 text-xl rounded'>
 										{<VercelIcon />}
 									</a>
 								</Link>
 								<button
-									className='text-white block cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent sm:hidden outline-none focus:outline-none'
+									className='text-white block cursor-pointer text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
 									type='button'
 									onClick={() => setNavOpen(!navOpen)}
 									name='open-nav-button'
@@ -81,18 +86,18 @@ const Header = ({ props, children }: HeaderProps) => {
 									{navOpen ? (
 										<a
 											aria-label='open-nav'
-											className='transition-colors duration-1000 hover:opacity-75'
+											className='transition duration-1000 hover:opacity-75 w-full'
 										>
 											<svg
 												fill='none'
 												viewBox='0 0 24 24'
-												className='h-6 w-6 transition transform rotate-180 duration-1000'
+												className='h-8 w-8 transition transform rotate-180 duration-1000 animate-pulse'
 											>
 												<path
 													d='M6 18L18 6M6 6L18 18'
 													strokeLinecap='round'
 													strokeLinejoin='round'
-													strokeWidth='2'
+													strokeWidth='3.5'
 													stroke='currentColor'
 												/>
 											</svg>
@@ -100,18 +105,18 @@ const Header = ({ props, children }: HeaderProps) => {
 									) : (
 										<a
 											aria-label='open-nav'
-											className='transition-colors duration-1000 hover:opacity-75 transform rotate-45'
+											className='transition-colors delay-1000 hover:opacity-75'
 										>
 											<svg
 												fill='none'
 												viewBox='0 0 24 24'
-												className='h-6 w-6 transform rotate-45 transition duration-1000'
+												className='h-8 w-8 transform rotate-855 transition duration-1000'
 											>
 												<path
 													d='M6 18L18 6M6 6L18 18'
 													strokeLinecap='round'
 													strokeLinejoin='round'
-													strokeWidth='2'
+													strokeWidth='2.5'
 													stroke='currentColor'
 												/>
 											</svg>
@@ -121,18 +126,20 @@ const Header = ({ props, children }: HeaderProps) => {
 							</div>
 							<div
 								className={
-									'sm:flex flex-grow items-center flex-wrap' +
+									'md:flex flex-grow flex-wrap float-right' +
 									(navOpen ? ' flex' : ' hidden')
 								}
 							>
-								<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row align-text-top sm:text-2xl list-none sm:ml-auto'>
-									{navlist}
-								</ul>
+								<div className="flex my-auto md:my-0 md:float-right w-full h-full items-center float-right align-text-right justify-center md:mx-auto">
+									<ul className='flex flex-col mx-auto md:mr-0 md:relative md:flex-row align-text-top md:text-2xl list-none md:ml-auto my-auto float-right'>
+										{navlist}
+									</ul>
+								</div>
 								{/* {navOpen ? (
 									<div className='container flex  items-center mx-auto min-h-full align-text-bottom justify-center'>
 										<ul className='flex flex-row mx-auto sm:mr-0 sm:relative sm:flex-row transform  sm:text-2xl list-none sm:ml-auto h-full min-h-full text-left'>
 											<div className='flex flex-col h-full min-h-full items-baseline text-left justify-center mx-auto'>
-												{navlist}
+												{navlist} 
 											</div>
 										</ul>
 									</div>
@@ -150,13 +157,13 @@ const Header = ({ props, children }: HeaderProps) => {
 	);
 
 	const subnav = (
-		<div className="text-lg">
+		<div className='text-xl transition delay-700 ease-in-out'>
 			<SocialMediaIcons />
-			</div>
+		</div>
 	);
 	return (
 		<Fragment>
-			<div className='bg-black transform duration-1000 transition-all container w-full min-w-full'>
+			<div className='bg-black transform  transition-all container w-full min-w-full'>
 				{' '}
 				{nav}
 				{subnav}

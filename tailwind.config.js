@@ -1,6 +1,19 @@
 module.exports = {
 	purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
 	theme: {
+		letterSpacing: {
+			tightest: '-.075em',
+			tighter: '-.05em',
+			tight: '-0.025em',
+			wide: '.025em',
+			wider: '.05em',
+			widest: '.15em'
+		},
+		rotate: {
+			'855': '855deg',
+			'180': '180deg',
+			'45': '45deg',
+		},
 		extend: {
 			keyframes: {
 				wiggle: {
@@ -94,4 +107,3 @@ module.exports = {
 		}
 	}
 };
-
