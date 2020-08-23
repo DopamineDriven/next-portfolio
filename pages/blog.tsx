@@ -1,18 +1,25 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
 import Header from '../components/header';
 import Layout from '../components/layout';
 import Container from '../components/container';
 import Intro from '../components/intro';
+import HeroBlog from '../components/hero-post-blog';
 import { CLIENT_NAME } from '../lib/constants';
 import { getAllBlogs } from '../lib/api';
+import BlogType from '../types/blog';
+import MoreBlogs from 'components/more-blogs';
 
-interface Props {
+interface BlogProps {
 	props: string | number;
 	preview?: boolean;
+	allBlogs: BlogType[];
 }
 
-const Blog = ({ preview, props }: Props) => {
+const Blog = ({ allBlogs, preview, props }: BlogProps) => {
+	const heroBlog = allBlogs[0];
+	const moreBlogs = allBlogs.slice(1);
 	return (
 		<>
 			<Header props={props} />
@@ -22,6 +29,17 @@ const Blog = ({ preview, props }: Props) => {
 				</Head>
 				<Container>
 					<Intro props={props} />
+					{heroBlog && (
+						<HeroBlog
+							title={heroBlog.title}
+							coverImage={heroBlog.coverImage}
+							date={heroBlog.date}
+							author={heroBlog.author}
+							slug={heroBlog.slug}
+							excerpt={heroBlog.excerpt}
+						/>
+					)}
+					{moreBlogs.length > 0 && <MoreBlogs blogs={moreBlogs} />}
 				</Container>
 			</Layout>
 		</>
@@ -29,6 +47,21 @@ const Blog = ({ preview, props }: Props) => {
 };
 
 export default Blog;
+
+export const getStaticBlogProps = async ({}: GetStaticProps) => {
+	const allBlogs = getAllBlogs([
+		'title',
+		'date',
+		'slug',
+		'author',
+		'coverImage',
+		'excerpt'
+	]);
+
+	return {
+		props: { allBlogs }
+	};
+};
 
 /*
 	<h2 className='text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8'>

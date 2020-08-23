@@ -65,7 +65,7 @@ interface BlogParams {
 	};
 }
 
-export async function getStaticProps({ params }: BlogParams) {
+export async function getStaticBlogProps({ params }: BlogParams) {
 	const blog = getBlogBySlug(params.slug, [
 		'title',
 		'date',
@@ -88,7 +88,7 @@ export async function getStaticProps({ params }: BlogParams) {
 	};
 }
 
-export async function getStaticPaths() {
+export async function getStaticBlogPaths() {
 	const blogs = getAllBlogs(['slug']);
 
 	return {
