@@ -25,7 +25,7 @@ const Index = ({ allPosts, props }: Props) => {
 			<Layout>
 				<Sidebar />
 				<Head>
-					<title>Next.js Blog Example with {CMS_NAME}</title>
+					<title>A Nextjs Portfolio via {CMS_NAME}</title>
 				</Head>
 				<Container>
 					<Intro props={props} />
