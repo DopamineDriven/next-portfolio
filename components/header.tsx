@@ -72,7 +72,7 @@ const Header = ({ props }: HeaderProps) => {
 			) : (
 				<div className='bg-transparent cursor-pointer flex flex-col flex-grow w-full text-1xl md:text-3xl text-center justify-center mx-auto my-0 uppercase text-white '>
 					<p className='hover:bg-black hover:bg-opacity-10 mx-auto tracking-widest md:text-1x1 md:tracking-widest inline-flex px-auto min-w-full text-center justify-center antialiased transform transition-colors duration-1000'>
-						Andrew&nbsp;&nbsp;S&nbsp;&nbsp;Ross
+						Andrew&nbsp;&nbsp;Ross
 					</p>{' '}
 					<p className='hover:bg-black md:text-3xl opacity-75 tracking-widest mx-auto inline-flex min-w-full text-2xl text-center justify-center px-5 antialiased transform transition-colors duration-1000'>
 						Developer - Human - Technophile
@@ -95,7 +95,7 @@ const Header = ({ props }: HeaderProps) => {
 	const paddingConditional = navOpen ? ' py-1' : ' py-10 md:py-0';
 
 	const logoT = (
-		<div className='flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto md:py-4 py-0'>
+		<div className='flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto md:py-4 py-0 mt-2 md:mt-10 lg:mt-18 xl:mt-20'>
 			<Link href='/'>
 				<a className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded md:py-0 ${paddingConditional} mt-1`}>
 					{<NewSvgLogo fillColor='#000000' />}
@@ -106,7 +106,7 @@ const Header = ({ props }: HeaderProps) => {
 
 	const logoB = (
 		<div
-			className={`flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto trasition-all duration-2000 py-0 md:mt-10 lg:mt-10 xl:mt-10`}
+			className={`flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto trasition-all duration-2000 py-0 md:mt-10 lg:mt-10 xl:mt-24`}
 		>
 			<Link href='/'>
 				<a className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 opacity-75 text-xl rounded md:py-0 ${paddingConditional} transform md:rotate-0 rotate-180`}>
@@ -240,7 +240,7 @@ const Header = ({ props }: HeaderProps) => {
 									)}
 								</button>
 							</div>
-							<div>
+							<div className='overflow-y-hidden'>
 								<Fragment>
 									{logoT} {threadingTheNeedle} {logoB}
 								</Fragment>
