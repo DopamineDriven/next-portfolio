@@ -48,7 +48,7 @@ const Blog = ({ allBlogs, preview, props }: BlogProps) => {
 
 export default Blog;
 
-export const getStaticBlogProps = async ({}: GetStaticProps) => {
+export const getStaticProps = async ({}: GetStaticProps) => {
 	const allBlogs = getAllBlogs([
 		'title',
 		'date',

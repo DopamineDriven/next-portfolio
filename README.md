@@ -1,6 +1,7 @@
 # next-jamstack-portfolio
 
 ## SCSS + Tailwind 
+- https://nextjs.org/blog/next-9-3#built-in-sass-css-module-support-for-component-level-styles
 - https://codeburst.io/next-js-boilerplate-with-tailwindcss-and-sass-ecc1df90f501
 
 ## Add several components to bitsrc.io
