@@ -7,7 +7,7 @@ import Container from '../components/container';
 import Intro from '../components/intro';
 import HeroBlog from '../components/hero-post-blog';
 import { CLIENT_NAME } from '../lib/constants';
-import { getAllBlogs } from '../lib/api';
+import { getAllBlogs } from '../lib/blog-api';
 import BlogType from '../types/blog';
 import MoreBlogs from 'components/more-blogs';
 
