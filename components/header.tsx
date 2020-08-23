@@ -240,7 +240,7 @@ const Header = ({ props }: HeaderProps) => {
 									)}
 								</button>
 							</div>
-							<div>
+							<div className='overflow-y-hidden'>
 								<Fragment>
 									{logoT} {threadingTheNeedle} {logoB}
 								</Fragment>
