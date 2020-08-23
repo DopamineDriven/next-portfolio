@@ -27,26 +27,63 @@ const Blogs = ({ blog, moreBlogs, preview, props }: BlogInterface) => {
 	}
 	return (
 		<>
-      <Header props={props} />
-      
-      <Layout preview={preview}>
-        <Container>
-          {router.isFallback ? (
-            <BlogPostTitle>Loading...</BlogPostTitle>
-          ) : (
-              <article className="mb-16">
-                <Head>
-                  <title>
-                    {blog.title} | Next.js Portfolio with {CMS_NAME}
-                  </title>
-                </Head>
-              </article>
-          )}
-        </Container>
-        <Sidebar />
+			<Header props={props} />
+
+			<Layout preview={preview}>
+				<Container>
+					{router.isFallback ? (
+						<BlogPostTitle>Loading...</BlogPostTitle>
+					) : (
+						<article className='mb-16'>
+							<Head>
+								<title>
+									{blog.title} | Next.js Portfolio with {CMS_NAME}
+								</title>
+								<meta property='og:image' content={blog.ogImage.url} />
+							</Head>
+							<BlogPostHeader
+								title={blog.title}
+								coverImage={blog.coverImage}
+								date={blog.date}
+								author={blog.author}
+							/>
+							<BlogPostBody content={blog.content} />
+						</article>
+					)}
+				</Container>
+				<Sidebar />
 			</Layout>
 		</>
 	);
 };
 
 export default Blogs;
+
+interface BlogParams {
+	params: {
+		slug: string;
+	};
+}
+
+export async function getStaticProps({ params }: BlogParams) {
+	const blog = getBlogBySlug(params.slug, [
+		'title',
+		'date',
+		'slug',
+		'author',
+		'content',
+		'ogImage',
+		'coverImage'
+	]);
+
+	const blogContent = await markdownToHtml(blog.content || '');
+
+	return {
+		props: {
+			blog: {
+				...blog,
+				blogContent
+			}
+		}
+	};
+}
