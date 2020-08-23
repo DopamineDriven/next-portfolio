@@ -87,3 +87,18 @@ export async function getStaticProps({ params }: BlogParams) {
 		}
 	};
 }
+
+export async function getStaticPaths() {
+	const blogs = getAllBlogs(['slug']);
+
+	return {
+		paths: blogs.map(blogs => {
+			return {
+				params: {
+					slug: blogs.slug
+				}
+			};
+		}),
+		fallback: false
+	};
+}
