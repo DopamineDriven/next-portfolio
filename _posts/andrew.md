@@ -6,7 +6,6 @@ articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR
 date: "2020-07-19T08:35:07.322Z"
 author:
   name: Andrew Ross
-  role: 'CTO'
   avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
   github: 'https://github.com/DopamineDriven'
   twitter: 'https://twitter.com/Dopamine_Driven'
