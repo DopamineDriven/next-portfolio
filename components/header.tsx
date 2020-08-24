@@ -61,7 +61,9 @@ const Header = ({ props }: HeaderProps) => {
 			}
 		>
 			{navOpen ? (
-				<div className={`bg-transparent leading-none h-full block flex-row hover:bg-black flex-grow w-full text-xl text-center justify-center mx-auto my-auto uppercase text-white ${onHover}`}>
+				<div
+					className={`bg-transparent leading-none h-full block flex-row hover:bg-black flex-grow w-full text-xl text-center justify-center mx-auto my-auto uppercase text-white ${onHover}`}
+				>
 					<p className='hover:bg-black opacity-75 tracking-widest mx-auto inline-flex min-w-full text-lg md:text-3xl text-center justify-center px-5 antialiased transform transition-colors duration-1000'>
 						Andrew&nbsp;&nbsp;Ross
 					</p>
@@ -97,7 +99,9 @@ const Header = ({ props }: HeaderProps) => {
 	const logoT = (
 		<div className='flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto md:py-4 py-0 mt-2 md:mt-10 lg:mt-18 xl:mt-20'>
 			<Link href='/'>
-				<a className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded md:py-0 ${paddingConditional} mt-1`}>
+				<a
+					className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 text-xl rounded md:py-0 ${paddingConditional} mt-1`}
+				>
 					{<NewSvgLogo fillColor='#000000' />}
 				</a>
 			</Link>
@@ -109,8 +113,17 @@ const Header = ({ props }: HeaderProps) => {
 			className={`flex flex-row mx-auto justify-center w-full min-w-full md:my-auto my-auto trasition-all duration-2000 py-0 md:mt-10 lg:mt-10 xl:mt-24`}
 		>
 			<Link href='/'>
-				<a className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 opacity-75 text-xl rounded md:py-0 ${paddingConditional} transform md:rotate-0 rotate-180`}>
-					{<NewSvgLogo fillColor2='#000000' fillColor3='#000000' fillColor='#000000' fillColor4='#ffffff' />}
+				<a
+					className={`inline-block leading-relaxed whitespace-no-wrap text-white hover:opacity-75 opacity-75 text-xl rounded md:py-0 ${paddingConditional} transform md:rotate-0 rotate-0`}
+				>
+					{
+						<NewSvgLogo
+							fillColor2='#000000'
+							fillColor3='#000000'
+							fillColor='#000000'
+							fillColor4='#ffffff'
+						/>
+					}
 				</a>
 			</Link>
 		</div>
@@ -242,7 +255,7 @@ const Header = ({ props }: HeaderProps) => {
 							</div>
 							<div className='overflow-hidden'>
 								<Fragment>
-									{logoT} {threadingTheNeedle} {logoB}
+									{threadingTheNeedle} {logoB}
 								</Fragment>
 							</div>
 						</div>
