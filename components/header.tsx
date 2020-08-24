@@ -1,8 +1,8 @@
 import { Fragment, useState } from 'react';
 import Link from 'next/link';
-import { NewSvgLogo } from './svg-logo-only';
-import Container from './container';
-import SocialMediaIcons from './social-media-icons-footer';
+import { NewSvgLogo } from 'components/svg-logo-only';
+import Container from 'components/container';
+import SocialMediaIcons from 'components/social-media-icons-footer';
 
 interface NavRef {
 	href: string;
@@ -274,7 +274,7 @@ export default Header;
 /*
 import { useState } from 'react';
 import Link from 'next/link';
-import SvgLogo from './svg-logo-only';
+import SvgLogo from 'components/svg-logo-only';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 

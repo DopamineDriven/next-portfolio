@@ -1,5 +1,5 @@
-import SectionSeparator from './section-separator';
-import Date from './date-formatter';
+import SectionSeparator from 'components/section-separator';
+import Date from 'components/date-formatter';
 
 type AvatarProps = {
 	name: string;

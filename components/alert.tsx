@@ -1,7 +1,7 @@
-import Container from './container';
+import Container from 'components/container';
 import cn from 'classnames';
 // import { EXAMPLE_PATH } from 'lib/constants';
-import SocialMediaIcons from './social-media-icons-footer';
+import SocialMediaIcons from 'components/social-media-icons-footer';
 
 type Props = {
 	preview?: boolean;

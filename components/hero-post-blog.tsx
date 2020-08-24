@@ -1,6 +1,6 @@
-import Avatar from './avatar-blog';
-import DateFormater from './date-formatter';
-import CoverImage from './cover-image-blog';
+import Avatar from 'components/avatar-blog';
+import DateFormater from 'components/date-formatter';
+import CoverImage from 'components/cover-image-blog';
 import Link from 'next/link';
 import Author from 'types/author';
 

@@ -1,8 +1,8 @@
 ---
 title: 'Hacking Font Awesome'
 excerpt: 'Permanent custom SVG Icon support'
-coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1597440661/portfolio/next-jamstack_x8lmse.jpg'
-articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR_Assets/typescript-in-react_vv81ae.png'
+coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
+articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
 date: '2020-07-19T08:35:07.322Z'
 author:
  name: Andrew Ross

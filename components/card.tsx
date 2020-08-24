@@ -1,7 +1,7 @@
-import CoverImage, { CoverImageProps } from './cover-image-card';
-import Avatar from './card-tech-specs';
+import CoverImage, { CoverImageProps } from 'components/cover-image-card';
+import Avatar from 'components/card-tech-specs';
 import Link from 'next/link';
-import CardIcons from './card-icons';
+import CardIcons from 'components/card-icons';
 import Author from 'types/author';
 
 type CardProps = {
