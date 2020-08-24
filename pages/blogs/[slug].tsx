@@ -1,17 +1,17 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import ErrorPage from 'next/error';
-import { getBlogBySlug, getAllBlogs } from '../../lib/blog-api';
-import { CMS_NAME } from '../../lib/constants';
-import markdownToHtml from '../../lib/markdownToHtml';
-import Container from '../../components/container';
-import BlogPostBody from '../../components/post-body-blog';
-import BlogPostHeader from '../../components/post-header-blog';
-import Header from '../../components/header';
-import BlogPostTitle from '../../components/post-title-blog';
-import Layout from '../../components/layout';
-import Blog from '../../types/blog';
-import Sidebar from '../../components/landing-sidebar';
+import { Fragment } from 'react';
+import { getBlogBySlug, getAllBlogs } from 'lib/blog-api';
+import { CMS_NAME } from 'lib/constants';
+import markdownToHtml from 'lib/markdownToHtml';
+import Container from 'components/container';
+import BlogPostBody from 'components/post-body-blog';
+import BlogPostHeader from 'components/post-header-blog';
+import Header from 'components/header';
+import BlogPostTitle from 'components/post-title-blog';
+import Layout from 'components/layout';
+import Blog from 'types/blog';
 
 interface BlogInterface {
 	blog: Blog;
@@ -26,10 +26,9 @@ const Blogs = ({ blog, moreBlogs, preview, props }: BlogInterface) => {
 		return <ErrorPage statusCode={404} />;
 	}
 	return (
-		<>
+		<Fragment>
 			<Header props={props} />
-      <Layout preview={preview}>
-        
+			<Layout preview={preview}>
 				<Container>
 					{router.isFallback ? (
 						<BlogPostTitle>Loading...</BlogPostTitle>
@@ -52,7 +51,7 @@ const Blogs = ({ blog, moreBlogs, preview, props }: BlogInterface) => {
 					)}
 				</Container>
 			</Layout>
-		</>
+		</Fragment>
 	);
 };
 
