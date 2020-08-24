@@ -5,6 +5,9 @@ declare module 'remark-html' {
 
 declare module 'fs';
 
+declare module 'to-vfile';
+declare module 'remark-images';
+
 import {
 	IconDefinition,
 	IconPrefix,
