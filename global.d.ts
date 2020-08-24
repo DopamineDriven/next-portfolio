@@ -3,6 +3,11 @@ declare module 'remark-html' {
 	export default html;
 }
 
+declare module 'fs';
+
+declare module 'to-vfile';
+declare module 'remark-images';
+
 import {
 	IconDefinition,
 	IconPrefix,

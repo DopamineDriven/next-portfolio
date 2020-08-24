@@ -15,14 +15,15 @@ import Sidebar from '../components/landing-sidebar';
 type Props = {
 	allPosts: Post[];
 	props: string | number;
+	preview?: boolean;
 };
 
-const Index = ({ allPosts, props }: Props) => {
+const Index = ({ allPosts, props, preview }: Props) => {
 	const morePosts = allPosts.slice(0);
 	return (
 		<>
 			<Header props={props} />
-			<Layout>
+			<Layout preview={preview}>
 				<Sidebar />
 				<Head>
 					<title>A Nextjs Portfolio via {CMS_NAME}</title>
