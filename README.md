@@ -3,7 +3,12 @@
 ## Typography themes for utils
 
 - https://kyleamathews.github.io/typography.js/
-- https://tailwindcss.com/docs/typography-plugin
+- - https://tailwindcss.com/docs/typography-plugin
+- Jose Felix 
+	- https://dev.to/joserfelix/using-react-spring-to-animate-svg-icons-dark-mode-toggle-2c86
+	- https://dev.to/joserfelix/kick-start-your-newsletter-mailchimp-custom-form-with-react-og5
+	- https://dev.to/joserfelix/dynamic-theme-switching-in-ant-design-how-to-change-between-light-and-dark-themes-5b8p
+	- https://dev.to/joserfelix/how-to-make-text-match-any-background-color-1n0f
 
 ```git
 yarn add typography-theme-sutro typeface-merriweather typeface-open-sans
