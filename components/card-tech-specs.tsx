@@ -1,7 +1,7 @@
-import Date from './date-formatter';
+import Date from 'components/date-formatter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faVercelIcon } from '../lib/fas-custom-integration';
+import { faVercelIcon } from 'lib/fas-custom-integration';
 
 type CardTechProps = {
 	name: string;

@@ -31,7 +31,7 @@ const links: SortRef[] = [
 // 	getAllPostsForHomeDateDesc,
 // 	getAllPostsForHomeAlphabetical,
 // 	getAllPostsForHomeReverseAlphabetical
-// } from '../lib/api';
+// } from 'lib/api';
 
 // type Sorting = {
 // 	sort: any;

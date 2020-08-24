@@ -2,7 +2,7 @@ import Avatar from './avatar-blog';
 import DateFormater from './date-formatter';
 import CoverImage from './cover-image-blog';
 import Link from 'next/link';
-import Author from '../types/author';
+import Author from 'types/author';
 
 type Props = {
 	title: string;

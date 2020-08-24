@@ -7,7 +7,7 @@ import {
 	faNextIcon,
 	faVercelIcon,
 	faTypeScriptIcon
-} from '../lib/fas-custom-integration';
+} from 'lib/fas-custom-integration';
 interface MappingProps {
 	href: string;
 	name: string;
