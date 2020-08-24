@@ -33,13 +33,16 @@ const HeroPost = ({
 							<a className='hover:underline'>{title}</a>
 						</Link>
 					</h3>
-					<div className='mb-4 md:mb-0 text-lg'>
+					<div className='mb-4 md:mb-0 md:pt-22 text-lg font-semibold ml-1'>
 						<DateFormater dateString={date} />
 					</div>
 				</div>
 				<div>
 					<p className='text-lg leading-relaxed mb-4'>{excerpt}</p>
-					<Avatar name={author.name} picture={author.avatar} />
+					<div className='font-semibold'>
+						{' '}
+						<Avatar name={author.name} picture={author.avatar} />
+					</div>
 				</div>
 			</div>
 		</section>

@@ -4,11 +4,7 @@
 
 - https://kyleamathews.github.io/typography.js/
 - - https://tailwindcss.com/docs/typography-plugin
-- Jose Felix 
-	- https://dev.to/joserfelix/using-react-spring-to-animate-svg-icons-dark-mode-toggle-2c86
-	- https://dev.to/joserfelix/kick-start-your-newsletter-mailchimp-custom-form-with-react-og5
-	- https://dev.to/joserfelix/dynamic-theme-switching-in-ant-design-how-to-change-between-light-and-dark-themes-5b8p
-	- https://dev.to/joserfelix/how-to-make-text-match-any-background-color-1n0f
+- Jose Felix - https://dev.to/joserfelix/using-react-spring-to-animate-svg-icons-dark-mode-toggle-2c86 - https://dev.to/joserfelix/kick-start-your-newsletter-mailchimp-custom-form-with-react-og5 - https://dev.to/joserfelix/dynamic-theme-switching-in-ant-design-how-to-change-between-light-and-dark-themes-5b8p - https://dev.to/joserfelix/how-to-make-text-match-any-background-color-1n0f
 
 ```git
 yarn add typography-theme-sutro typeface-merriweather typeface-open-sans
@@ -239,18 +235,34 @@ export type IconName = 'graphql-icon' | 'heroku-icon' | 'next-icon' | 'vercel-ic
 
 ```html
 <svg
-	width="478"
-	height="340"
-	viewBox="0 0 478 340"
+	width="112"
+	height="51"
+	viewBox="0 0 112 51"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<path
-		d="M55.3692 170L1.39502 112.412H37.3745L73.3539 150.804L109.333 112.412H145.313L37.3745 227.587H1.39502L55.3692 170ZM154.305 227.587H190.285V112.412H154.305L46.3768 227.587H82.3563L154.305 150.875V227.587ZM305.722 150.875V227.587H341.701V112.412H296.729L269.842 150.804L233.862 112.412H197.773V227.587H233.753V150.875L269.732 189.266L305.722 150.875ZM386.653 112.412H350.674V227.587H476.607L452.707 201.995H386.753L386.653 112.412Z"
-		fill="black"
-		stroke="black"
-		stroke-width="0.201333"
-	/>
+	<g clip-path="url(#clip0)">
+		<path
+			d="M55.8681 0.0673828C40.9701 0.0673828 31.6584 5.66368 27.9341 16.8559C33.5209 11.2597 40.0387 9.16108 47.4879 10.5602C51.7378 11.3583 54.7756 13.675 58.1382 16.2388C63.6159 20.416 69.9552 25.2502 83.8022 25.2502C98.7002 25.2502 108.012 19.6539 111.736 8.46167C106.149 14.058 99.6316 16.1565 92.1824 14.7574C87.9325 13.9593 84.8946 11.6426 81.5321 9.07878C76.0544 4.90164 69.7151 0.0673828 55.8681 0.0673828ZM27.9341 25.2502C13.036 25.2502 3.7244 30.8465 0 42.0388C5.58681 36.4425 12.1046 34.3439 19.5538 35.7431C23.8037 36.5412 26.8416 38.8578 30.2041 41.4217C35.6818 45.5988 42.0211 50.4331 55.8681 50.4331C70.7661 50.4331 80.0778 44.8368 83.8022 33.6445C78.2154 39.2408 71.6975 41.3394 64.2483 39.9402C59.9984 39.1421 56.9606 36.8255 53.598 34.2616C48.1203 30.0845 41.7811 25.2502 27.9341 25.2502Z"
+			fill="url(#paint0_linear)"
+		/>
+	</g>
+	<defs>
+		<linearGradient
+			id="paint0_linear"
+			x1="-3.10403"
+			y1="16.1844"
+			x2="77.8156"
+			y2="78.2893"
+			gradientUnits="userSpaceOnUse"
+		>
+			<stop stop-color="#2298BD" />
+			<stop offset="1" stop-color="#0ED7B5" />
+		</linearGradient>
+		<clipPath id="clip0">
+			<rect width="111.736" height="50.5" fill="white" />
+		</clipPath>
+	</defs>
 </svg>
 ```
 
