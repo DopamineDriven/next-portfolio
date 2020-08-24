@@ -1,4 +1,4 @@
-import styles from './markdown-styles.module.css';
+import styles from 'components/markdown-styles.module.css';
 
 type PostBodyProps = {
 	content: string;
