@@ -1,8 +1,18 @@
 import Head from 'next/head';
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants';
-import { Fragment } from 'react';
+import { CMS_NAME, HOME_OG_IMAGE_URL } from 'lib/constants';
+import { Fragment, FC } from 'react';
+// import getSiteMetaData from 'utils/helpers';
 
-const MetaData = () => {
+// interface SeoMeta {
+// 	title?: string;
+// 	description?: string;
+// }
+
+// export interface SeoMetaFunctional extends FC<SeoMeta>{}
+
+
+const MetaData =  () => {
+	// const siteMetaData = getSiteMetaData();
 	return (
 		<Fragment>
 			<Head>
@@ -27,7 +37,7 @@ const MetaData = () => {
 				<link rel='manifest' href='/fav/manifest.json' />
 				<link rel='mask-icon' href='/fav/safari-pinned-tab.svg' color='#000000' />
 				<link rel='shortcut icon' href='/fav/favicon.ico' />
-				<link rel='canonical' href='https://next-jamstack-portfolio.vercel.app/' />
+				<link rel='canonical' href='https://next-portfolio-asross.vercel.app/' />
 				<link
 					href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap'
 					rel='stylesheet'

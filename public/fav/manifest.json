@@ -1,7 +1,7 @@
 {
-	"name": "JAMstack Portfolio",
-	"short_name": "JAMstack",
-	"start_url": "https://next-jamstack-portfolio.vercel.app/",
+	"name": "Next Portfolio",
+	"short_name": "Portfolio",
+	"start_url": "https://next-portfolio-asross.app/",
 	"icons": [
 		{
 			"src": "/fav/android-chrome-192x192.png",
