@@ -1,5 +1,9 @@
 # next-jamstack-portfolio
 
+## lquip security vulnerability
+- removed lquip-loader package as it flagged a high security vulnerability alert (regex)
+- https://github.com/cyrilwanner/next-optimized-images#optimization-packages
+
 ## Markdown
 - https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6**
 - https://dev.to/jfelx/how-to-make-a-static-blog-with-next-js-2bd6
