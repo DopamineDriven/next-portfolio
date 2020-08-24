@@ -33,7 +33,7 @@ const HeroPost = ({
 							<a className='hover:underline'>{title}</a>
 						</Link>
 					</h3>
-					<div className='mb-4 md:mb-0 text-lg font-semibold ml-1'>
+					<div className='mb-4 md:mb-0 md:pt-22 text-lg font-semibold ml-1'>
 						<DateFormater dateString={date} />
 					</div>
 				</div>

@@ -19,7 +19,7 @@ const PostHeaderBlog = ({ title, coverImage, date, author }: Props) => {
 			<div className='hidden md:hidden'>
 				<Avatar name={author.name} picture={author.avatar} />
 			</div>{' '}
-			<div className='mb-2 text-2xl font-semibold'>
+			<div className='mb-2 text-2xl font-semibold inline-flex mx-auto text-center justify-center w-full'>
 				<DateFormater dateString={date} />
 			</div>
 			<div className='mb-8 md:mb-8 -mx-5 sm:mx-0 md:flex md:mx-auto justify-center md:text-center'>
@@ -30,9 +30,9 @@ const PostHeaderBlog = ({ title, coverImage, date, author }: Props) => {
 				<div className='hidden md:hidden'>
 					<Avatar name={author.name} picture={author.avatar} />
 				</div>
-				<div className='mb-2 text-2xl font-semibold'>
+				{/* <div className='mb-2 text-2xl font-semibold'>
 					<DateFormater dateString={date} />
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

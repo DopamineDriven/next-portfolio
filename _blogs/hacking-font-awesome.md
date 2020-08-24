@@ -1,7 +1,7 @@
 ---
 title: 'Hacking Font Awesome'
 excerpt: 'Hacking the Font Awesome Library with React, Nextjs, and TypeScript to support custom SVG incorporation locally and in production.'
-coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
+coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/9c7qdhn25b07am8dl66n.png'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
 date: '2020-08-19T08:35:07.322Z'
 author:
@@ -17,15 +17,13 @@ ogImage:
  url: '/assets/next-jamstack.jpg'
 ---
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png)
-
-## [Overview](overview)
+# Overviw
 
 The aim of this article is to outline how to directly incorporate custom Fontawesome icons into your Next.js TypeScript project. For a solid introduction on setting up Fontawesome 5 with Next.js and TypeScript please see [Vuong Dang's recent post](https://dev.to/vuongddang/how-to-use-fontawesome-in-next-js-5bl5).
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/9c7qdhn25b07am8dl66n.png)
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png)
 
-## [1. Setting up for success](setting-up-for-success)
+## 1. Setting up for success
 
 Create a lib directory in the root of your Next.js project. Then, create a fas-custom-integration.ts file where the magic will unfold. There is no tsx returned in the actual customization file itself which is why the library folder serves as its perfect home.
 
@@ -33,7 +31,7 @@ Create a lib directory in the root of your Next.js project. Then, create a fas-c
 mkdir lib && cd lib && touch fas-custom-integration.ts && cd ..
 ```
 
-## [2. A quick look under the hood](under-the-hood)
+## 2. A quick look under the hood
 
 Head to the @fortawesome package in node_modules. Then, open `fontawesome-svg-core/index.d.ts` to inspect the contents of the declaration file:
 
@@ -77,7 +75,7 @@ export function layer(
 
 This is it, the librarians lair 📚. Examine the first two lines of this file. The very same Interfaces imported are exported immediately thereafter. What's important to note when viewing declaration files like this is where Interfaces of potential utility such as IconDefinition and IconLookup reside. So let's head on over to `fontawesome-common-types/index.d.ts` and view the contents of its declaration file.
 
-## [3. Structure dictates function](structure-dictates-function)
+## 3. Structure dictates function
 
 Interfaces serve to describe the "shape" that values have in TypeScript. Personally, I prefer to think of this shape as its structure. If you're familiar with biology you may recall that "structure dictates function" is known as the Central Dogma of Life. This thinking can be carried over to Interface usage in TypeScript; interface structure introduces strict type requirements which breathes life into the code we write. It's do or die. Right, back to the hacking. With the contents of `fontawesome-common-types/index.d.ts` before us, the key to executing custom icon integration becomes increasingly clear.
 
@@ -117,11 +115,11 @@ export type IconName =
 	| 'yin-yang';
 ```
 
-## 4. [Dissecting Interfaces of utility](interfaces-of-utility)
+## 4. Dissecting Interfaces of utility
 
 Since IconDefinition and IconLookup are of immediate utility for custom icon incorporation let's break each down each individually.
 
-### [4(a). IconLookup](icon-lookup)
+### 4(a). IconLookup
 
 This Interface describes two values, `prefix` and `iconName`. The prefix value is a string corresponding to "faX" as defined by the IconPrefix type above (where X=b, d, l, r, or s). The free version of Fontawesome supports "fab" and "fas" prefixes which denote brand and solid icon styles, respectively. Then there's `iconName` which is defined by the IconName type. This type describes an array of strings totaling out to 7,854 icon names in length.
 
@@ -147,7 +145,7 @@ export type IconName =
 	| 'yin-yang';
 ```
 
-### [4(b). IconDefinition](icon-definition)
+### 4(b). IconDefinition
 
 ```typescript
 export interface IconDefinition extends IconLookup {
@@ -187,7 +185,7 @@ The third value involved in defining an icon corresponds to ligatures<sub>3</sub
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/bsn68polig9f0c7w4tov.gif)
 
-## [5. Translating theory to practice](theory-to-practice)
+## 5. Translating theory to practice
 
 With a plan of attack in mind, let's get to it! Out of the node_modules and back to the `fas-custom-integration.ts` file in the lib directory we go. To prime the file for custom icon integration, import the library and the previously dissected Interfaces of utility:
 
@@ -295,7 +293,7 @@ library.add(faCustomVercelIcon);
 
 While it is best practice to define all custom icons in one file, the `CustomIconConstruct` interface that extends IconDefinition & IconLookup can now be imported throughout your project without having to go through the hastle of importing the two Interfaces of utility once more. So, how does this look in practice?
 
-## [6. Importing to a tsx file to run locally](run-custom-local)
+## 6. Importing to a tsx file to run locally
 
 To test your custom icon out, open a file that ultimately renders to a pages directory file and import the following:
 
@@ -325,7 +323,7 @@ If you aren't familiar with tailwindcss don't worry about the `className` inline
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/a0emifr1hjzkslxxwavc.png)
 
-## [7. Priming for production](#priming-production)
+## 7. Priming for production
 
 In order for custom icons to successfully deploy to a production environment, the following package(s) must be installed:
 
