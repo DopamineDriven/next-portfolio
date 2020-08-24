@@ -178,11 +178,11 @@ const Header = ({ props }: HeaderProps) => {
 
 	const nav = (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-threeFourths lg:h-fourFifths md:h-sevenEights sm:h-nineTenths ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-whole lg:h-whole md:h-whole sm:h-whole ${heightOnOpen} transform duration-2000 absolute transition-all bg-opacity-10 ${!pulseOnOpen} bg-lighterBlack flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-threeFourths lg:h-fourFifths md:h-sevenEights sm:h-nineTenths ${heightOnOpen} transform duration-2000 absolute transition-all bg-opacity-10 ${!pulseOnOpen} bg-lighterBlack flex flex-row w-full bg-contain antialiased`}
 					style={{
 						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
 						backgroundRepeat: 'no-repeat',

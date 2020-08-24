@@ -77,6 +77,7 @@ module.exports = {
 			height: {
 				whole: '100vh',
 				nineTenths: '90vh',
+				sevenEights: '87.5vh',
 				fourFifths: '80vh',
 				threeFourths: '75vh',
 				twoThirds: '66.67vh',
