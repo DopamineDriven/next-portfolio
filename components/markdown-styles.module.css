@@ -31,29 +31,29 @@
 	@apply my-6;
 }
 
-.content a {
+.markdown a {
 	@apply underline;
 }
 
-.content ul,
-.content ol {
+.markdown ul,
+.markdown ol {
 	@apply pl-4;
 }
 
-.content ul {
+.markdown ul {
 	@apply list-disc;
 }
 
-.content ol {
+.markdown ol {
 	@apply list-decimal;
 }
 
-.content ul > li > ul,
-.content ol > li > ol {
+.markdown ul > li > ul,
+.markdown ol > li > ol {
 	@apply my-0 ml-4;
 }
 
-.content ul > li > ul {
+.markdown ul > li > ul {
 	list-style: circle;
 }
 
@@ -69,30 +69,30 @@
 	@apply text-xl mt-6 mb-4 leading-snug;
 }
 
-.content pre {
+.markdown pre {
 	@apply whitespace-pre overflow-x-auto p-4 text-sm leading-tight border border-gray-400 bg-gray-100;
 }
 
-.content code {
+.markdown code {
 	@apply text-sm;
 }
 
-.content figcaption {
+.markdown figcaption {
 	@apply text-center text-sm;
 }
 
-.content blockquote {
+.markdown blockquote {
 	@apply border-l-4 border-gray-500 bg-gray-200 italic ml-0 py-4 px-6;
 }
 
-.content blockquote p {
+.markdown blockquote p {
 	@apply mt-0;
 }
 
-.content blockquote cite {
+.markdown blockquote cite {
 	@apply not-italic;
 }
 
-.content audio {
+.markdown audio {
 	@apply w-full;
 }

@@ -1,4 +1,4 @@
-import { SvgIcon } from './svg-icons';
+import { SvgIcon } from 'components/svg-icons';
 
 const CustomLogo: SvgIcon = ({
 	width = '200',

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import SvgIconConstituentValues from '../types/svg-icons';
+import SvgIconConstituentValues from 'types/svg-icons';
 // FC can be parameterized via Abstraction
 
 export interface SvgIcon extends FC<SvgIconConstituentValues> {}

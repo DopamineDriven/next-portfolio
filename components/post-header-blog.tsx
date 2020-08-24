@@ -1,8 +1,8 @@
-import Avatar from './avatar-blog';
-import DateFormater from './date-formatter';
-import CoverImage from './cover-image-blog';
-import PostTitle from './post-title';
-import Author from '../types/author';
+import Avatar from 'components/avatar-blog';
+import DateFormater from 'components/date-formatter';
+import CoverImage from 'components/cover-image-blog';
+import PostTitle from 'components/post-title';
+import Author from 'types/author';
 
 type Props = {
 	title: string;

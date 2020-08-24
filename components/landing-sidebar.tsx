@@ -1,4 +1,4 @@
-import { iconLinks } from '../components/social-media-icons-footer';
+import { iconLinks } from 'components/social-media-icons-footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const landingSidebar = () => {

@@ -19,13 +19,13 @@ ogImage:
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png)
 
-# [Overview](overview)
+## [Overview](overview)
 
 The aim of this article is to outline how to directly incorporate custom Fontawesome icons into your Next.js TypeScript project. For a solid introduction on setting up Fontawesome 5 with Next.js and TypeScript please see [Vuong Dang's recent post](https://dev.to/vuongddang/how-to-use-fontawesome-in-next-js-5bl5).
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/9c7qdhn25b07am8dl66n.png)
 
-# [1. Setting up for success](setting-up-for-success)
+## [1. Setting up for success](setting-up-for-success)
 
 Create a lib directory in the root of your Next.js project. Then, create a fas-custom-integration.ts file where the magic will unfold. There is no tsx returned in the actual customization file itself which is why the library folder serves as its perfect home.
 
@@ -33,7 +33,7 @@ Create a lib directory in the root of your Next.js project. Then, create a fas-c
 mkdir lib && cd lib && touch fas-custom-integration.ts && cd ..
 ```
 
-# [2. A quick look under the hood](under-the-hood)
+## [2. A quick look under the hood](under-the-hood)
 
 Head to the @fortawesome package in node_modules. Then, open `fontawesome-svg-core/index.d.ts` to inspect the contents of the declaration file:
 

@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/header';
-import Layout from '../components/layout';
-import Container from '../components/container';
+import Header from 'components/header';
+import Layout from 'components/layout';
+import Container from 'components/container';
 import { CLIENT_NAME } from '../lib/constants';
 
 interface Props {
@@ -21,9 +21,7 @@ const Contact = ({ preview, props }: Props) => {
 				<Container>
 					<h2 className='text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8'>
 						<Link href='/'>
-							<a className='hover:underline text-cimaRed px-8'>
-								Contact
-							</a>
+							<a className='hover:underline text-cimaRed px-8'>Contact</a>
 						</Link>
 					</h2>
 				</Container>

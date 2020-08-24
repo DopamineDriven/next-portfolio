@@ -1,9 +1,9 @@
-import Avatar from './post-avatar';
-import Date from './date-formatter';
-import CoverImage from './post-cover-image';
-import PostTitle from './post-title';
-import CardIcons from './card-icons';
-import Author from '../types/author';
+import Avatar from 'components/post-avatar';
+import Date from 'components/date-formatter';
+import CoverImage from 'components/post-cover-image';
+import PostTitle from 'components/post-title';
+import CardIcons from 'components/card-icons';
+import Author from 'types/author';
 
 type PostHeaderProps = {
 	title: string;
