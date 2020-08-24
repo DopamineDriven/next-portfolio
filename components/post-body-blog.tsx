@@ -7,7 +7,7 @@ type Props = {
 
 const PostBodyBlog = ({ content }: Props) => {
 	return (
-		<div className='max-w-2xl mx-auto content-center text-left items-center justify-center align-middle flex flex-grow-0 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
+		<div className='max-w-2xl  mx-auto content-center text-left items-center justify-center align-middle sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl'>
 			<ReactMarkdown
 				className={markdownStyles['markdown']}
 				escapeHtml={false}
