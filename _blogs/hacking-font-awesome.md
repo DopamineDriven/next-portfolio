@@ -319,7 +319,7 @@ The following snippet is from a project that's currently under construction usin
 </a>
 ```
 
-If you aren't familiar with tailwindcss don't worry about the `className` inline-styling above. That said, do note how the `faCustomVercelIcon` was received as props by the `<FontAwesomeIcon />` JSX.Element. Success!
+If you aren't familiar with tailwindcss don't worry about the `className` inline-styling above. That said, do note how the `faCustomVercelIcon` was received as props by the `<FontAwesomeIcon />` JSX.Element.
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/a0emifr1hjzkslxxwavc.png)
 
