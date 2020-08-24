@@ -118,8 +118,8 @@ const Header = ({ props }: HeaderProps) => {
 				>
 					{
 						<NewSvgLogo
-							fillColor2='#000000'
-							fillColor3='#000000'
+							fillColor2='#ffffff'
+							fillColor3='#ffffff'
 							fillColor='#000000'
 							fillColor4='#ffffff'
 						/>
