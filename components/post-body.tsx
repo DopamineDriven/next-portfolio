@@ -1,4 +1,5 @@
 import styles from 'components/markdown-styles.module.css';
+import ReactMarkdown from 'react-markdown/with-html';
 
 type PostBodyProps = {
 	content: string;
@@ -8,9 +9,10 @@ export default function PostBody({ content }: PostBodyProps) {
 	return (
 		<>
 			<div className='max-w-3xl mx-auto content-center text-left items-center justify-center align-middle'>
-				<div
+				<ReactMarkdown
 					className={styles['markdown']}
-					dangerouslySetInnerHTML={{ __html: content }}
+					escapeHtml={false}
+					source={content}
 				/>
 			</div>
 			<div className='mb-6 text-lg grid-cols-1'>
