@@ -3,6 +3,8 @@ declare module 'remark-html' {
 	export default html;
 }
 
+declare module '@tailwindcss/typography';
+
 declare module 'fs';
 
 declare module 'to-vfile';

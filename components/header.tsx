@@ -44,7 +44,7 @@ const Header = ({ props }: HeaderProps) => {
 				<a
 					className={`px-5 bg-black opacity-100 text-lg md:bg-black md:hover:bg-black md:opacity-75 md:hover:animate-pulse mx-auto md:px-5 md:mx-auto flex text-left 
 					md:text-center w-full h-full min-h-full md:text-2xl font-bold leading-loose md:leading-loose text-white hover:opacity-75 
-					antialiased transform transition-all duration-1000 justify-center uppercase md:tracking-widest md:uppercase tracking-widest md:my-auto md:flex md:justify-start animate-pulse`}
+					antialiased transform transition-all duration-1000 justify-center uppercase md:tracking-widest md:uppercase tracking-widest md:my-auto md:flex md:justify-start`}
 					aria-label={link.label}
 				>
 					&nbsp;{link.label}&nbsp;
