@@ -1,7 +1,7 @@
 # next-jamstack-portfolio
 
 ## Markdown
-
+- https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6**
 - https://dev.to/jfelx/how-to-make-a-static-blog-with-next-js-2bd6
 - https://github.com/vriad/devii
 - https://www.netlify.com/blog/2020/05/04/building-a-markdown-blog-with-next-9.4-and-netlify/
