@@ -3,6 +3,11 @@
 ## Typography themes for utils
 
 - https://kyleamathews.github.io/typography.js/
+- https://tailwindcss.com/docs/typography-plugin
+
+```git
+yarn add typography-theme-sutro typeface-merriweather typeface-open-sans
+```
 
 ## Mailchimp for contact page
 
