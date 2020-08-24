@@ -1,3 +1,17 @@
+// interface siteMetaData {
+//   title: string;
+//   author: {
+//     name: string;
+//     summary: string;
+//   }
+//   description: string;
+//   siteUrl: string;
+//   language: string;
+//   social: {
+//     twitter: string
+//   }
+// }
+
 export default {
     siteMetadata: {
       title: "next-portfolio",
