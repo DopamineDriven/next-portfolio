@@ -28,8 +28,8 @@ const Blogs = ({ blog, moreBlogs, preview, props }: BlogInterface) => {
 	return (
 		<>
 			<Header props={props} />
-
-			<Layout preview={preview}>
+      <Layout preview={preview}>
+        
 				<Container>
 					{router.isFallback ? (
 						<BlogPostTitle>Loading...</BlogPostTitle>
@@ -51,7 +51,6 @@ const Blogs = ({ blog, moreBlogs, preview, props }: BlogInterface) => {
 						</article>
 					)}
 				</Container>
-				<Sidebar />
 			</Layout>
 		</>
 	);

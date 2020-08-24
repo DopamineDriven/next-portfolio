@@ -10,6 +10,7 @@ import { CLIENT_NAME } from '../lib/constants';
 import { getAllBlogs } from '../lib/blog-api';
 import BlogType from '../types/blog';
 import MoreBlogs from 'components/more-blogs';
+import LandingSidebar from '../components/landing-sidebar';
 
 interface BlogProps {
 	props: string | number;
@@ -24,6 +25,7 @@ const Blog = ({ allBlogs, preview, props }: BlogProps) => {
 		<>
 			<Header props={props} />
 			<Layout preview={preview}>
+				<LandingSidebar />
 				<Head>
 					<title>{`${CLIENT_NAME}' about page`}</title>
 				</Head>
