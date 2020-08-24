@@ -115,7 +115,7 @@ export type IconName =
 	| 'yin-yang';
 ```
 
-## 4. Dissecting Interfaces of utility
+## 4. Interfaces of utility
 
 Since IconDefinition and IconLookup are of immediate utility for custom icon incorporation let's break each down each individually.
 

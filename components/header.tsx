@@ -57,14 +57,14 @@ const Header = ({ props }: HeaderProps) => {
 		<div
 			className={
 				'md:flex md:mx-auto md:my-auto md:h-full md:w-full flex-grow flex-wrap' +
-				(navOpen ? ' flex' : ' hidden')
+				(navOpen ? ' flex bg-black opacity-90' : ' hidden')
 			}
 		>
 			{navOpen ? (
 				<div
-					className={`bg-transparent leading-none h-full block flex-row hover:bg-black flex-grow w-full text-xl text-center justify-center mx-auto my-auto uppercase text-white ${onHover}`}
+					className={`bg-transparent pb-4 leading-none h-full block flex-row hover:bg-black flex-grow w-full text-xl text-center justify-center mx-auto my-auto uppercase text-white ${onHover}`}
 				>
-					<p className='hover:bg-black opacity-75 tracking-widest mx-auto inline-flex min-w-full text-lg md:text-3xl text-center justify-center px-5 antialiased transform transition-colors duration-1000'>
+					<p className='hover:bg-black opacity-90 tracking-widest mx-auto inline-flex min-w-full text-lg md:text-3xl mb-2 text-center justify-center px-5 antialiased transform transition-colors duration-1000'>
 						Andrew&nbsp;&nbsp;Ross
 					</p>
 					<p className='my-1'>Developer</p>
@@ -186,7 +186,7 @@ const Header = ({ props }: HeaderProps) => {
 	);
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
-	const heightOnOpen = navOpen ? ' h-whole' : ' h-whole';
+	const heightOnOpen = navOpen ? ' h-whole' : ' h-nineTenths';
 	const pulseOnOpen = navOpen ? ' animate-none' : ' animate-pulse';
 
 	const nav = (
@@ -204,8 +204,8 @@ const Header = ({ props }: HeaderProps) => {
 					}}
 				>
 					<Container>
-						<div className='container block flex-grow px-4 justify-center w-full min-w-full items-center mx-auto md:my-auto md:block md:flex-grow md:mx-auto md:min-w-full md:w-full md:justify-center'>
-							<div className='flex w-full relative md:min-w-full md:mx-auto md:my-auto md:align-middle md:float-left justify-between md:w-full md:justify-center md:flex md:flex-row md:flex-grow'>
+						<div className='container block min-h-full h-full flex-grow my-auto px-4 justify-center w-full min-w-full items-center mx-auto md:my-auto md:block md:flex-grow md:mx-auto md:min-w-full md:w-full md:justify-center'>
+							<div className='flex w-full relative md:min-w-full md:mx-auto md:my-auto md:align-middle md:float-left justify-between md:w-full md:justify-center md:flex md:flex-row md:flex-grow mt-32'>
 								<button
 									className='text-white block mx-auto cursor-pointer pt-2 text-xl leading-none transition-colors duration-1000 px-3 border border-solid border-transparent rounded bg-transparent md:hidden outline-none focus:outline-none'
 									type='button'
