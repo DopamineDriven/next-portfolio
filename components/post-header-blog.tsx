@@ -15,7 +15,8 @@ const PostHeaderBlog = ({ title, coverImage, date, author }: Props) => {
 	return (
 		<div className='mt-4'>
 			<PostTitle>{title}</PostTitle>
-			<div className='hidden md:flex md:content-center md:mb-12 md:mx-auto md:justify-center md:mt-4'>
+			{/* <div className='hidden md:flex md:content-center md:mb-12 md:mx-auto md:justify-center md:mt-4'> */}
+			<div className='hidden md:hidden'>
 				<Avatar name={author.name} picture={author.avatar} />
 			</div>
 			<div className='mb-8 md:mb-8 -mx-5 sm:mx-0 md:flex md:mx-auto justify-center md:text-center'>
