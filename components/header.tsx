@@ -255,6 +255,7 @@ const Header = ({ props }: HeaderProps) => {
 							</div>
 							<div className='overflow-hidden'>
 								<Fragment>
+									{/* {logoT} removed from below for UI/UX testing */}
 									{threadingTheNeedle} {logoB}
 								</Fragment>
 							</div>
