@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { SvgIcon } from './svg-icons';
 
 export interface SvgIconPropsLogo {
 	strokeColor?: string;

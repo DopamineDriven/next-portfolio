@@ -1,8 +1,8 @@
-import Avatar from './card-tech-specs';
-import DateFormater from './date-formatter';
-import CoverImage from './cover-image-card';
+import Avatar from 'components/card-tech-specs';
+import DateFormater from 'components/date-formatter';
+import CoverImage from 'components/cover-image-card';
 import Link from 'next/link';
-import Author from '../types/author';
+import Author from 'types/author';
 
 type Props = {
 	title: string;

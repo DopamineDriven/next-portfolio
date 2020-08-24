@@ -38,7 +38,7 @@ import {
 	VimIcon,
 	WebpackIcon,
 	YamlIcon
-} from './svg-icons';
+} from 'components/svg-icons';
 
 
 export interface SvgIconAbstract {
