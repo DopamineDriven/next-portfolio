@@ -85,7 +85,7 @@ export default function Intro({ props }: IntroProps) {
 	// ));
 	// console.log(sortingMap);
 	return (
-		<>
+		<div className='mb-10'>
 			{/* <div className='flex flex-row mx-auto items-center justify-center'>
 				<Link href='/'>
 					<a
@@ -159,6 +159,6 @@ export default function Intro({ props }: IntroProps) {
 			</h2>
 			<div className='flex flex-row justify-center items-center align-middle'></div> */}
 			{/* <hr className='border-accent-2 w-full mt-8' /> */}
-		</>
+		</div>
 	);
 }

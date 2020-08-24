@@ -10,7 +10,7 @@ const landingSidebar = () => {
 			href={link.href}
 			className='bg-black text-white hover:text-iconHover transform transition-colors duration-500 font-lg my-2 items-center justify-center align-center outline-none focus:outline-none rounded-full py-2 px-2 inline-block text-center'
 		>
-			<FontAwesomeIcon icon={link.icon} size='3x' className='rounded-full' />
+			<FontAwesomeIcon icon={link.icon} size='2x' className='rounded-full' />
 		</a>
 	));
 	return (

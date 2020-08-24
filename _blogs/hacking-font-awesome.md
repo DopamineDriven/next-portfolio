@@ -1,9 +1,9 @@
 ---
 title: 'Hacking Font Awesome'
-excerpt: 'Permanent custom SVG Icon support'
+excerpt: 'Hacking the Font Awesome Library with React, Nextjs, and TypeScript to support custom SVG incorporation locally and in production.'
 coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
 articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
-date: '2020-07-19T08:35:07.322Z'
+date: '2020-08-19T08:35:07.322Z'
 author:
  name: Andrew Ross
  role: 'CTO'
