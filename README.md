@@ -1,6 +1,9 @@
 # next-jamstack-portfolio
 
-## lquip security vulnerability
+## Mailchimp for contact page
+- https://dev.to/joserfelix/kick-start-your-newsletter-mailchimp-custom-form-with-react-og5
+
+## lquip 86'd over security vulnerability
 - removed lquip-loader package as it flagged a high security vulnerability alert (regex)
 - https://github.com/cyrilwanner/next-optimized-images#optimization-packages
 
