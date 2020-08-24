@@ -1,37 +1,57 @@
 # next-jamstack-portfolio
 
-## SCSS + Tailwind 
+## Markdown
+
+- https://dev.to/jfelx/how-to-make-a-static-blog-with-next-js-2bd6
+- https://github.com/vriad/devii
+- https://www.netlify.com/blog/2020/05/04/building-a-markdown-blog-with-next-9.4-and-netlify/
+
+## SCSS + Tailwind
+
 - https://nextjs.org/blog/next-9-3#built-in-sass-css-module-support-for-component-level-styles
 - https://codeburst.io/next-js-boilerplate-with-tailwindcss-and-sass-ecc1df90f501
 
 ## Add several components to bitsrc.io
+
 - https://blog.bitsrc.io/react-typescript-cheetsheet-2b6fa2cecfe2
 
 ## Patching Node_Modules
+
 - https://stackoverflow.com/questions/13300137/how-to-edit-a-node-module-installed-via-npm
+
 ```git
 npx patch-package @fortawesome/fontawesome-common-types
 ```
+
 - then, add the following to scripts in package.json
+
 ```
-"postinstall": "npx patch-package" 
+"postinstall": "npx patch-package"
 ```
-***create a master svgLibrary function wrapping all svg declarations***
-- Pass Props  
+
+**_create a master svgLibrary function wrapping all svg declarations_**
+
+- Pass Props
 
 ## Extending an abstracted functional component to an array of objects via props extension
+
 - https://stackoverflow.com/questions/25469244/how-can-i-define-an-interface-for-an-array-of-objects-with-typescript/25470775
 
-## SVG viewBox Exact Order of Translation and Scaling 
+## SVG viewBox Exact Order of Translation and Scaling
+
 - https://stackoverflow.com/questions/53582351/svg-viewbox-exact-order-of-translation-and-scaling
 
 ### Transformations
+
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Transformations
 
 ## SVGs in tailwindcss
+
 - https://medium.com/swlh/reusable-svg-icon-using-figma-react-typescript-and-tailwind-css-51b8ceb86ac2
 - https://tailwindcss.com/course/working-with-svg-icons
+
 ## Ico Moon custom icons
+
 - https://icomoon.io/app/#/select
 - https://www.npmjs.com/package/react-icomoon
 - ssg
@@ -46,10 +66,10 @@ npx patch-package @fortawesome/fontawesome-common-types
 - https://github.com/remarkjs/remark/blob/HEAD/doc/plugins.md#list-of-plugins
 
 - next plugins
-    - https://github.com/vercel/next-plugins
+  - https://github.com/vercel/next-plugins
 
 ```js
-    module.exports = {
+module.exports = {
 	purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
 	theme: {
 		extend: {
@@ -153,8 +173,8 @@ npx patch-package @fortawesome/fontawesome-common-types
 	// plugins: [plugin(function(require('tailwindcss-gradients')))]
 };
 ```
-```ts
 
+```ts
 // const plugin = require('tailwindcss/plugin');
 
 // module.exports = {
@@ -164,9 +184,7 @@ npx patch-package @fortawesome/fontawesome-common-types
 // 		})
 // 	]
 // } https://github.com/benface/tailwindcss-gradients
-
 ```
-
 
 ```ts
 export type IconPrefix = "fas" | "fab" | "fac" | "far" | "fal" | "fad";
@@ -192,22 +210,25 @@ export interface IconPack {
   [key: string]: IconDefinition;
 }
 
-export type IconName = 'graphql-icon' | 'heroku-icon' | 'next-icon' | 'vercel-icon' | 'typescript-icon' | '500px' | 
+export type IconName = 'graphql-icon' | 'heroku-icon' | 'next-icon' | 'vercel-icon' | 'typescript-icon' | '500px' |
 ```
 
 ```html
-
-
-
-<svg width="478" height="340" viewBox="0 0 478 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M55.3692 170L1.39502 112.412H37.3745L73.3539 150.804L109.333 112.412H145.313L37.3745 227.587H1.39502L55.3692 170ZM154.305 227.587H190.285V112.412H154.305L46.3768 227.587H82.3563L154.305 150.875V227.587ZM305.722 150.875V227.587H341.701V112.412H296.729L269.842 150.804L233.862 112.412H197.773V227.587H233.753V150.875L269.732 189.266L305.722 150.875ZM386.653 112.412H350.674V227.587H476.607L452.707 201.995H386.753L386.653 112.412Z" fill="black" stroke="black" stroke-width="0.201333"/>
+<svg
+	width="478"
+	height="340"
+	viewBox="0 0 478 340"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<path
+		d="M55.3692 170L1.39502 112.412H37.3745L73.3539 150.804L109.333 112.412H145.313L37.3745 227.587H1.39502L55.3692 170ZM154.305 227.587H190.285V112.412H154.305L46.3768 227.587H82.3563L154.305 150.875V227.587ZM305.722 150.875V227.587H341.701V112.412H296.729L269.842 150.804L233.862 112.412H197.773V227.587H233.753V150.875L269.732 189.266L305.722 150.875ZM386.653 112.412H350.674V227.587H476.607L452.707 201.995H386.753L386.653 112.412Z"
+		fill="black"
+		stroke="black"
+		stroke-width="0.201333"
+	/>
 </svg>
-
-
-
-
 ```
-
 
 '0': '0ms',
 '200': '200ms',
