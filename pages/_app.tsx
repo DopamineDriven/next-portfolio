@@ -1,4 +1,5 @@
 import 'styles/index.css';
+import '@tailwindcss/typography';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { AppProps } from 'next/app';

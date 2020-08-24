@@ -7,6 +7,7 @@
   .markdown ol,
   .markdown blockquote {
 	@apply my-6;
+	@apply font-subpolished;
   }
   
   .markdown h2 {
@@ -32,7 +33,11 @@
 }
 
 .markdown a {
-	@apply underline;
+	@apply font-polished;
+}
+
+.markdown a:hover {
+	@apply text-herokuStroke;
 }
 
 .markdown ul,
@@ -77,6 +82,10 @@
 	@apply text-sm;
 }
 
+.markdown style {
+	@apply bg-black;
+}
+
 .markdown figcaption {
 	@apply text-center text-sm;
 }
@@ -95,4 +104,8 @@
 
 .markdown audio {
 	@apply w-full;
+}
+
+.markdown img {
+	@apply  block mx-auto;
 }
