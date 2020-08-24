@@ -1,5 +1,5 @@
 diff --git a/node_modules/@fortawesome/fontawesome-common-types/index.d.ts b/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
-index b70b000..8078a5d 100644
+index b70b000..dbb251c 100644
 --- a/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
 +++ b/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
 @@ -1,4 +1,4 @@
@@ -13,7 +13,7 @@ index b70b000..8078a5d 100644
  }
  
 -export type IconName = '500px' | 
-+export type IconName = 'auth-icon' | 'graphql-icon' | 'heroku-icon' | 'next-icon' | 'vercel-icon' | 'typescript-icon' | '500px' | 
++export type IconName = 'auth-icon' | 'graphql-icon' | 'heroku-icon' | 'next-icon' | 'vercel-icon' | 'tailwind-icon' | 'typescript-icon' | '500px' | 
    'accessible-icon' | 
    'accusoft' | 
    'acquisitions-incorporated' | 
