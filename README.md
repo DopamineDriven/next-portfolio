@@ -1,10 +1,25 @@
 # next-jamstack-portfolio
 
-## lquip security vulnerability
+## Typography themes for utils
+
+- https://kyleamathews.github.io/typography.js/
+- https://tailwindcss.com/docs/typography-plugin
+
+```git
+yarn add typography-theme-sutro typeface-merriweather typeface-open-sans
+```
+
+## Mailchimp for contact page
+
+- https://dev.to/joserfelix/kick-start-your-newsletter-mailchimp-custom-form-with-react-og5
+
+## lquip 86'd over security vulnerability
+
 - removed lquip-loader package as it flagged a high security vulnerability alert (regex)
 - https://github.com/cyrilwanner/next-optimized-images#optimization-packages
 
 ## Markdown
+
 - https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6**
 - https://dev.to/jfelx/how-to-make-a-static-blog-with-next-js-2bd6
 - https://github.com/vriad/devii

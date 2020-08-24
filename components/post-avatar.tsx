@@ -1,5 +1,3 @@
-import SectionSeparator from 'components/section-separator';
-import Author from 'types/author';
 type AvatarProps = {
 	name: string;
 	avatar: string;
