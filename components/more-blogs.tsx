@@ -1,5 +1,5 @@
-import PostPreview from './post-preview';
-import Blogs from '../types/blog';
+import PostPreview from 'components/post-preview';
+import Blogs from 'types/blog';
 
 type Props = {
 	blogs: Blogs[];

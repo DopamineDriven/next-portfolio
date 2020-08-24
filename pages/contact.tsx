@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Header from 'components/header';
 import Layout from 'components/layout';
 import Container from 'components/container';
-import { CLIENT_NAME } from '../lib/constants';
+import { CLIENT_NAME } from 'lib/constants';
 
 interface Props {
 	props: string | number;

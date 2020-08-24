@@ -1,20 +1,20 @@
 ---
 title: 'Hacking Font Awesome'
 excerpt: 'Permanent custom SVG Icon support'
-coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1597440661/portfolio/next-jamstack_x8lmse.jpg'
-articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR_Assets/typescript-in-react_vv81ae.png'
-date: "2020-07-19T08:35:07.322Z"
+coverImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
+articleImage: 'https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png'
+date: '2020-07-19T08:35:07.322Z'
 author:
-  name: Andrew Ross
-  role: 'CTO'
-  avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
-  github: 'https://github.com/DopamineDriven'
-  twitter: 'https://twitter.com/Dopamine_Driven'
-  linkedin: 'https://www.linkedin.com/in/asross/'
-  vercel: 'https://next-jamstack-portfolio.vercel.app/'
-  heroku: 'https://heroku.com'
+ name: Andrew Ross
+ role: 'CTO'
+ avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
+ github: 'https://github.com/DopamineDriven'
+ twitter: 'https://twitter.com/Dopamine_Driven'
+ linkedin: 'https://www.linkedin.com/in/asross/'
+ vercel: 'https://next-jamstack-portfolio.vercel.app/'
+ heroku: 'https://heroku.com'
 ogImage:
-  url: '/assets/next-jamstack.jpg'
+ url: '/assets/next-jamstack.jpg'
 ---
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/51fagc1ri8auwsxfpkzj.png)
@@ -301,7 +301,7 @@ To test your custom icon out, open a file that ultimately renders to a pages dir
 
 ```typescript
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCustomVercelIcon } from '../lib/fas-custom-integration';
+import { faCustomVercelIcon } from 'lib/fas-custom-integration';
 ```
 
 The following snippet is from a project that's currently under construction using Next, TypeScript, and Tailwindcss as frameworks.

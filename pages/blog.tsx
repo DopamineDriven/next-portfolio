@@ -1,14 +1,13 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import Header from 'components/header';
 import Layout from 'components/layout';
 import Container from 'components/container';
 import Intro from 'components/intro';
 import HeroBlog from 'components/hero-post-blog';
-import { CLIENT_NAME } from '../lib/constants';
-import { getAllBlogs } from '../lib/blog-api';
-import BlogType from '../types/blog';
+import { CLIENT_NAME } from 'lib/constants';
+import { getAllBlogs } from 'lib/blog-api';
+import BlogType from 'types/blog';
 import MoreBlogs from 'components/more-blogs';
 import LandingSidebar from 'components/landing-sidebar';
 

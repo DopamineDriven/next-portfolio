@@ -1,6 +1,6 @@
-import Card from './card';
-import PostPreview from './post-preview';
-import Post from '../types/post';
+import Card from 'components/card';
+import PostPreview from 'components/post-preview';
+import Post from 'types/post';
 
 type CardsProps = {
 	posts: Post[];
