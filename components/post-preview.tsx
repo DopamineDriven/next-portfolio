@@ -37,7 +37,7 @@ const PostPreview = ({
 			<div className='text-3xl leading-relaxed mb-2 text-center justify-center'>
 				{excerpt}
 			</div>
-			<Avatar name={author.name} github={author.github} date={date} />
+			<Avatar name={author.name} github={author.github} date={date} heroku={author.heroku} vercel={author.vercel} />
 		</div>
 	);
 };

@@ -1,10 +1,11 @@
 import Author from 'types/author';
-
+import TechIcons from 'types/tech-icons';
 interface PostType {
 	slug: string;
 	title: string;
 	date: string;
 	coverImage: string;
+	tech: TechIcons;
 	author: Author;
 	excerpt: string;
 	ogImage: {

@@ -12,15 +12,17 @@ import { CMS_NAME } from 'lib/constants';
 import markdownToHtml from 'lib/markdownToHtml';
 import PostType from 'types/post';
 import { Fragment } from 'react';
+import MoreCards from 'components/more-cards';
 
 type SlugProps = {
 	post: PostType;
-	morePosts: PostType[];
+	posts: PostType[];
 	preview?: boolean;
 	props: string | number;
 };
 
-const Post = ({ post, morePosts, preview, props }: SlugProps) => {
+const Post = ({ post, posts, preview, props }: SlugProps) => {
+	const morePosts = posts?.slice(1);
 	const router = useRouter();
 	if (!router.isFallback && !post?.slug) {
 		return <ErrorPage statusCode={404} />;
@@ -46,9 +48,13 @@ const Post = ({ post, morePosts, preview, props }: SlugProps) => {
 									coverImage={post.coverImage}
 									date={post.date}
 									author={post.author}
+									tech={post.tech}
 								/>
 								<PostBody content={post.content} />
 							</article>
+							<div className='max-w-5xl grid mx-auto content-center justify-center items-center text-center'>
+								{morePosts?.length > 0 && <MoreCards posts={morePosts} />}
+							</div>
 						</>
 					)}
 				</Container>

@@ -4,12 +4,14 @@ import CoverImage from 'components/post-cover-image';
 import PostTitle from 'components/post-title';
 import CardIcons from 'components/card-icons';
 import Author from 'types/author';
+import TechIcons from 'types/tech-icons';
 
 type PostHeaderProps = {
 	title: string;
 	coverImage: string;
 	author: Author;
 	date: string;
+	tech: TechIcons;
 	// slug?: string;
 };
 
@@ -17,7 +19,8 @@ export default function PostHeader({
 	title,
 	date,
 	author,
-	coverImage
+	coverImage,
+	tech
 }: PostHeaderProps) {
 	return (
 		<>
@@ -42,12 +45,13 @@ export default function PostHeader({
 						<Categories categories={categories} />
 					</div> */}
 					<CardIcons
-						twitter={author.twitter}
-						props={author.props}
-						linkedin={author.linkedin}
-						react={author.react}
-						heroku={author.heroku}
-						vercel={author.vercel}
+						apollo={tech.apollo}
+						auth0={tech.auth0}
+						graphql={tech.graphql}
+						next={tech.next}
+						react={tech.react}
+						tailwind={tech.tailwind}
+						typescript={tech.typescript}
 					/>
 				</div>
 

@@ -3,9 +3,12 @@ import Avatar from 'components/card-tech-specs';
 import Link from 'next/link';
 import CardIcons from 'components/card-icons';
 import Author from 'types/author';
+import TechIcons from 'types/tech-icons';
+import next from 'next';
 
 type CardProps = {
 	author: Author;
+	tech: TechIcons;
 	src: string;
 	title: string;
 	slug: string;
@@ -13,7 +16,7 @@ type CardProps = {
 	excerpt: string;
 };
 
-const Card = ({ author, src, excerpt, date, slug, title }: CardProps) => {
+const Card = ({ author, src, excerpt, date, slug, tech, title }: CardProps) => {
 	// animate
 	// https://www.npmjs.com/package/tailwindcss-animatecss
 	return (
@@ -38,18 +41,25 @@ const Card = ({ author, src, excerpt, date, slug, title }: CardProps) => {
 					></div>
 					<>
 						<div className='grid-cols-1 pl-2 font-subpolished'>
-							<Avatar github={author.github} date={date} name={author.name} />
+							<Avatar
+								github={author.github}
+								date={date}
+								name={author.name}
+								vercel={author.vercel}
+								heroku={author.heroku}
+							/>
 						</div>
 					</>
 					<hr className='border-customGray w-full mt-2' />
 					<div className='text-right items-end align-middle float-right pr-2 py-1 font-subpolished'>
 						<CardIcons
-							heroku={author.heroku}
-							vercel={author.vercel}
-							linkedin={author.linkedin}
-							props={author.props}
-							twitter={author.twitter}
-							react={author.react}
+							apollo={tech.apollo}
+							auth0={tech.auth0}
+							graphql={tech.graphql}
+							next={tech.next}
+							react={tech.react}
+							tailwind={tech.tailwind}
+							typescript={tech.typescript}
 						/>
 					</div>
 				</div>
