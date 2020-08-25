@@ -5,12 +5,13 @@ coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374915/portf
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374915/portfolio/mock-airbnb-home_vh5rhx.jpg'
 date: "2020-05-25T09:35:07.322Z"
 tech:
-  name: Andrew Ross
-  auth0: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
-  graphql: 'https://github.com/DopamineDriven'
-  next: 'https://twitter.com/Dopamine_Driven'
-  tailwindcss: 'https://www.linkedin.com/in/asross/'
-  typescript: ''
+  apollo: true
+  auth0: false
+  graphql: true
+  next: false
+  react: true
+  tailwindcss: false
+  typescript: true
 author:
   name: Andrew Ross
   avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'

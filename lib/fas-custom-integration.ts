@@ -72,7 +72,7 @@ export const faVercelIcon: CustomIconConstruct = {
 	icon: [24, 24, [], '#626262', 'M24 22.525H0l12-21.05l12 21.05z']
 };
 
-export const TailwindIcon: CustomIconConstruct = {
+export const faTailwindIcon: CustomIconConstruct = {
 	prefix: 'fac',
 	iconName: 'tailwind-icon',
 	icon: [

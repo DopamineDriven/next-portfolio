@@ -1,9 +1,11 @@
 interface TechIcons {
-  auth0: string;
-  graphql: string;
-  next: string;
-  tailwind: string;
-  typescript: string;
+  apollo: boolean;
+  auth0: boolean;
+  graphql: boolean;
+  next: boolean;
+  react: boolean;
+  tailwind: boolean;
+  typescript: boolean;
 }
 
 export default TechIcons;

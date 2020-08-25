@@ -19,6 +19,7 @@ export default function MoreCards({ posts }: CardsProps) {
 						title={post.title}
 						src={post.coverImage}
 						author={post.author}
+						tech={post.tech}
 						date={post.date}
 						slug={post.slug}
 						excerpt={post.excerpt}

@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import {
+	faApolloIcon,
 	faAuth0Icon,
 	faGraphQLIcon,
-	faHerokuIcon,
 	faNextIcon,
-	faVercelIcon,
+	faTailwindIcon,
 	faTypeScriptIcon
 } from 'lib/fas-custom-integration';
 interface MappingProps {
@@ -15,6 +16,11 @@ interface MappingProps {
 }
 
 const iconLinks: MappingProps[] = [
+	{
+		href: 'https://www.apollographql.com/docs/',
+		name: 'apollo',
+		icon: faApolloIcon
+	},
 	{
 		href: 'https://auth0.com/',
 		name: 'auth0',
@@ -26,133 +32,156 @@ const iconLinks: MappingProps[] = [
 		icon: faGraphQLIcon
 	},
 	{
-		href: 'https://www.heroku.com/',
-		name: 'heroku',
-		icon: faHerokuIcon
-	},
-	{
 		href: 'https://nextjs.org/',
 		name: 'next',
 		icon: faNextIcon
 	},
 	{
-		href: 'https://vercel.com/',
-		name: 'vercel',
-		icon: faVercelIcon
+		href: 'https://tailwindcss.com/',
+		name: 'tailwind',
+		icon: faTailwindIcon
 	},
 	{
-		href: 'https://twitter.com/Dopamine_Driven',
+		href: 'https://www.typescriptlang.org/',
 		name: 'typescript',
 		icon: faTypeScriptIcon
 	}
 ];
 
 type CardIconProps = {
-	twitter: string;
-	linkedin: string;
-	react: string;
-	heroku: string;
-	vercel: string;
-	props: string | number;
+	apollo: boolean;
+	auth0: boolean;
+	graphql: boolean;
+	next: boolean;
+	react: boolean;
+	tailwind: boolean;
+	typescript: boolean;
 };
 
 const CardIcons = ({
-	props,
-	linkedin,
-	twitter,
+	apollo,
+	auth0,
+	graphql,
+	next,
 	react,
-	heroku,
-	vercel
+	tailwind,
+	typescript
 }: CardIconProps) => {
-	console.log(typeof faHerokuIcon);
-	console.log(typeof faVercelIcon);
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
-					{vercel === '' ? (
+					{apollo === false ? (
 						<></>
 					) : (
 						<a
-							aria-label='react'
+							aria-label='apollo'
 							target='__blank'
-							href={vercel}
+							href='https://www.apollographql.com/docs/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							{vercel === '' ? (
-								<></>
-							) : (
-								<FontAwesomeIcon
-									icon={faVercelIcon}
-									className='flex align-middle text-center font-extrabold text-1xl pb-1'
-									size='lg'
-								/>
-							)}
+							<FontAwesomeIcon
+								icon={faApolloIcon}
+								className='flex align-middle text-center font-extrabold text-1xl pb-1'
+								size='lg'
+							/>
 						</a>
 					)}{' '}
-					<a
-						aria-label='linkedin'
-						target='__blank'
-						href={linkedin}
-						className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
-					>
-						<FontAwesomeIcon
-							icon={faNextIcon}
-							className='align-middle text-center font-extrabold text-1xl pb-1'
-							size='lg'
-						/>
-					</a>{' '}
-					<a
-						aria-label='linkedin'
-						target='__blank'
-						href={linkedin}
-						className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-relaxed duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
-					>
-						<FontAwesomeIcon
-							icon={faGraphQLIcon}
-							className='align-middle text-center font-extrabold text-1xl pb-1'
-							size='lg'
-						/>
-					</a>{' '}
-					{heroku === '' ? (
-						<></>
-					) : (
-						<a
-							aria-label='heroku'
-							target='__blank'
-							href={heroku}
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
-						>
-							{react === '' ? (
-								<></>
-							) : (
-								<FontAwesomeIcon
-									icon={faTypeScriptIcon}
-									className='flex align-middle text-center font-extrabold text-1xl'
-									size={'sm'}
-								/>
-							)}
-						</a>
-					)}{' '}
-					{heroku === '' ? (
+					{auth0 === false ? (
 						<></>
 					) : (
 						<a
 							aria-label='auth0'
 							target='__blank'
-							href={heroku}
+							href='https://auth0.com/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							{react === '' ? (
-								<></>
-							) : (
-								<FontAwesomeIcon
-									icon={faAuth0Icon}
-									className='flex align-middle text-center font-extrabold text-1xl'
-									size={'sm'}
-								/>
-							)}
+							<FontAwesomeIcon
+								icon={faAuth0Icon}
+								className='flex align-middle text-center font-extrabold text-1xl pb-1'
+								size='lg'
+							/>
+						</a>
+					)}{' '}
+					{graphql === false ? (
+						<></>
+					) : (
+						<a
+							aria-label='graphql'
+							target='__blank'
+							href='https://www.graphql.com/'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faGraphQLIcon}
+								className='flex align-middle text-center font-extrabold text-1xl pb-1'
+								size='lg'
+							/>
+						</a>
+					)}{' '}
+					{next === false ? (
+						<></>
+					) : (
+						<a
+							aria-label='next'
+							target='__blank'
+							href='https://nextjs.org/'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faNextIcon}
+								className='flex align-middle text-center font-extrabold text-1xl pb-1'
+								size='lg'
+							/>
+						</a>
+					)}{' '}
+					{react === false ? (
+						<></>
+					) : (
+						<a
+							aria-label='react'
+							target='__blank'
+							href='https://reactjs.org/'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faReact}
+								className='flex align-middle text-center font-extrabold text-1xl pb-1'
+								size='lg'
+							/>
+						</a>
+					)}{' '}
+					{tailwind === false ? (
+						<></>
+					) : (
+						<a
+							aria-label='tailwind'
+							target='__blank'
+							href='https://tailwindcss.com/'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faTailwindIcon}
+								className='flex align-middle text-center font-extrabold text-1xl pb-1'
+								size='lg'
+							/>
+						</a>
+					)}{' '}
+					{typescript === false ? (
+						<></>
+					) : (
+						<a
+							aria-label='typescript'
+							target='__blank'
+							href='https://www.typescriptlang.org/'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							<FontAwesomeIcon
+								icon={faTypeScriptIcon}
+								className='flex align-middle text-center font-extrabold text-1xl pb-1'
+								size='lg'
+							/>
 						</a>
 					)}{' '}
 				</li>
@@ -189,4 +218,27 @@ export default CardIcons;
 // } from '@fortawesome/free-brands-svg-icons';
 
 // import { HerokuIcon } from './svg-icons';
+
+
+{' '}
+					{apollo === false ? (
+						<></>
+					) : (
+						<a
+							aria-label='react'
+							target='__blank'
+							href=''
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							{apollo === false ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faApolloIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
+						</a>
+					)}{' '}
 */
