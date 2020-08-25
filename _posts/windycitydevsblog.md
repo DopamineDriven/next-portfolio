@@ -17,6 +17,7 @@ author:
   react: 'react'
   tailwindcss: 'tailwindcss'
   typescript: 'typescript'
+  wordpress: ''
 ogImage:
   url: 'https://res.cloudinary.com/asross311/image/upload/v1598374915/portfolio/mock-airbnb-home_vh5rhx.jpg'
 ---

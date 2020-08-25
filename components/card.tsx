@@ -59,6 +59,7 @@ const Card = ({ author, src, excerpt, date, slug, title }: CardProps) => {
 							react={author.react}
 							tailwindcss={author.tailwindcss}
 							typescript={author.typescript}
+							wordpress={author.wordpress}
 						/>
 					</div>
 				</div>

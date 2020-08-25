@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import {
 	faApolloIcon,
 	faAuth0Icon,
@@ -45,6 +45,11 @@ const iconLinks: MappingProps[] = [
 		href: 'https://www.typescriptlang.org/',
 		name: 'typescript',
 		icon: faTypeScriptIcon
+	},
+	{
+		href: 'https://wpengine.com/resources/headless-cms-and-wordpress/',
+		name: 'wordpress',
+		icon: faWordpress
 	}
 ];
 
@@ -56,6 +61,7 @@ type CardIconProps = {
 	react: string;
 	tailwindcss: string;
 	typescript: string;
+	wordpress: string;
 };
 
 const CardIcons = ({
@@ -65,7 +71,8 @@ const CardIcons = ({
 	next,
 	react,
 	tailwindcss,
-	typescript
+	typescript,
+	wordpress
 }: CardIconProps) => {
 	return (
 		<div className='align-middle justify-right text-right inline-block'>
@@ -147,7 +154,6 @@ const CardIcons = ({
 								<FontAwesomeIcon
 									icon={faNextIcon}
 									className='flex align-middle text-center font-extrabold text-1xl'
-				
 								/>
 							)}
 						</a>
@@ -205,6 +211,26 @@ const CardIcons = ({
 							) : (
 								<FontAwesomeIcon
 									icon={faTypeScriptIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-half'
+									size='sm'
+								/>
+							)}
+						</a>
+					)}{' '}
+					{wordpress === '' ? (
+						<></>
+					) : (
+						<a
+							aria-label='wordpress'
+							target='__blank'
+							href='https://wpengine.com/resources/headless-cms-and-wordpress/'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							{wordpress === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faWordpress}
 									className='flex align-middle text-center font-extrabold text-1xl pb-half'
 									size='sm'
 								/>

@@ -50,6 +50,7 @@ export default function PostHeader({
 						react={author.react}
 						tailwindcss={author.tailwindcss}
 						typescript={author.typescript}
+						wordpress={author.wordpress}
 					/>
 				</div>
 

@@ -11,7 +11,8 @@ interface Author {
   next: string;
   react: string;
   tailwindcss: string;
-  typescript: string;
+	typescript: string;
+	wordpress: string;
 }
 
 export default Author;

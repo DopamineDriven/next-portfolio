@@ -17,6 +17,7 @@ author:
   react: 'react'
   tailwindcss: 'tailwindcss'
   typescript: 'typescript'
+  wordpress: 'wordpress'
 ogImage:
   url: '/assets/next-jamstack.jpg'
 ---

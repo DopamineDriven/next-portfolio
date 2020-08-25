@@ -17,6 +17,7 @@ author:
   react: 'react'
   tailwindcss: ''
   typescript: ''
+  wordpress: ''
 ogImage:
   url: 'https://res.cloudinary.com/asross311/image/upload/v1598377626/portfolio/consilience_s1yr8g.jpg'
 ---
