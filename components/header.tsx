@@ -186,16 +186,17 @@ const Header = ({ props }: HeaderProps) => {
 	);
 	// calculate vpw/vph - https://www.hawatel.com/blog/handle-window-resize-in-react/
 
-	const heightOnOpen = navOpen ? ' h-whole' : ' h-nineTenths';
+	const heightOnOpen = navOpen ? ' h-whole' : ' h-sevenEighths';
+	const heightOnOpenSm = navOpen ? ' h-whole' : ' h-fourFifths';
 	const pulseOnOpen = navOpen ? ' animate-none' : ' animate-pulse';
 
 	const nav = (
 		<nav
-			className={`flex flex-row flex-wrap font-header xl:h-threeFourths lg:h-fourFifths md:h-sevenEights sm:h-nineTenths ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
+			className={`flex flex-row flex-wrap font-header xl:h-threeFourths lg:h-threeFourths md:h-fourFifths sm:${heightOnOpenSm} ${heightOnOpen} container overflow-y-hidden overflow-x-hidden -mx-5`}
 		>
 			<Container>
 				<div
-					className={`xl:h-threeFourths lg:h-fourFifths md:h-sevenEights sm:h-nineTenths ${heightOnOpen} transform duration-2000 absolute transition-all bg-opacity-10 ${!pulseOnOpen} bg-lighterBlack flex flex-row w-full bg-contain antialiased`}
+					className={`xl:h-threeFourths lg:h-fourFifths md:h-sevenEights sm:${heightOnOpenSm} ${heightOnOpen} transform duration-2000 absolute transition-all bg-opacity-10 ${!pulseOnOpen} bg-lighterBlack flex flex-row w-full bg-contain antialiased`}
 					style={{
 						backgroundImage: `url(https://res.cloudinary.com/asross311/image/upload/v1597640990/portfolio/unsplash-chemistry_sfct4z.jpg)`,
 						backgroundRepeat: 'no-repeat',

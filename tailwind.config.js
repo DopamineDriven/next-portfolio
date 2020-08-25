@@ -77,9 +77,10 @@ module.exports = {
 			height: {
 				whole: '100vh',
 				nineTenths: '90vh',
-				sevenEights: '87.5vh',
+				sevenEighths: '87.5vh',
 				fourFifths: '80vh',
 				threeFourths: '75vh',
+				sevenTenths: '70vh',
 				twoThirds: '66.67vh',
 				threeFifths: '60vh',
 				half: '50vh',
@@ -90,7 +91,9 @@ module.exports = {
 				threeTenths: '30vh',
 				oneFourth: '25vh',
 				oneFifth: '20vh',
-				oneSixth: '16.67vh'
+				oneSixth: '16.67vh',
+				oneTenth: '10vh',
+				oneTwentieth: '5vh'
 			},
 			spacing: {
 				7: '1.75rem',
