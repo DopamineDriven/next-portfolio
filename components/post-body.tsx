@@ -1,5 +1,17 @@
 import styles from 'components/markdown-styles.module.css';
 import ReactMarkdown from 'react-markdown/with-html';
+import {
+	Prism as SyntaxHighlighter,
+	SyntaxHighlighterProps
+} from 'react-syntax-highlighter';
+
+const CodeBlock = ({ language, value, style }: SyntaxHighlighterProps) => {
+	return (
+		<SyntaxHighlighter useInlineStyles={true} language={language}>
+			{value}
+		</SyntaxHighlighter>
+	);
+};
 
 type PostBodyProps = {
 	content: string;
@@ -13,6 +25,7 @@ export default function PostBody({ content }: PostBodyProps) {
 					className={styles['markdown']}
 					escapeHtml={false}
 					source={content}
+					renderers={{ code: CodeBlock }}
 				/>
 			</div>
 			<div className='mb-6 text-lg grid-cols-1'>

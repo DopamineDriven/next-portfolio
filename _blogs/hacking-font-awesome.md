@@ -246,7 +246,13 @@ With a standardized SVG obtained via Figma, let the excising begin. Your custom 
 export const faCustomVercelIcon: IconDefinition & IconLookup = {
 	prefix: 'fab',
 	iconName: 'vercel-icon',
-	icon: [24, 24, [], 'none', 'M24 22.525H0l12-21.05l12 21.05z']
+	icon: [
+		24, 
+		24, 
+		[], 
+		'none', 
+		'M24 22.525H0l12-21.05l12 21.05z'
+	]
 };
 ```
 
@@ -285,7 +291,13 @@ export interface CustomIconConstruct extends IconDefinition, IconLookup {}
 export const faCustomVercelIcon: CustomIconConstruct = {
 	prefix: 'fac',
 	iconName: 'vercel-icon',
-	icon: [24, 24, [], 'none', 'M24 22.525H0l12-21.05l12 21.05z']
+	icon: [
+		24, 
+		24, 
+		[], 
+		'none', 
+		'M24 22.525H0l12-21.05l12 21.05z'
+	]
 };
 
 library.add(faCustomVercelIcon);
