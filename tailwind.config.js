@@ -99,6 +99,9 @@ module.exports = {
 				oneTwentieth: '5vh'
 			},
 			spacing: {
+				'half': '0.125rem',
+				'threeQuarters': '0.175rem',
+				'threeHalves': '0.325rem',
 				7: '1.75rem',
 				14: '3.5rem',
 				18: '4.5rem',
