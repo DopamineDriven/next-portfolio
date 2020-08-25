@@ -17,7 +17,7 @@ ogImage:
  url: '/assets/next-jamstack.jpg'
 ---
 
-# Overviw
+# Overview
 
 The aim of this article is to outline how to directly incorporate custom Fontawesome icons into your Next.js TypeScript project. For a solid introduction on setting up Fontawesome 5 with Next.js and TypeScript please see [Vuong Dang's recent post](https://dev.to/vuongddang/how-to-use-fontawesome-in-next-js-5bl5).
 
