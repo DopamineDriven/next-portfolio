@@ -1,5 +1,16 @@
 # next-jamstack-portfolio
 
+
+- jsconfig.json
+```json
+{
+	"compilerOptions": {
+		"baseUrl": "."
+	}
+}
+
+```
+
 ## Typography themes for utils
 
 - https://kyleamathews.github.io/typography.js/

@@ -1,4 +1,4 @@
-import Author from './author';
+import Author from 'types/author';
 
 interface PostType {
 	slug: string;
