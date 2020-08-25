@@ -4,22 +4,19 @@ excerpt: '"The mechanic that would perfect his work must first sharpen his tools
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374421/portfolio/headless-wp-directory_ydouen.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR_Assets/typescript-in-react_vv81ae.png'
 date: "2020-08-19T08:35:07.322Z"
-tech:
-  apollo: true
-  auth0: false
-  graphql: true
-  next: true
-  react: true
-  tailwindcss: true
-  typescript: true
 author:
   name: Andrew Ross
   avatar: 'https://res.cloudinary.com/asross311/image/upload/v1598377026/portfolio/dogeout_fftsx9.png'
   github: 'https://github.com/DopamineDriven/headless-wp-next-directory'
-  twitter: 'https://twitter.com/Dopamine_Driven'
-  linkedin: 'https://www.linkedin.com/in/asross/'
   vercel: 'https://headless-wp-next-directory.vercel.app/'
   heroku: ''
+  apollo: 'apollo'
+  auth0: ''
+  graphql: 'graphql'
+  next: 'next'
+  react: 'react'
+  tailwindcss: 'tailwindcss'
+  typescript: 'typescript'
 ogImage:
   url: '/assets/next-jamstack.jpg'
 ---

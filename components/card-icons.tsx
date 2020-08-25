@@ -49,13 +49,13 @@ const iconLinks: MappingProps[] = [
 ];
 
 type CardIconProps = {
-	apollo: boolean;
-	auth0: boolean;
-	graphql: boolean;
-	next: boolean;
-	react: boolean;
-	tailwind: boolean;
-	typescript: boolean;
+	apollo: string;
+	auth0: string;
+	graphql: string;
+	next: string;
+	react: string;
+	tailwindcss: string;
+	typescript: string;
 };
 
 const CardIcons = ({
@@ -64,7 +64,7 @@ const CardIcons = ({
 	graphql,
 	next,
 	react,
-	tailwind,
+	tailwindcss,
 	typescript
 }: CardIconProps) => {
 	return (
@@ -72,7 +72,7 @@ const CardIcons = ({
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
-					{apollo === false ? (
+					{apollo === '' ? (
 						<></>
 					) : (
 						<a
@@ -81,14 +81,18 @@ const CardIcons = ({
 							href='https://www.apollographql.com/docs/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							<FontAwesomeIcon
-								icon={faApolloIcon}
-								className='flex align-middle text-center font-extrabold text-1xl pb-1'
-								size='lg'
-							/>
+							{apollo === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faApolloIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
 						</a>
 					)}{' '}
-					{auth0 === false ? (
+					{auth0 === '' ? (
 						<></>
 					) : (
 						<a
@@ -97,14 +101,18 @@ const CardIcons = ({
 							href='https://auth0.com/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							<FontAwesomeIcon
-								icon={faAuth0Icon}
-								className='flex align-middle text-center font-extrabold text-1xl pb-1'
-								size='lg'
-							/>
+							{auth0 === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faAuth0Icon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
 						</a>
 					)}{' '}
-					{graphql === false ? (
+					{graphql === '' ? (
 						<></>
 					) : (
 						<a
@@ -113,14 +121,18 @@ const CardIcons = ({
 							href='https://www.graphql.com/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							<FontAwesomeIcon
-								icon={faGraphQLIcon}
-								className='flex align-middle text-center font-extrabold text-1xl pb-1'
-								size='lg'
-							/>
+							{graphql === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faGraphQLIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
 						</a>
 					)}{' '}
-					{next === false ? (
+					{next === '' ? (
 						<></>
 					) : (
 						<a
@@ -129,14 +141,18 @@ const CardIcons = ({
 							href='https://nextjs.org/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							<FontAwesomeIcon
-								icon={faNextIcon}
-								className='flex align-middle text-center font-extrabold text-1xl pb-1'
-								size='lg'
-							/>
+							{next === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faNextIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
 						</a>
 					)}{' '}
-					{react === false ? (
+					{react === '' ? (
 						<></>
 					) : (
 						<a
@@ -145,30 +161,38 @@ const CardIcons = ({
 							href='https://reactjs.org/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							<FontAwesomeIcon
-								icon={faReact}
-								className='flex align-middle text-center font-extrabold text-1xl pb-1'
-								size='lg'
-							/>
+							{react === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faReact}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
 						</a>
 					)}{' '}
-					{tailwind === false ? (
+					{tailwindcss === '' ? (
 						<></>
 					) : (
 						<a
-							aria-label='tailwind'
+							aria-label='tailwindcss'
 							target='__blank'
 							href='https://tailwindcss.com/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							<FontAwesomeIcon
-								icon={faTailwindIcon}
-								className='flex align-middle text-center font-extrabold text-1xl pb-1'
-								size='lg'
-							/>
+							{tailwindcss === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faTailwindIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
 						</a>
 					)}{' '}
-					{typescript === false ? (
+					{typescript === '' ? (
 						<></>
 					) : (
 						<a
@@ -177,11 +201,15 @@ const CardIcons = ({
 							href='https://www.typescriptlang.org/'
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							<FontAwesomeIcon
-								icon={faTypeScriptIcon}
-								className='flex align-middle text-center font-extrabold text-1xl pb-1'
-								size='lg'
-							/>
+							{typescript === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faTypeScriptIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									size='lg'
+								/>
+							)}
 						</a>
 					)}{' '}
 				</li>
@@ -221,7 +249,7 @@ export default CardIcons;
 
 
 {' '}
-					{apollo === false ? (
+					{apollo === '' ? (
 						<></>
 					) : (
 						<a
@@ -230,7 +258,7 @@ export default CardIcons;
 							href=''
 							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
 						>
-							{apollo === false ? (
+							{apollo === '' ? (
 								<></>
 							) : (
 								<FontAwesomeIcon

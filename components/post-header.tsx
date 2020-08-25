@@ -11,7 +11,6 @@ type PostHeaderProps = {
 	coverImage: string;
 	author: Author;
 	date: string;
-	tech: TechIcons;
 	// slug?: string;
 };
 
@@ -19,8 +18,7 @@ export default function PostHeader({
 	title,
 	date,
 	author,
-	coverImage,
-	tech
+	coverImage
 }: PostHeaderProps) {
 	return (
 		<>
@@ -45,13 +43,13 @@ export default function PostHeader({
 						<Categories categories={categories} />
 					</div> */}
 					<CardIcons
-						apollo={tech.apollo}
-						auth0={tech.auth0}
-						graphql={tech.graphql}
-						next={tech.next}
-						react={tech.react}
-						tailwind={tech.tailwind}
-						typescript={tech.typescript}
+						apollo={author.apollo}
+						auth0={author.auth0}
+						graphql={author.graphql}
+						next={author.next}
+						react={author.react}
+						tailwindcss={author.tailwindcss}
+						typescript={author.typescript}
 					/>
 				</div>
 

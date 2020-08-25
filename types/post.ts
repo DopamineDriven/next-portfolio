@@ -5,7 +5,6 @@ interface PostType {
 	title: string;
 	date: string;
 	coverImage: string;
-	tech: TechIcons;
 	author: Author;
 	excerpt: string;
 	ogImage: {
