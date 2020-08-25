@@ -1,19 +1,27 @@
 import Date from 'components/date-formatter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faVercelIcon } from 'lib/fas-custom-integration';
+import { faVercelIcon, faHerokuIcon } from 'lib/fas-custom-integration';
 
 type CardTechProps = {
 	name: string;
 	date: string;
 	github: string;
+	heroku: string;
+	vercel: string;
 };
 
-export default function Avatar({ date, name, github }: CardTechProps) {
+export default function Avatar({
+	date,
+	name,
+	github,
+	vercel,
+	heroku
+}: CardTechProps) {
 	return (
 		<>
 			<div className='ml-1 mt-1 flex flex-row align-bottom items-left text-left float-left overflow-hidden'>
-				<div className='flex flex-col w-1/3 mr-6 align-bottom pt-2 cursor-pointer'>
+				<div className='flex flex-row w-1/2 mr-6 align-bottom pt-2 cursor-pointer'>
 					{github === '' ? (
 						<></>
 					) : (
@@ -28,6 +36,44 @@ export default function Avatar({ date, name, github }: CardTechProps) {
 							) : (
 								<FontAwesomeIcon
 									icon={faGithub}
+									className='flex align-middle text-center font-extrabold text-1xl'
+								/>
+							)}
+						</a>
+					)}{' '}
+					{heroku === '' ? (
+						<></>
+					) : (
+						<a
+							aria-label='github'
+							target='__blank'
+							href={heroku}
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							{heroku === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faHerokuIcon}
+									className='flex align-middle text-center font-extrabold text-1xl'
+								/>
+							)}
+						</a>
+					)}{' '}
+					{vercel === '' ? (
+						<></>
+					) : (
+						<a
+							aria-label='github'
+							target='__blank'
+							href={vercel}
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+						>
+							{vercel === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faVercelIcon}
 									className='flex align-middle text-center font-extrabold text-1xl'
 								/>
 							)}
