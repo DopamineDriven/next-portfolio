@@ -1,6 +1,6 @@
 ---
 title: 'Windy City Devs Blog'
-excerpt: 'Statically Generated with Nextjs'
+excerpt: 'Blog posts about current tech and use cases. Statically Generated with Nextjs.'
 coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598376790/portfolio/wcd-logo_1_iuuuob.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1598376790/portfolio/wcd-logo_1_iuuuob.jpg'
 date: "2020-06-28T09:35:07.322Z"
@@ -21,7 +21,5 @@ author:
 ogImage:
   url: 'https://res.cloudinary.com/asross311/image/upload/v1598385330/portfolio/Group_25_1_mkabg7.jpg'
 ---
-
-# Mock Airbnb App
 
  ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/k9lv12xtp4lkavj6ip0c.png)
