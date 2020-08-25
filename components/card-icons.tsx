@@ -79,15 +79,15 @@ const CardIcons = ({
 							aria-label='apollo'
 							target='__blank'
 							href='https://www.apollographql.com/docs/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							{apollo === '' ? (
 								<></>
 							) : (
 								<FontAwesomeIcon
 									icon={faApolloIcon}
-									className='flex align-middle text-center font-extrabold text-1xl pb-1'
-									size='lg'
+									className='flex align-middle text-center font-extrabold text-1xl pr-half'
+									size='2x'
 								/>
 							)}
 						</a>
@@ -119,15 +119,15 @@ const CardIcons = ({
 							aria-label='graphql'
 							target='__blank'
 							href='https://www.graphql.com/'
-							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
 						>
 							{graphql === '' ? (
 								<></>
 							) : (
 								<FontAwesomeIcon
 									icon={faGraphQLIcon}
-									className='flex align-middle text-center font-extrabold text-1xl pb-1'
-									size='lg'
+									className='flex align-middle text-center font-extrabold text-1xl'
+									size='2x'
 								/>
 							)}
 						</a>
@@ -146,8 +146,8 @@ const CardIcons = ({
 							) : (
 								<FontAwesomeIcon
 									icon={faNextIcon}
-									className='flex align-middle text-center font-extrabold text-1xl pb-1'
-									size='lg'
+									className='flex align-middle text-center font-extrabold text-1xl'
+				
 								/>
 							)}
 						</a>
@@ -166,7 +166,7 @@ const CardIcons = ({
 							) : (
 								<FontAwesomeIcon
 									icon={faReact}
-									className='flex align-middle text-center font-extrabold text-1xl pb-1'
+									className='flex align-middle text-center font-extrabold text-1xl'
 									size='lg'
 								/>
 							)}
@@ -186,8 +186,7 @@ const CardIcons = ({
 							) : (
 								<FontAwesomeIcon
 									icon={faTailwindIcon}
-									className='flex align-middle text-center font-extrabold text-1xl pb-1'
-									size='lg'
+									className='flex align-middle text-center font-extrabold py-1'
 								/>
 							)}
 						</a>
@@ -206,8 +205,8 @@ const CardIcons = ({
 							) : (
 								<FontAwesomeIcon
 									icon={faTypeScriptIcon}
-									className='flex align-middle text-center font-extrabold text-1xl pb-1'
-									size='lg'
+									className='flex align-middle text-center font-extrabold text-1xl pb-half'
+									size='sm'
 								/>
 							)}
 						</a>
