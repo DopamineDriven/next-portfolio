@@ -232,7 +232,6 @@ const CardIcons = ({
 								<FontAwesomeIcon
 									icon={faWordpress}
 									className='flex align-middle text-center font-extrabold text-1xl pb-half'
-									size='sm'
 								/>
 							)}
 						</a>
