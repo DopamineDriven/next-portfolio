@@ -1,4 +1,4 @@
-import Avatar from 'components/card-tech-specs';
+import Avatar from 'components/card-github-deployment';
 import DateFormater from 'components/date-formatter';
 import CoverImage from 'components/cover-image-card';
 import Link from 'next/link';
