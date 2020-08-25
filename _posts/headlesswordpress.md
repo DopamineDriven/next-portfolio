@@ -1,7 +1,7 @@
 ---
 title: 'Headless WordPress Directory'
 excerpt: '"The mechanic that would perfect his work must first sharpen his tools." - <em>Confucius</em>'
-coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374421/portfolio/headless-wp-directory_ydouen.jpg'
+coverImage: 'https://og-image.now.sh/!%5BAlt%20Text%5D(https%3A%2F%2Fres.cloudinary.com%2Fasross311%2Fimage%2Fupload%2Fv1598033283%2Fportfolio%2FVector_5_obdzoj.png).png?theme=dark&md=1&fontSize=225px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-white.svg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR_Assets/typescript-in-react_vv81ae.png'
 date: "2020-08-19T08:35:07.322Z"
 author:
