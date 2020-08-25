@@ -1,7 +1,7 @@
 ---
 title: 'Headless WordPress Directory'
 excerpt: 'Uniting 40-130 independent Chicago-based media companies and increasing their digital presence.'
-coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598385330/portfolio/Group_25_1_mkabg7.jpg'
+coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374421/portfolio/headless-wp-directory_ydouen.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR_Assets/typescript-in-react_vv81ae.png'
 date: "2020-08-19T08:35:07.322Z"
 author:
