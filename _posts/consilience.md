@@ -19,7 +19,7 @@ author:
   typescript: ''
   wordpress: ''
 ogImage:
-  url: 'https://res.cloudinary.com/asross311/image/upload/v1598377626/portfolio/consilience_s1yr8g.jpg'
+  url: 'https://og-image.now.sh/!%5BAlt%20Text%5D(https%3A%2F%2Fres.cloudinary.com%2Fasross311%2Fimage%2Fupload%2Fv1598033283%2Fportfolio%2FVector_5_obdzoj.png).png?theme=dark&md=1&fontSize=225px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-white.svg'
 ---
 
 # Consilience
