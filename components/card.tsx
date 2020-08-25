@@ -3,6 +3,7 @@ import Avatar from 'components/card-tech-specs';
 import Link from 'next/link';
 import CardIcons from 'components/card-icons';
 import Author from 'types/author';
+import TechIcons from 'types/tech-icons';
 
 type CardProps = {
 	author: Author;
@@ -38,7 +39,13 @@ const Card = ({ author, src, excerpt, date, slug, title }: CardProps) => {
 					></div>
 					<>
 						<div className='grid-cols-1 pl-2 font-subpolished'>
-							<Avatar github={author.github} date={date} name={author.name} vercel={author.vercel} heroku={author.heroku} />
+							<Avatar
+								github={author.github}
+								date={date}
+								name={author.name}
+								vercel={author.vercel}
+								heroku={author.heroku}
+							/>
 						</div>
 					</>
 					<hr className='border-customGray w-full mt-2' />

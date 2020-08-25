@@ -1,16 +1,16 @@
 ---
 title: 'Headless WordPress Directory'
 excerpt: '"The mechanic that would perfect his work must first sharpen his tools." - <em>Confucius</em>'
-coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1597440661/portfolio/next-jamstack_x8lmse.jpg'
+coverImage: 'https://res.cloudinary.com/asross311/image/upload/v1598374421/portfolio/headless-wp-directory_ydouen.jpg'
 articleImage: 'https://res.cloudinary.com/asross311/image/upload/v1594138140/ASR_Assets/typescript-in-react_vv81ae.png'
-date: "2020-07-19T08:35:07.322Z"
+date: "2020-08-19T08:35:07.322Z"
 author:
   name: Andrew Ross
-  avatar: 'https://res.cloudinary.com/asross311/image/upload/v1597678722/portfolio/doge_ropqvx.jpg'
-  github: 'https://github.com/DopamineDriven'
+  avatar: 'https://res.cloudinary.com/asross311/image/upload/v1598377026/portfolio/dogeout_fftsx9.png'
+  github: 'https://github.com/DopamineDriven/headless-wp-next-directory'
   twitter: 'https://twitter.com/Dopamine_Driven'
   linkedin: 'https://www.linkedin.com/in/asross/'
-  vercel: 'https://next-jamstack-portfolio.vercel.app/'
+  vercel: 'https://headless-wp-next-directory.vercel.app/'
   heroku: ''
 ogImage:
   url: '/assets/next-jamstack.jpg'

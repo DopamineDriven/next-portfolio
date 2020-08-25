@@ -21,7 +21,7 @@ export default function Avatar({
 	return (
 		<>
 			<div className='ml-1 mt-1 flex flex-row align-bottom items-left text-left float-left overflow-hidden'>
-				<div className='flex flex-row w-1/2 mr-6 align-bottom pt-2 cursor-pointer'>
+				<div className='flex flex-row-reverse w-1/2 mr-6 align-middle items-center justify-center cursor-pointer'>
 					{github === '' ? (
 						<></>
 					) : (
@@ -56,6 +56,7 @@ export default function Avatar({
 								<FontAwesomeIcon
 									icon={faHerokuIcon}
 									className='flex align-middle text-center font-extrabold text-1xl'
+									size='2x'
 								/>
 							)}
 						</a>
@@ -74,7 +75,8 @@ export default function Avatar({
 							) : (
 								<FontAwesomeIcon
 									icon={faVercelIcon}
-									className='flex align-middle text-center font-extrabold text-1xl'
+											className='flex align-middle text-center font-extrabold pb-1 text-lg'
+											size='1x'
 								/>
 							)}
 						</a>
