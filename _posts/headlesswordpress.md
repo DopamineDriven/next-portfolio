@@ -10,6 +10,7 @@ author:
   github: 'https://github.com/DopamineDriven/headless-wp-next-directory'
   vercel: 'https://headless-wp-next-directory.vercel.app/'
   heroku: ''
+  antdesign: ''
   apollo: 'apollo'
   auth0: ''
   graphql: 'graphql'

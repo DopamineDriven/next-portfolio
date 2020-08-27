@@ -10,6 +10,7 @@ author:
   github: 'https://github.com/DopamineDriven/windycitydevs'
   vercel: 'https://windycitydevs.vercel.app/'
   heroku: ''
+  antdesign: ''
   apollo: ''
   auth0: ''
   graphql: ''

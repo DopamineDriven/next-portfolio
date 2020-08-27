@@ -5,6 +5,7 @@ interface Author {
 	heroku: string;
 	vercel: string;
 	props: string | number;
+	antdesign: string;
 	apollo: string;
   auth0: string;
   graphql: string;
