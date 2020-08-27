@@ -1,5 +1,5 @@
 diff --git a/node_modules/@fortawesome/fontawesome-common-types/index.d.ts b/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
-index b70b000..18c052c 100644
+index b70b000..7c6134a 100644
 --- a/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
 +++ b/node_modules/@fortawesome/fontawesome-common-types/index.d.ts
 @@ -1,4 +1,4 @@
@@ -8,7 +8,7 @@ index b70b000..18c052c 100644
  export type IconPathData = string | string[]
  
  export interface IconLookup {
-@@ -21,7 +21,24 @@ export interface IconPack {
+@@ -21,7 +21,25 @@ export interface IconPack {
    [key: string]: IconDefinition;
  }
  
@@ -16,6 +16,7 @@ index b70b000..18c052c 100644
 +export type IconName = 'antdesign-icon' |
 +  'apollo-icon' |
 +  'auth-icon' |
++  'cloudinary-icon' |
 +  'crapp-icon' |
 +  'graphql-icon' |
 +  'heroku-icon' |
