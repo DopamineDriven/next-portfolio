@@ -10,6 +10,7 @@ author:
   github: 'https://github.com/DopamineDriven/Consilience'
   vercel: ''
   heroku: 'https://classroom-consilience.herokuapp.com/'
+  antdesign: ''
   apollo: ''
   auth0: ''
   graphql: ''

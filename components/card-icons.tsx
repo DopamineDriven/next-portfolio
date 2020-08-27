@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import {
+	faAntDesignIcon,
 	faApolloIcon,
 	faAuth0Icon,
 	faGraphQLIcon,
@@ -16,6 +17,11 @@ interface MappingProps {
 }
 
 const iconLinks: MappingProps[] = [
+	{
+		href: 'https://ant.design/',
+		name: 'antdesign',
+		icon: faAntDesignIcon
+	},
 	{
 		href: 'https://www.apollographql.com/docs/',
 		name: 'apollo',
@@ -54,6 +60,7 @@ const iconLinks: MappingProps[] = [
 ];
 
 type CardIconProps = {
+	antdesign: string;
 	apollo: string;
 	auth0: string;
 	graphql: string;
@@ -64,7 +71,33 @@ type CardIconProps = {
 	wordpress: string;
 };
 
+// const CardIconsMapped = () => { 
+// 	const cardIconsMapped = iconLinks.map(link => 
+// 		{link.name === '' ? (
+// 			<></>
+// 		) : (
+// 			<a
+// 				aria-label='apollo'
+// 				target='__blank'
+// 				href={link.href}
+// 				className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+// 			>
+// 				{link.name === '' ? (
+// 					<></>
+// 				) : (
+// 					<FontAwesomeIcon
+// 						icon={link.icon}
+// 						className='flex align-middle text-center font-extrabold text-1xl pr-half'
+// 						size='2x'
+// 					/>
+// 				)}
+// 			</a>
+// 		)}
+// 	)
+// 	}
+
 const CardIcons = ({
+	antdesign,
 	apollo,
 	auth0,
 	graphql,
@@ -79,6 +112,26 @@ const CardIcons = ({
 			<ul className='align-middle'>
 				<li className='align-middle'>
 					{' '}
+					{antdesign === '' ? (
+						<></>
+					) : (
+						<a
+							aria-label={antdesign}
+							target='__blank'
+							href='https://ant.design/'
+							className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-threeHalves rounded-full focus:outline-none'
+						>
+							{antdesign === '' ? (
+								<></>
+							) : (
+								<FontAwesomeIcon
+									icon={faAntDesignIcon}
+									className='flex align-middle text-center font-extrabold text-1xl pr-half'
+									size='1x'
+								/>
+							)}
+						</a>
+					)}{' '}
 					{apollo === '' ? (
 						<></>
 					) : (

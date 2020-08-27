@@ -52,6 +52,7 @@ const Card = ({ author, src, excerpt, date, slug, title }: CardProps) => {
 					<hr className='border-customGray w-full mt-2' />
 					<div className='text-right items-end align-middle float-right pr-2 py-1 font-subpolished'>
 						<CardIcons
+							antdesign={author.antdesign}
 							apollo={author.apollo}
 							auth0={author.auth0}
 							graphql={author.graphql}

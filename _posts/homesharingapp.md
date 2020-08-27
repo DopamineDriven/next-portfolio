@@ -10,6 +10,7 @@ author:
   github: 'https://github.com/DopamineDriven/home-sharing-app'
   vercel: ''
   heroku: 'https://gql-homesharing.herokuapp.com/'
+  antdesign: 'antdesign'
   apollo: 'apollo'
   auth0: ''
   graphql: 'graphql'

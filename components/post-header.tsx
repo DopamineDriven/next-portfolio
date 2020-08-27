@@ -43,6 +43,7 @@ export default function PostHeader({
 						<Categories categories={categories} />
 					</div> */}
 					<CardIcons
+						antdesign={author.antdesign}
 						apollo={author.apollo}
 						auth0={author.auth0}
 						graphql={author.graphql}
