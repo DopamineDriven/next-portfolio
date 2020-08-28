@@ -1,5 +1,5 @@
 # next-jamstack-portfolio
-
+- statically generated next-portfolio ft projects, blog posts, custom font-awesome icons generated via deconstructing declaration files, extending library interfaces, patching, and postinstall scripting. 
 
 ```xml
 <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
