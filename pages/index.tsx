@@ -20,6 +20,9 @@ type Props = {
 
 const Index = ({ allPosts, props, preview }: Props) => {
 	const morePosts = allPosts.slice(0);
+
+	
+
 	return (
 		<>
 			<Header props={props} />
@@ -81,4 +84,16 @@ Twitter practice problems
 	// const x: number & (boolean | number) = seven + bool;
 	// x === 8 ? console.log('result of x:', x) : console.log(typeof x);
 	// console.log('type of x:', typeof x);
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+1) `in` in JS is not about the elements *in* the structure but about it's properties
+2) The structure's methods are in the same collection "properties".
+The in operator returns true if the specified property is in the specified object or its prototype chain.
+Reduce can be used to process an :array and operate on each of its elements.
+Hence, it will allways return true even if the array is empty.
+	const nums: number[] = [1, 2, 3];
+	console.log(nums);
+	'reduce' in nums;
+	console.log(nums);
 */
