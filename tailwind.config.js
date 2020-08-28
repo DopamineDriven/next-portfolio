@@ -76,7 +76,9 @@ module.exports = {
 				gqlPink: '#E535AB',
 				devPurple: '#3333CC',
 				lighterBlack: '#323232',
-				gatsbyPurple: '#663399'
+				gatsbyPurple: '#663399',
+				oneFiveBlack: '#151515',
+				fiveOBlack: '#505050'
 			},
 			height: {
 				whole: '100vh',
