@@ -1,10 +1,8 @@
-import CoverImage, { CoverImageProps } from 'components/cover-image-card';
+import CoverImage from 'components/cover-image-card';
 import Avatar from 'components/card-github-deployment';
 import Link from 'next/link';
 import CardIcons from 'components/card-icons';
 import Author from 'types/author';
-import TechIcons from 'types/tech-icons';
-import next from 'next';
 
 type CardProps = {
 	author: Author;
@@ -68,21 +66,5 @@ const Card = ({ author, src, excerpt, date, slug, title }: CardProps) => {
 		</div>
 	);
 };
-
-// interface CardSlugProps {
-// 	title: string;
-// }
-
-// const CardSlug = ({ title }: CardSlugProps) => {
-// 	return (
-// 		<>
-// 			<Link as={`/posts/${Card()}`} href='/posts/[slug]'>
-// 				<a>
-// 				<Card />
-// 				</a>
-// 			</Link>
-// 		</>
-// 	);
-// };
 
 export default Card;
