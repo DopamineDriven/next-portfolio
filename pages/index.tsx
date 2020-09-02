@@ -85,6 +85,10 @@ Twitter practice problems
 	// x === 8 ? console.log('result of x:', x) : console.log(typeof x);
 	// console.log('type of x:', typeof x);
 
+	week of 8-30
+	const value: number | string = parseFloat('3.14.55');
+		value == '3.14.55' ? console.log(`correct, value === ${value}`) : console.log(value);
+
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 1) `in` in JS is not about the elements *in* the structure but about it's properties
