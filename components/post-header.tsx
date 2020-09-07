@@ -28,7 +28,7 @@ export default function PostHeader({
 				</div>
 				<PostTitle>{title}</PostTitle>
 
-				<div className='max-w-4xl mx-auto align-middle content-center justified-center text-center'>
+				<div className='max-w-4xl mx-auto align-middle content-center justify-center text-center'>
 					<div className='hidden md:block align-middle content-center text-center justify-center'>
 						<Avatar avatar={author.avatar} name={author.name} />
 					</div>

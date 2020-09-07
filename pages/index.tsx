@@ -21,8 +21,6 @@ type Props = {
 const Index = ({ allPosts, props, preview }: Props) => {
 	const morePosts = allPosts.slice(0);
 
-	
-
 	return (
 		<>
 			<Header props={props} />
@@ -84,6 +82,14 @@ Twitter practice problems
 	// const x: number & (boolean | number) = seven + bool;
 	// x === 8 ? console.log('result of x:', x) : console.log(typeof x);
 	// console.log('type of x:', typeof x);
+
+	week of 8-30
+	const value: number | string = parseFloat('3.14.55');
+		value == '3.14.55' ? console.log(`correct, value === ${value}`) : console.log(value);
+	
+	// const value: number = parseFloat('3.14.55');
+	// console.log(value);
+	outputs 3.14
 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
